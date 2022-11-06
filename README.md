@@ -1,2 +1,1 @@
-# startup1
-first thing ever
+# CSE-1010-PYTHON
