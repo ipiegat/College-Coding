@@ -1,4 +1,5 @@
-"""Class 3 Notes: 1/26/2023
+"""
+Class 3 Notes: 1/26/2023
 
 Composition: This concept lets us create complex types by combining objects of different classes
     - We cam call/reference one or more objects of another class as an instance variable in the current class
