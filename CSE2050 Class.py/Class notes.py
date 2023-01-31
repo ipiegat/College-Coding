@@ -1,4 +1,50 @@
 """
+Class 4 Notes: 1/31/2023
+
+Test Driven Development:
+    - Red: The test fails
+    - Green: You get the tests to pass
+    - Refactor: You clean up the code, removing clutter/duplication
+
+Time Module:
+"""
+
+def duplicates_1(L):
+    n = len(L) # 2
+    for i in range(n): # n 
+        for j in range(i, n): # n, i reduces comparison time by comparing each pair once
+            if i != j and L[i] == L[j]: # 2
+                return True # not executed
+    
+    return False # 1
+
+# Total cost = 2+n(n(2))+1 = 2n^2 + 3
+
+import time
+
+# from duplicates immport duplicates_1
+
+n = 1000
+for i in range(5):
+    start_time = time.time()
+    duplicates_1(list(range(n)))
+    end_time = time.time()
+    timetaken = end_time - start_time
+
+    print("Time taken for n = ", n, ":", timetaken)
+
+# create improved algorithm for duplicates to reduce time
+
+"""
+Asymptotic Analysis:
+    - Performance is determined by the size of an input and the number of operations executed by algorithm
+    - L.pop(2) -> n - i or 5 - 2 = 3 atomic operations
+    - See duplicates_1 comments
+"""
+
+#------------------------------------------------------------------
+
+"""
 Class 3 Notes: 1/26/2023
 
 Composition: This concept lets us create complex types by combining objects of different classes
