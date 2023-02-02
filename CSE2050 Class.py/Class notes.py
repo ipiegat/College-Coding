@@ -1,4 +1,57 @@
 """
+Class 5 Notes: 2/2/2023
+"""
+
+def sum(k):
+    total = 0 # 1
+    for i in range(0, k+1): 
+        total += i # 2k
+
+    return total # 1
+
+# 2k + 2
+
+def sum_improved(k):
+    total = k*(k+1)//2
+    return total 
+
+# 5 
+
+"""
+Big-O Notation: Ignore terms to a lower power once number is large enough
+
+f(n) = O(g(n))
+
+Example:
+
+f(n) = 3n^2 + 2n + 1 can be represented as O(n^2) only when f(n) <= c * g(n) which is 4 * n^2
+n = 1
+3(1)+2(1)+1 = 7 /// 4*1 = 4
+
+n = 2
+3(2)+2(2)+1 = 17 /// 4*2^2 = 16
+
+n = 3
+3(3)+2(3)+1 = 34 /// 4*3^2 = 36 so CONDITION is satisfied this n_initial = 3
+
+"""
+
+def duplicates_1(L):
+    n = len(L)
+    for i in range(n): 
+        for j in range(i, n): 
+            if i != j and L[i] == L[j]: 
+                return True 
+    
+    return False
+
+# n^2/2 - n/2 + 3
+
+# O(n^2)
+
+#------------------------------------------------------------------------------------
+
+"""
 Class 4 Notes: 1/31/2023
 
 Test Driven Development:
@@ -12,13 +65,13 @@ Time Module:
 def duplicates_1(L):
     n = len(L) # 2
     for i in range(n): # n 
-        for j in range(i, n): # n, i reduces comparison time by comparing each pair once
+        for j in range(i, n): # n - i, i reduces comparison time by comparing each pair once
             if i != j and L[i] == L[j]: # 2
-                return True # not executed
+                return True # not executed in worst case scenario
     
     return False # 1
 
-# Total cost = 2+n(n(2))+1 = 2n^2 + 3
+# Total cost = 2+n(n(2))+1 = 2n^2 + 3 without (i, n)
 
 import time
 
