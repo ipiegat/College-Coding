@@ -1,11 +1,24 @@
-def sum(k):
-    total = 0 # 1
-    for i in range(0, k+1): 
-        total += i # 2k
+def duplicates_1(L):
+    n = len(L)
+    for i in range(n):
+        for j in range(i, n):
+            if L[i] == L[j]:
+                return True
+    
+    return False
 
-    return total # 1
+import time
 
-print(sum(8))
+# from duplicates import duplicates_1
 
-# 2k + 2
+n = 1000000
+for i in range(5):
+    start_time = time.time()
+    duplicates_1(list(range(n)))
+    end_time = time.time()
+    timetaken = end_time - start_time
+
+    print("Time taken for n = ", n, ":", timetaken)
+
+
     
