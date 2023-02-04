@@ -8,3 +8,4 @@ class Solution:
                 answer = nums[i] + nums[j]
                 if answer == target and i != j:
                     return [i, j]
+
