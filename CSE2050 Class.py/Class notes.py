@@ -1,3 +1,101 @@
+"""Class 7 Notes: 2/9/2023
+
+Abstract Data Types (ADT)
+    - Stacks - LIFO
+        - Operations: PUSH, POP, PEEK, IS_EMPTY, LEN
+        - Cost: O(1)
+    - Queues - FIFO
+        - Operations: ENQUEUE, DEQUEUE, FIRST, IS_EMPTY, LEN
+        - Cost: Dequeue -> O(n)
+        - To overcome this, we made use of the head variable to dequeue the element in the front of queue
+
+Deque ADT
+    - Acts like stack and queue
+        - Add or remove elements from both the beginning and the end
+        - addfirst(), addlast(), removefirst(), removelast(), len()
+        - Uses list data structure so shifting left or right
+        - INSTEAD arrange data in NODES
+            - Data (Head to Tail) and address -> Linked Lists ADT
+            - Use a class Node"""
+
+class _Node:
+    def __init__(self, element, next):
+        self._element = element
+        self._next = next
+    
+"""Linked Lists ADT: Singly Linked List
+    - Simplest form of linked lists
+    - First node is the head node, last node is the tail node
+    - Tail node is determined if next none = None
+    - Keep reference of head node and tail node
+    - When creating a new element, point it to Head. Then that element is updated to be Head. 
+"""
+L = []
+#create new HEAD
+newest = _Node() # create a node with an element 
+newest._next = L.head # set newest node next reference to the current head node
+L.head = newest #set variable to "head" to refer the newest node as head node
+L.size += 1 # update the size of the list
+
+#create new TAIL
+newest = _Node() # create node with element 
+newest.next = None # set the newest code next reference to None
+L.tail.next = newest # set the next node reference of current tail to point to the newest node
+L.Tail = newest # set the variable "tail" to reference to newes node
+L.size += 1 #update size of list
+
+# start with an instance of LinkedStack with head = None
+
+
+class LinkedStack:
+    def __init__(self):
+        self._head = None
+        self._tail = None
+        self._size = 0
+    
+    def push(self, item):
+        head = _Node(item, head)
+        Item = self._tail
+        self._size += 1
+
+    def pop(self):
+        read_element = head
+        head = head._next
+        self._size -= 1
+        return read_element
+
+"""Queue ADT as Linked List
+1. Start off by creating an instance of LinkedQueue with:
+    head = None
+    tail = None
+2. Enqueue operation
+    newest = _Node("A", None)
+    if it is the first element then 
+        head = newest
+    set the element as a a Tail
+        tail = newest
+3. Enqueueing another element
+    newest = _Node("B", None)
+    if it is the first element then 
+        head = newest
+    else
+        tail._next = newest
+    set the element as a tail element
+    newest = self._tail(newest)
+4. Dequeue read the element
+        read_element = head._element
+    update the head variable to be set to the next node
+        head = head._next
+        if it was the last element in the queue
+            tail = None
+    reduce the size of queue
+    return read_element
+
+"""
+
+
+#--------------------------------------------------------------------------------------
+
 """Class 6 Notes: 2/7/2023
 
 Stack ADT: Operations
@@ -31,8 +129,6 @@ class Q:
     
     def peek(self):
         return self._L[self._head]
-
-
 
 #--------------------------------------------------------------------------------------
 
