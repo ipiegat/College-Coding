@@ -1,3 +1,41 @@
+"""Class 6 Notes: 2/7/2023
+
+Stack ADT: Operations
+    - stack.push(integer) -> goes to top of stack
+    - stack.pop() removes element at top of stack
+    - stack.peek() returns element at top of stack
+    - stack.is_empty() returns true if stack is empty, false if not
+    - stack.len() return number of elements in a stack
+
+Queue ADT: A collection of objects that are inserted and removed according to the first in first out principle (FIFO)
+    - Elements can be inserted in back of que
+
+Queue Operations:
+    - Q.enqueue(e) add element to back of que
+    - Q.dequeue() removes first added value and returns it
+
+"""
+class Q:
+    def __init__(self):
+        self.L = []
+        self._head = 0
+    
+    def enqueue(self, item):
+        self.L.append(item)
+    
+    def dequeue(self):
+        front_item = self.peek()
+        self._head += 1
+        return front_item
+        # self.L.pop(0) is inefficient, so simply return 
+    
+    def peek(self):
+        return self._L[self._head]
+
+
+
+#--------------------------------------------------------------------------------------
+
 """
 Class 5 Notes: 2/2/2023
 """
