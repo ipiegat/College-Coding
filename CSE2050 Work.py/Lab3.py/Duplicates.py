@@ -9,7 +9,7 @@ def has_duplicates_1(L):
 
 def has_duplicates_2(L):
     n = len(L)
-    for i in range(n):
+    for i in range(n): 
         for j in range(i, n):
             if i != j and L[i] == L[j]:
                 return True
