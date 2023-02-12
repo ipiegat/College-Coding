@@ -332,7 +332,7 @@ Inheritance:
     2) Can use features/ attributes of already existing class as a base to create new class
     3) Best explained as enherenting features of existing class, say A into B
     4) Great example of code 'reuse'
-    5) Also called "is a" realtionship
+    5) Also called "is a" relationship
         - Child class is an instance of parent class
     
 """
