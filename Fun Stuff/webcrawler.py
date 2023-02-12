@@ -9,18 +9,7 @@ print page name and analysis result
 import urllib.request
 from html.parser import HTMLParser
 
-# Part 1: Get a random wiki page
-
-random_gen_url = "https://en.wikipedia.org/wiki/Special:Random"
-
-page = urllib.request.urlopen(random_gen_url)
-wiki_HTML = page.read().decode("utf-8")
-print("Got wiki HTML")
-
-# Part 2: Parse the HTML, get the text body]
-
-target_div_id = "mw-content-text"
-
+TARGET_DIV_ID = "mw-content-text"
 
 class MyHTMLParser(HTMLParser):
     def __init__(self):
@@ -36,8 +25,8 @@ class MyHTMLParser(HTMLParser):
     def handle_starttag(self, tag, attrs):
         if tag == "div":
             for k, v in attrs:
-                if k == "id" and v == target_div_id:
-                    print("Found target div ID")
+                if k == "id" and v == TARGET_DIV_ID:
+                    print("\nFound target div ID")
                     self.in_target_div = True
 
         if self.in_target_div:
@@ -74,11 +63,27 @@ class MyHTMLParser(HTMLParser):
         if len(stripped) > 0:
             self.body_text += " " + stripped
 
+def get_random_wiki_page():
+    random_gen_url = "https://en.wikipedia.org/wiki/Special:Random"
+    page = urllib.request.urlopen(random_gen_url)
+    wiki_HTML = page.read().decode("utf-8")
+    
+    return wiki_HTML
 
-parser = MyHTMLParser()
-parser.feed(wiki_HTML)
+def parse_HTML(wiki_HTML):
 
-print(
-    "=========================================ALL TEXT=========================================\n\n"
-)
-print(parser.body_text)
+    parser = MyHTMLParser()
+    parser.feed(wiki_HTML)
+
+    return parser.body_text
+
+if __name__ == "__main__":
+
+    # Part 1: Get a random wiki page
+    wiki_HTML = get_random_wiki_page()
+
+    # Part 2: Parse the HTML, get the text body
+    text = parse_HTML(wiki_HTML)
+    print("\n=========================================ALL TEXT=========================================\n")
+    print(text)
+
