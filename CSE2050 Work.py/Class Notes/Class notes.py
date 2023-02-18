@@ -1,3 +1,64 @@
+"""Class 8 Test Review Note: 2/14/2023
+
+Module 1:
+    - Class: Template to create objects
+    - Method: functions defined in a class
+    - Attributes: data/features of class
+    - Instantiation: creation of an object/instance of a class
+    - Inheritance: Inheriting or extending the existing features of another class
+        - inherited class -> parent / base / super class
+        - inheriting class -> child / derived / sub class
+    - Composition: Creating an instance of a class within another class
+        - Composite class -> class which contains an object of another class
+        - Component class -> class being referenced in another class
+        - class B():
+            - obj = A()
+    - Polymorphism: reuse and renaming 
+
+Module 2: Testing
+    - assert statements
+        - all tests must pass or returns false
+        - does not specify where error occurs
+    - unitttest
+        - runs all tests even if any test fails
+        - specify where the failure occured
+    - test driven development
+        - tdd is based on red-green-refactor phases
+        - red: fails
+        - green: passes
+        - refactor: clean up code, remove clutter/duplication
+
+Module 3: Running time analysis
+    - Performance analysis via measuring execution time
+        - does not give us accurate performance because of different factors
+    - asympotic analysis
+    - big O notation
+        - consider highest power element
+
+Module 4: Linear Data Structures
+    - Stacks - LIFO - LAST IN FIRST OUT
+        - PUSH, POP, PEEK time complexity O(1)
+    - Queues - FIFO - FIRST IN FIRST OUT
+        - Enqueue, dequeue, first/peek
+            - dequeue time complexity O(n), others O(1)
+    - Linked Lists
+        - Minimally, linked list must keep a reference of head node
+        - Deleting element from the tail of linked list is O(n) time complexity
+
+
+
+
+
+
+
+
+
+"""
+
+
+
+#--------------------------------------------------------------------------------------
+
 """Class 7 Notes: 2/9/2023
 
 Abstract Data Types (ADT)
@@ -92,7 +153,6 @@ class LinkedStack:
     return read_element
 
 """
-
 
 #--------------------------------------------------------------------------------------
 

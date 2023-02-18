@@ -17,7 +17,7 @@ def prefix(strs):
 
 print(prefix(strs))
         
-    
+
         
     
     
