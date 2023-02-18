@@ -1,6 +1,7 @@
 from scipy import optimize
 from matplotlib import pyplot as plt
 
+
 # linear fitting function
 # the first parameter of a fitting funciton must be x
 # subsequent parameters are automatically adjusted by curve_fit
@@ -37,14 +38,14 @@ def create_fig(y_fit_quad, y_fit_lin, xdata, ydata):
     # plot the raw data and the line of best fit
     plt.figure()
     plt.scatter(xdata, ydata)
-    plt.plot(xdata, y_fit_quad, c ="r", label = "Quadratic")
-    plt.plot(xdata, y_fit_lin, c = "g", label = "Linear")
+    plt.plot(xdata, y_fit_quad, c="r", label="Quadratic")
+    plt.plot(xdata, y_fit_lin, c="g", label="Linear")
     plt.xlabel("n")
     plt.ylabel("Duration (s)")
     plt.title("Best Fit")
     plt.legend()
-    #plt.show()
-    plt.savefig("bestfit")
+    plt.show()
+    #plt.savefig("bestfit")
 
 
 def se(ydata, y_fit):
@@ -81,9 +82,11 @@ def fit_data(func, xdata, ydata):
 
 
 # generate data on y = 1*x + 0, then add some "noise"
-xdata = [i for i in range(10)]
-ydata = [i for i in range(10)]
-ydata[1] = 2
-ydata[8] = 7
+if __name__ == "__main__":
 
-print(fit_data(const, xdata, ydata))
+    xdata = [i for i in range(10)]
+    ydata = [i for i in range(10)]
+    ydata[1] = 2
+    ydata[8] = 7
+
+    print(fit_data(const, xdata, ydata))
