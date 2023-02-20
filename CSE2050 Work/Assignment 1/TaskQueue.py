@@ -29,14 +29,14 @@ class TaskQueue:
         if self.is_empty() == True:  # if the list is empty
             raise RuntimeError(f"Task with ID {id} was not found")  # raise error
         if self.is_empty() == False:  # if the list is not empty
-            if self.len() == 1:  # if there is only one item in the list
+            if self.__len__() == 1:  # if there is only one item in the list
                 if self.current.id == id:  # and the item has the ID
                     self.current = None  # set the item to None
                 else:  # if the one item does not have the ID
                     raise RuntimeError(
                         f"Task with ID {id} was not found"
                     )  # raise error
-            if self.len() > 1:  # if there are two or more items in the list
+            if self.__len__() > 1:  # if there are two or more items in the list
                 if self.current.id == id:  # if the head has the ID
                     self.current = self.current.next  # set the next item to be the head
                     self.last.next = self.current  # point the new item towards itself
@@ -47,7 +47,7 @@ class TaskQueue:
                         if cur.next == self.current:
                             raise RuntimeError(f"Task with ID {id} was not found")
 
-    def len(self):
+    def __len__(self):
         if self.current is None:
             return 0
 
@@ -62,7 +62,7 @@ class TaskQueue:
         return count
 
     def is_empty(self):
-        if self.len() == 0:  # if the length of the list is 0
+        if self.__len__() == 0:  # if the length of the list is 0
             return True  # return True (is is empty)
         else:  # if length is not 0
             return False  # return False (it is not empty)
