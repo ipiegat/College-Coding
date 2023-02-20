@@ -30,7 +30,6 @@ y1 = np.array(y1)
 y2 = np.array(y2)
 
 
-
 ##### Plot datasets
 plt.figure()  # create a new figure
 plt.scatter(
@@ -41,7 +40,7 @@ plt.scatter(
 )  # add scatter plot to figure
 plt.ylabel("running time (s)")  # label y axis
 plt.legend()  # add legend to figure
-plt.show()                                                          # show figure on local computer
-#plt.savefig("dups")  # save figure
+plt.show()  # show figure on local computer
+# plt.savefig("dups")  # save figure
 
 # Note: You can either use plt.show() or plt.savefig(). Using both does not work.

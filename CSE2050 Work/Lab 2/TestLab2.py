@@ -1,5 +1,5 @@
 import unittest
-from Lab2 import Polygon, Triangle, Rectangle
+from Superclass import Polygon, Triangle, Rectangle
 
 
 class TestLab2(unittest.TestCase):
