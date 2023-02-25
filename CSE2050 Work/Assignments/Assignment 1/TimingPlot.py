@@ -32,8 +32,8 @@ def create_fig(y_fit_quad, y_fit_lin, xdata, ydata):
     plt.ylabel("Duration (s)")
     plt.title("Best Fit")
     plt.legend()
-    # plt.show()
-    plt.savefig("bestfit")
+    plt.show()
+    #plt.savefig("bestfit")
 
 
 def bubble_sort(L):
