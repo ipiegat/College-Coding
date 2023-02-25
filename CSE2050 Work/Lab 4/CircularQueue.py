@@ -1,20 +1,12 @@
-from typing import Optional
-
-class Node:
-    def __init__(self, element, next):
-        self._element = element
-        self._next: Optional[Node] = next
-
 class CircularQueue:
     DEFAULT_CAPACITY = 10
 
     def __init__(self):
         """ Creating an empty queue. """
         self._data = [None] * self.DEFAULT_CAPACITY
-        self._front: Optional[Node] = None
-        self._back: Optional[Node] = None
+        self._front: int = 0
+        self._back: int = 0
         self._size: int = 0
-
 
     def __len__(self):
         return self._size
@@ -24,31 +16,31 @@ class CircularQueue:
 
     def first(self):
         """ Return (but do not remove) the first element of the queue. """
-        return self._front._element
+        return self._data[self._front]
 
     def dequeue(self):
         " Remove and return the first element of the queue. (FIFO)"
-        if self.is_empty:
+        if self.is_empty():
             raise IndexError
         
-        # a -> b -> c -> a
-        old_front = self._front
-        self._front._next = self._front
-        self._back._next = self._front
+        front = self._data[self._front]
+        self._front += 1
+        if self._front == self.DEFAULT_CAPACITY:
+            self._front = 0
         self._size -= 1
 
-        if self._front is None:
-            self._back = None
-        
-        return old_front._element
+        return front
 
     def enqueue(self, element):
-        if self.is_empty():
-            self._front = Node(element, None)
-            self._back = self._front
-            self._back._next = self._front
-        else:
-            self._back._next = Node(element, self._front)
-            self._back = self._back._next
-
+        if len(self) == self.DEFAULT_CAPACITY:
+            raise IndexError
+        
+        self._data[self._back] = element
+        self._back += 1
+        if self._back == self.DEFAULT_CAPACITY:
+            self._back = 0
+        
         self._size += 1
+
+
+
