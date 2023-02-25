@@ -1,3 +1,127 @@
+"""Class 10 Notes: 2/23/2023
+
+Recursion: Basic Rules
+    - Have a Base Case
+
+Fibonacci Sequence:
+    - A series of numbers in which a given number is a sum of previous two numbers
+        - f(n) = f(n-1) + f(n-2)
+
+"""
+
+
+def fibanacci_sequence(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fibanacci_sequence(n - 2) + fibanacci_sequence(n - 1)
+
+
+# Time complexity for fib sequence:
+# T(k) = T(k-1) + T(k-2) + 1
+# T(k) = 2T(k-1) + 1
+# T(1) = 2T(0) + 1 = 1
+# T(2) = 2T(1) + 1 = 2 + 1 = 3
+
+
+def factorial(n):
+    answer = 1
+    for i in range(n, 1, -1):
+        answer *= i
+    return answer
+
+
+def fact_recr(n):
+    if n >= 1:
+        return n * fact_recr(n - 1)
+    else:
+        return 1
+
+
+def sum(k):
+    if k > 0:  # base case
+        return sum(k - 1) + k
+    return 0
+
+
+import sys
+
+sys.setrecursionlimit(50)
+# --------------------------------------------------------------------------------------
+
+
+"""Class 9 Notes: 2/21/2023
+
+Doubly Linked List:
+    - Maintain position of the next and previous node 
+    - Provides O(1) time complexity for all operations
+    - Two dummy nodes:
+        - header, trailer
+        - The head and tail never chance, only elements/nodes between them
+        - All insert operations add between existing nodes
+        - As with all delete operations
+    - Insert node in doubly linked list
+        - Create a new node with reference of predecessor and successor nodes
+        - Update next and prev pointers of predecessor and sucessor nodes to the new node
+    - Deletion of a node
+        - Link neighbors of deleted node with each other
+
+
+"""
+
+
+class _Node:
+    def __init__(self, prev, element, next):
+        self._prev = prev
+        self._element = element
+        self._next = next
+
+
+class DoublyLinkedList:
+    def __init__(self):
+        self._header = _Node(None, None, None)
+        self._trailer = _Node(None, None, None)
+        self._header.next = self._trailer
+        self._trailer.prev = self._header
+        self._size = 0
+
+    def insert_between(self, predecessor, element, successor):
+        newest = _Node(predecessor, element, successor)
+        predecessor._next = newest
+        successor._prev = newest
+        self._size += 1
+
+    def delete_node(self, node):
+        predecessor = node._prev
+        successor = node._next
+        predecessor._next = successor
+        successor._prev = predecessor
+        self._size -= 1
+
+        element = node._element
+        node._prev = node._next = node._element = None  # garbage collection
+        return element
+
+
+"""Module 5: Recursion and Dynamic Programming
+
+    - Recursion: A method of solving a problem with the help of a function, when the function calls itself
+    - Function Call Stack: A function which recursively calls itself forever
+        - Detects recursion with RecursionError
+
+"""
+
+
+def sum(k):  # infinitely looping function
+    if k > 0:
+        return sum(k - 1) + k
+    return 0
+
+
+# --------------------------------------------------------------------------------------
+
 """Class 8 Test Review Note: 2/14/2023
 
 Module 1:
@@ -45,19 +169,9 @@ Module 4: Linear Data Structures
         - Minimally, linked list must keep a reference of head node
         - Deleting element from the tail of linked list is O(n) time complexity
 
-
-
-
-
-
-
-
-
 """
 
-
-
-#--------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
 
 """Class 7 Notes: 2/9/2023
 
@@ -79,11 +193,13 @@ Deque ADT
             - Data (Head to Tail) and address -> Linked Lists ADT
             - Use a class Node"""
 
+
 class _Node:
     def __init__(self, element, next):
         self._element = element
         self._next = next
-    
+
+
 """Linked Lists ADT: Singly Linked List
     - Simplest form of linked lists
     - First node is the head node, last node is the tail node
@@ -92,18 +208,20 @@ class _Node:
     - When creating a new element, point it to Head. Then that element is updated to be Head. 
 """
 L = []
-#create new HEAD
-newest = _Node() # create a node with an element 
-newest._next = L.head # set newest node next reference to the current head node
-L.head = newest #set variable to "head" to refer the newest node as head node
-L.size += 1 # update the size of the list
+# create new HEAD
+newest = _Node()  # create a node with an element
+newest._next = L.head  # set newest node next reference to the current head node
+L.head = newest  # set variable to "head" to refer the newest node as head node
+L.size += 1  # update the size of the list
 
-#create new TAIL
-newest = _Node() # create node with element 
-newest.next = None # set the newest code next reference to None
-L.tail.next = newest # set the next node reference of current tail to point to the newest node
-L.Tail = newest # set the variable "tail" to reference to newes node
-L.size += 1 #update size of list
+# create new TAIL
+newest = _Node()  # create node with element
+newest.next = None  # set the newest code next reference to None
+L.tail.next = (
+    newest  # set the next node reference of current tail to point to the newest node
+)
+L.Tail = newest  # set the variable "tail" to reference to newes node
+L.size += 1  # update size of list
 
 # start with an instance of LinkedStack with head = None
 
@@ -113,10 +231,10 @@ class LinkedStack:
         self._head = None
         self._tail = None
         self._size = 0
-    
+
     def push(self, item):
         head = _Node(item, head)
-        Item = self._tail
+        item = self._tail
         self._size += 1
 
     def pop(self):
@@ -124,6 +242,7 @@ class LinkedStack:
         head = head._next
         self._size -= 1
         return read_element
+
 
 """Queue ADT as Linked List
 1. Start off by creating an instance of LinkedQueue with:
@@ -154,7 +273,7 @@ class LinkedStack:
 
 """
 
-#--------------------------------------------------------------------------------------
+# --------------------------------------------------------------------------------------
 
 """Class 6 Notes: 2/7/2023
 
@@ -173,43 +292,50 @@ Queue Operations:
     - Q.dequeue() removes first added value and returns it
 
 """
+
+
 class Q:
     def __init__(self):
         self.L = []
         self._head = 0
-    
+
     def enqueue(self, item):
         self.L.append(item)
-    
+
     def dequeue(self):
         front_item = self.peek()
         self._head += 1
         return front_item
-        # self.L.pop(0) is inefficient, so simply return 
-    
+        # self.L.pop(0) is inefficient, so simply return
+
     def peek(self):
         return self._L[self._head]
 
-#--------------------------------------------------------------------------------------
+
+# --------------------------------------------------------------------------------------
 
 """
 Class 5 Notes: 2/2/2023
 """
 
-def sum(k):
-    total = 0 # 1
-    for i in range(0, k+1): 
-        total += i # 2k
 
-    return total # 1
+def sum(k):
+    total = 0  # 1
+    for i in range(0, k + 1):
+        total += i  # 2k
+
+    return total  # 1
+
 
 # 2k + 2
 
-def sum_improved(k):
-    total = k*(k+1)//2
-    return total 
 
-# 5 
+def sum_improved(k):
+    total = k * (k + 1) // 2
+    return total
+
+
+# 5
 
 """
 Big-O Notation: Ignore terms to a lower power once number is large enough
@@ -230,20 +356,22 @@ n = 3
 
 """
 
+
 def duplicates_1(L):
     n = len(L)
-    for i in range(n): 
-        for j in range(i, n): 
-            if i != j and L[i] == L[j]: 
-                return True 
-    
+    for i in range(n):
+        for j in range(i, n):
+            if i != j and L[i] == L[j]:
+                return True
+
     return False
+
 
 # n^2/2 - n/2 + 3
 
 # O(n^2)
 
-#------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------
 
 """
 Class 4 Notes: 1/31/2023
@@ -256,14 +384,18 @@ Test Driven Development:
 Time Module:
 """
 
+
 def duplicates_1(L):
-    n = len(L) # 2
-    for i in range(n): # n 
-        for j in range(i, n): # n - i, i reduces comparison time by comparing each pair once
-            if i != j and L[i] == L[j]: # 2
-                return True # not executed in worst case scenario
-    
-    return False # 1
+    n = len(L)  # 2
+    for i in range(n):  # n
+        for j in range(
+            i, n
+        ):  # n - i, i reduces comparison time by comparing each pair once
+            if i != j and L[i] == L[j]:  # 2
+                return True  # not executed in worst case scenario
+
+    return False  # 1
+
 
 # Total cost = 2+n(n(2))+1 = 2n^2 + 3 without (i, n)
 
@@ -289,7 +421,7 @@ Asymptotic Analysis:
     - See duplicates_1 comments
 """
 
-#------------------------------------------------------------------
+# ------------------------------------------------------------------
 
 """
 Class 3 Notes: 1/26/2023
@@ -305,6 +437,7 @@ Inheretance vs Composition:
     - Composition
 """
 
+
 class Component:
     def __init__(self):
         print("Component class is created")
@@ -312,14 +445,16 @@ class Component:
     def cmpnt(self):
         print("Method from component class is running")
 
+
 class Composite:
     def __init__(self):
         print("Composite class is created")
         self.obj1 = Component()
-    
+
     def cmpst(self):
         self.obj1 = Component()
         print("Method from composite class is running")
+
 
 composite_obj = Composite()
 composite_obj.cmpnt()
@@ -334,35 +469,53 @@ Testing:
     - Assert statement raises an error if he predicate is a failure
 """
 
+
 class abc:
     def __init__(self, num):
         self.num = num
-    
+
     def double(self):
         return self.num + 2
 
+
 obj = abc(4)
 
-assert(obj.double() == 8) #compares code value to wanted value. can have multiple in a row but all must pass
-print("Test Passed!") # if above statement is true, print statement executes. if not error will pop up
+assert (
+    obj.double() == 8
+)  # compares code value to wanted value. can have multiple in a row but all must pass
+print(
+    "Test Passed!"
+)  # if above statement is true, print statement executes. if not error will pop up
 
 """
 Unit Testing with unittest:
     - Bigger software programs are usually tested by a procesdure called unit testing
 """
 
-pairs = {"Sun":"Sunday", "Mon": "Monday", "Tue": "Tuesday", "Wedn": "Wednesday", "Thur":"Thursday", "Fri": "Friday", "Satu": "Saturday"}
+pairs = {
+    "Sun": "Sunday",
+    "Mon": "Monday",
+    "Tue": "Tuesday",
+    "Wedn": "Wednesday",
+    "Thur": "Thursday",
+    "Fri": "Friday",
+    "Satu": "Saturday",
+}
+
+
 class DaysOfTheWeek:
     def __init__(self, abbreviated_name):
         self.abbreviated_name = abbreviated_name
-    
+
     def full_name(self):
         return pairs[self.abbreviated_name]
-    
+
+
 Day = DaysOfTheWeek("Sun")
 print(Day.full_name())
 
 import unittest
+
 
 class TestDaysOfTheWeek(unittest.TestCase):
     def test_days(self):
@@ -371,10 +524,11 @@ class TestDaysOfTheWeek(unittest.TestCase):
 
         day = DaysOfTheWeek("Mon")
         self.assertEqual(day.full_name(), "Monday")
-    
+
+
 unittest.main()
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 """
 Class 2 Notes: 1/24/2023
@@ -397,26 +551,30 @@ Inheritance:
     
 """
 
-class Person():
+
+class Person:
     def __init__(self, name, gender, age):
         self.name = name
         self.gender = gender
         self.age = age
 
-class Faculty(Person): # inherit parent class attributes
+
+class Faculty(Person):  # inherit parent class attributes
     def __init__(self, name, gender, age, teaching):
         self.teaching = teaching
-        super().__init__(name, age, gender) # initiliazer of superclass
+        super().__init__(name, age, gender)  # initiliazer of superclass
+
 
 class Student(Person):
     def __init__(self, name, gender, age, courses):
         self.courses = courses
-        super().__init__(name, age, gender) 
+        super().__init__(name, age, gender)
 
-faculty1 = Faculty("Isaac", "M", "18", "CSE") # creates error, look line 38
+
+faculty1 = Faculty("Isaac", "M", "18", "CSE")  # creates error, look line 38
 print(faculty1.age)
 
-#--------------------------------------------------------
+# --------------------------------------------------------
 
 """
 Class 1 CSE 1010 Review: 1/19/2023
@@ -431,5 +589,4 @@ Class 1 CSE 1010 Review: 1/19/2023
 
 """
 
-#--------------------------------------------------------
-
+# --------------------------------------------------------

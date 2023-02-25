@@ -1,8 +1,6 @@
-num = 0
-i = 0
-n = 5
+y = 1
 
-while i <= n:
-    num += 1
-    i += 1
+x = y
+y = 2
 
+print(x)
