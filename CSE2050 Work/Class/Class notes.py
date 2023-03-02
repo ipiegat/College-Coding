@@ -1,3 +1,65 @@
+"""Class 11 Notes: 3/2/2023
+
+Recursion
+    base case
+    recursive calls move towards base case
+
+FunctionCall Stack
+
+Dynamic Programming: Refers to an optimization over plain recursion
+    - Avoid making a function call again which has already been executed by:
+        - storing the intermediate solution of subproblems and use them later when needed
+        - this is called Memoization
+
+Two approaches of formulating a dynamic programming solution:
+    1) Top-down approach: Use memoization
+        - Create the fib sequence function
+        - Create variable which will hold the returning value
+            - Apppend variable to list if not already there
+        - Repeat
+    2) Bottom up approach using tabulation (iterative) method
+
+Longest common subsequence: Problem of finding a longest subsequence 't' in a given set of
+sequences (usually just two) S1 and S2, such that all characters in 't' appears in S1 and S2
+in the same order
+    - Example:
+        S1: a. b. c. d
+        S2: a. b, c, a, d
+        longest common:  abc, abd
+        2**n possible subsequences
+    - Optimizing
+        Compare if the last in each sequence are the same
+            X[-1] == Y[-1]
+
+"""
+
+def fib_sequence(k, fib_array):
+    if k in [0,1]:
+        fib_array[k] = k
+        return fib_array[k]
+
+    if fib_array[k] != None:
+        return fib_array[k]
+    fib_array[k] = fib_sequence(k-1, fib_array) + fib_sequence(k-2, fib_array)
+    
+    return fib_array
+
+X = "abcd"
+Y = "bc"
+
+def LCS(X, Y):
+    if X == "" or Y == "":
+        return ""
+    
+    elif X[-1] == Y[-1]:
+        return LCS(X[:-1], Y[:-1]) + X[-1]
+    
+    elif X[-1] != Y[-1]:
+        return max(LCS(X[:-1], Y), LCS(X, Y[:-1]))
+
+# --------------------------------------------------------------------------------------
+
+
 """Class 10 Notes: 2/23/2023
 
 Recursion: Basic Rules
