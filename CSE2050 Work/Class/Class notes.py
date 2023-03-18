@@ -1,3 +1,132 @@
+"""Class 13 Notes: 3/9/2023
+
+Sorting Algorithms
+    - Bubble sort
+    - Selection sort
+        - Find smallest item and place it at beginning
+        - or largest item and place it at the end
+"""
+L = []
+
+def is_sorted(L):
+    for i in range(len(L) -1):
+        for j in range(i+1, len(L)):
+            if L[i] > L[j]:
+                return False
+        return True
+
+def is_sorted_better(L):
+    for i in range(len(L)-1):
+        if L[i] > L[i+1]:
+            return False
+        return True
+
+def bubble_sort(L):
+    for el in range(len(L)-1):
+        for i in range(len(L)-1-el):
+            if L[i] > L[i+1]: # If two items are out of order
+                L[i], L[i+1] = L[i+1], L[i] # Switch them, time complexity O(n^2)
+    
+def selection_sort_min(L):
+    for i in range(len(L)-1):
+        min_idx = i
+        for j in range(i+1, len(L)):
+            if L[j] < L[min_idx]:
+                min_idx = j 
+        
+        L[i], L[min_idx] = L[min_idx], L[i]
+        
+    return L
+
+def selection_sort_max(L):
+    for i in range(len(L)-1):
+        max_index = 0
+        for j in range(1, len(L) - i):
+            if L[j] > L[max_index]:
+                max_index = j 
+        
+        L[-1 - i], L[max_index] = L[max_index], L[-1 - i]
+        
+    return L
+
+# --------------------------------------------------------------------------------------
+
+
+"""Class 12 Notes: 3/7/2023
+
+Binary Search Algorithm: Search for an element in a sorted array by dividing search interval in half
+    - Find middle item, find if > or < then cut out portion 
+    - Repeat
+
+^ Time complexity:
+    - 0th iteration data size = n
+    - 1st iteration data size = n/2 or n/(2^1)
+    - 2nd iteratoin data size = n/4 or n/(2^2)
+    - at kth iteration, the data size becomes 1
+        - n/(2^k) = 1
+        - n = 2^k
+        - logn = log2^k or O(logn)
+
+"""
+
+def binary_search(data, item, count=0):
+
+    count += 1
+    if len(data) == 0:
+        return False, count
+    
+    else:
+        mid_index = len(data) // 2
+                
+        if item == data[mid_index]:
+            return True, count
+        
+        elif item < data[mid_index]:
+            return binary_search(data[ : mid_index], item, count) # because of slicing, O(n) time complexity
+
+        elif item > data[mid_index]:
+            return binary_search(data[mid_index + 1 : ], item, count) #instead pass index and not entire new list
+        
+        
+def binary_search_imprv(data, item, lower_index, upper_index, count=0):
+
+    count += 1
+
+    if lower_index > upper_index:
+        return False, count
+    
+    else:
+        mid_index = (lower_index + upper_index) // 2
+                
+        if data == data[mid_index]:
+            return True, count
+        
+        elif data[item] < mid_index:
+            return binary_search_imprv(data, item, lower_index, mid_index - 1, count)
+
+        elif data[item] > mid_index:
+            return binary_search_imprv(data, item, mid_index + 1, upper_index, count)
+
+
+def BS_iterative(L, item):
+    lower, upper = 0, len(L)
+
+    while upper - lower > 0:
+        mid_index = (lower + upper)//2
+
+        if item == L[mid_index]:
+            return True
+        
+        elif item < L[mid_index]:
+            upper = mid_index
+
+        else:
+            lower = mid_index
+        
+    return False
+
+# --------------------------------------------------------------------------------------
+
 """Class 11 Notes: 3/2/2023
 
 Recursion

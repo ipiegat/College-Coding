@@ -1,14 +1,18 @@
-X = "abcd"
-Y = "bc"
+tuples1 = {(1, 2), (2, 3)}
+tuples2 = {(2, 2), (2, 3)}
 
-def LCS(X, Y):
-    if X == "" or Y == "":
-        return ""
-    
-    elif X[-1] == Y[-1]:
-        return LCS(X[:-1], Y[:-1]) + X[-1]
-    
-    elif X[-1] != Y[-1]:
-        return max(LCS(X[:-1], Y), LCS(X, Y[:-1]))
+def solveable(x, y):
+    # num_pawns = len(p_idxs)
+    # possible_moves = valid_moves(k_idx)
 
-print(LCS(X,Y))
+    # # base case 1
+    # if num_pawns == 0:
+    #     return True
+    # base case 2, if there is no move which the first move can take a pawn
+    for i in x:
+        for j in y:
+            if i != j:
+                return False
+            
+
+print(solveable(tuples1, tuples2))
