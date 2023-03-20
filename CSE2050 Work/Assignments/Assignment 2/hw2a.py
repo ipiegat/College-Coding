@@ -1,26 +1,18 @@
-# make completable chess board and non-completable chess board
-
-# knight searches for spot in L pattern
-
-# if there is a pawn there move there
-
-# repeat until cannot find pawn in L pattern or until all pawns are gone
-
-# 0 7
-# 7
-# 0
-
-
 def valid_moves(k_idx: tuple):
     # valid moves starting clockwise from 12
-    m1 = (k_idx[0] + 2, k_idx[1] + 1)
-    m2 = (k_idx[0] + 1, k_idx[1] + 2)
-    m3 = (k_idx[0] - 1, k_idx[1] + 2)
-    m4 = (k_idx[0] - 2, k_idx[1] + 1)
-    m5 = (k_idx[0] - 2, k_idx[1] - 1)
-    m6 = (k_idx[0] - 1, k_idx[1] - 2)
-    m7 = (k_idx[0] + 1, k_idx[1] - 2)
-    m8 = (k_idx[0] + 2, k_idx[1] - 1)
+    x, y = k_idx
+    if x in range(0, 8) and y in range(0, 8):
+        m1 = (k_idx[0] + 2, k_idx[1] + 1)
+        m2 = (k_idx[0] + 1, k_idx[1] + 2)
+        m3 = (k_idx[0] - 1, k_idx[1] + 2)
+        m4 = (k_idx[0] - 2, k_idx[1] + 1)
+        m5 = (k_idx[0] - 2, k_idx[1] - 1)
+        m6 = (k_idx[0] - 1, k_idx[1] - 2)
+        m7 = (k_idx[0] + 1, k_idx[1] - 2)
+        m8 = (k_idx[0] + 2, k_idx[1] - 1)
+    else:
+        return "Horse is not on the board"
+
     all_moves = {m1, m2, m3, m4, m5, m6, m7, m8}
 
     # create empty set
@@ -62,15 +54,3 @@ def solveable(p_idxs, k_idx):
             return True
 
     return False
-
-
-# print(valid_movess())
-# print(solveable({(2, 3), (4, 4)}, (0, 4)))
-
-
-# return True if no pawns left
-
-# find all possible moves
-# find all new board configs
-# recursively call solve_board on all new configs
-# if any are solved, return solution plus correct move
