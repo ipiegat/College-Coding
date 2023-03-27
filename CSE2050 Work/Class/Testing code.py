@@ -1,18 +1,13 @@
-tuples1 = {(1, 2), (2, 3)}
-tuples2 = {(2, 2), (2, 3)}
+L = ([1, 3, 2], [4, 7, 6])
 
-def solveable(x, y):
-    # num_pawns = len(p_idxs)
-    # possible_moves = valid_moves(k_idx)
+def insertionsort(L):
+    n = len(L)
+    for i in range(n):
+        j = n - i - 1
+        while j < n - 1 and L[j]>L[j+1]:
+            L[j], L[j+1] = L[j+1], L[j]
+            j+=1
+    
+    return L
 
-    # # base case 1
-    # if num_pawns == 0:
-    #     return True
-    # base case 2, if there is no move which the first move can take a pawn
-    for i in x:
-        for j in y:
-            if i != j:
-                return False
-            
-
-print(solveable(tuples1, tuples2))
+print(insertionsort(L))

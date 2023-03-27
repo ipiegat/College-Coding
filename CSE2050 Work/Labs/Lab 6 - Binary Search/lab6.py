@@ -30,7 +30,7 @@ class OrderedList:
     def __contains__(self, item):
         """returns true if there is an item of the list equal to item."""
         return self._bs(
-            item, 0, len(self)
+            item, 0, len(self) - 1
         )  # You'll have to implement _bs() for this to work
 
         # The lines below implement contains with different algs.
@@ -77,7 +77,7 @@ class OrderedList:
             mid_index = (max_index + min_index) // 2
 
             # base case - item not in list
-            if min_index == max_index and target != self[mid_index]:
+            if min_index >= max_index and target != self[mid_index]:
                 return False
 
             # base case: found item

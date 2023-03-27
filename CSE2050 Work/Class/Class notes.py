@@ -1,3 +1,141 @@
+"""Class 15 Notes: 3/23/2023
+
+Last class summary:
+    Quadratic Sorting Alg: O(n^2)
+        - Bubble sort (swap instantly)
+        - Selection sort (keep on recording index and swap at the end of inner loop)
+        - Insertion sort( check all preceding elements)
+            - Swapped elements may not be at their place until the end
+        - Divide and Conquer:
+            - Divide the data
+            - Conquering using recursion
+            - Combine
+        - Merge sort algorithm
+            - Time complexity O(nlogn)
+
+Quick-Sort Algorithm:
+    - Divide: Pick a random element x (called pivot)
+      from D; then partition D into 
+        - L elements -> less than x
+        - E elements -> equal to x
+        - G elements -> greater than x
+        - Nothing needs to be done if D has one or less element
+    - Conquer: Recursively sort sequences L and G
+    - Combine: Join L, E, and G
+    - Any element can be taken as a pivot element - first, last, or middle
+
+Quick-sort: In-place Implementation
+    - Uses indexes instead of creating entirely new lists
+
+"""
+# Algorithm quickSort(D)
+    # Input: sequence D with n elements
+    # Output: sequence D sorted
+
+# if D.size() > 1
+    # pivot <- pick x from D
+    # L <- elements less then x
+    # E <- equal to x
+    # G <- elements greater then x
+    # L = quickSort(L)
+    # G = quickSort(G)
+    # return L + E + G
+# else:
+    # return D
+
+# quickSort(D, L_idx, H_idx) in-place implementation
+    # if L_ifx < H_idx
+        # pivot = partition(D, L_idx, H_idx)
+        # quickSort(D, L_idx, pivot-1)
+        # quickSort(D, pivot+1, H_idx)
+    # end
+
+def partition(D, L, H):
+    pivotindex = (L+H) //2
+    #swap(pivotindex, high)
+
+    i = L
+
+    for j in range(L, H+1):
+        if D[j] <= D[H]:
+            i += 1
+    
+    return i - 1
+
+def quickSort(D, L_idx, H_idx):
+    if L_idx < H_idx:
+        pivot = partition(D, L_idx, H_idx)
+        quickSort(D, L_idx, pivot-1)
+
+# --------------------------------------------------------------------------------------
+
+"""Class 14 Notes: 3/21/2023
+
+More sorting algorithms:
+    - Insertion Sort
+        - another O(n^2) time complexity
+        - easy to implement
+        - more efficient than bubble sort and selection sort
+            - selection sort is better for applications where less number of write operations
+            are required
+        - compare current element with procedeing elements
+            - if current element is smaller than its preceding element -> swap
+    - Online algorithm 0 sort array as it receieves data (example from web)
+
+Module 7: Divide and Conquer
+     1. Divide: Divide the input data into two or more disjoint subsets, D1 and D2
+     2. Conquer: Recursively solve the subproblems associated with the subsets, D1 and D2
+     3. Combine: Take the solutions to the subproblems (D1, D2) and merge them into a solution 
+     to the original problem D
+
+     Base case: Subproblems of a size 0 or 1
+
+     Merge sorting algorithm: Based on divide and conquer paradigm
+        - Divide: Partition D into two sequences D1 and D2 having n/2 elements in each
+            - If D has zero or one item, return D as it is considered sorted
+        
+        - Conquer: Recursively sort D1 and D2
+        - Combine: Merge D1 and D2 into a sorted sequence
+    
+    Time complexity:
+        - 2^i * x * n/2^i -> O(n)
+        - Stopping condition of recursion O(logn)
+        - Total time complexity = O(nlogn)
+
+"""
+
+# if D.size() > 1
+    # (D1, D2) <- partition(D, n/2)
+    # mergesort(D1)
+    # mergesort(D2)
+    # D <- merge(D1, D2)
+
+# --------------------------------------------------------------------------------------
+
+def merge(D1, D2, D):
+    i = j = 0
+
+    while i < len(D1) and j < len(D2):
+        if D1[i] < D2[j]:
+            D[i+j] = D1[i]
+            i += 1
+        else:
+            D[i+j] = D2[j]
+            j += 1
+    
+    D[i+j:] = D1[i:] + D2[j:]
+
+def merge_sort(D):
+    if len(D) > 1:
+        n = len(D) // 2
+        D1 = D[:n]
+        D2 = D[n:]
+        merge(D1)
+        merge(D2)
+        D = merge(D1, D2, D)
+
+# --------------------------------------------------------------------------------------
+
 """Class 13 Notes: 3/9/2023
 
 Sorting Algorithms
