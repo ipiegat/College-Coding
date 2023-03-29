@@ -1,13 +1,11 @@
-L = ([1, 3, 2], [4, 7, 6])
+L = [1, 2, 3, 4, 5]
 
-def insertionsort(L):
-    n = len(L)
-    for i in range(n):
-        j = n - i - 1
-        while j < n - 1 and L[j]>L[j+1]:
-            L[j], L[j+1] = L[j+1], L[j]
-            j+=1
-    
-    return L
+L.pop(2)
 
-print(insertionsort(L))
+L.append(9)
+
+L.append(9)
+
+set(L)
+
+print(type(L))

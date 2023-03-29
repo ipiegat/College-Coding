@@ -1,3 +1,54 @@
+"""Class 16 Notes: 3/28/2023
+
+Exam 2 review:
+    - Module 5: Recursion and Dynamic Programming
+        - FunctionCall Stack (LIFO) structure to hold recursive calls
+        - Restricted to 1000 by default sys.setrecursion
+        - Have a base case
+            - Recursion calls
+            - Recursion calls move towards base case
+            - No base case leads to RecursionError
+        - Memoization 
+            - Avoid making function call again which has already been executed
+            - Storing intermediate solution of subproblems and use later
+            - Top down approach
+        - Dynamic Programming
+            - Bottom up approach using tabulation (iterative) method
+    - Module 6: Searching and Sorting
+        - Binary Search
+            - Search for an element in a sorted array by dividing search interval in half
+            - Start by examining the middle item -> return if it is the item
+                - If the required item is less, disregard upper half. If greater, vice versa
+                - Repeat until item is found or not found
+                - O(n) time complexity with slicing, O(log(n)) without slicing
+                    - n/(2^k) = 1
+        - Bubble Sort Algorithm O(n^2)
+            for el in range(len(L)-1)
+                for i in range(1, len(L)-el)
+        - Selection Sort Algorithm O(n^2)
+            - We can find either smallest item and place at beginning or larger vice versa
+            - Selection sort is better for applications where less number of write operations
+            are required
+        - Insertion Sort Algorithm
+            - Online algorithm: sort array as it receives data (example: from web)
+        - Bubble sort
+            - Iterates over every pair in collection, swaps out of order pairs
+            - After x iterations, the last x items are in their final (sorted) place
+        - Selection sort
+            - Iterates over every unsorted item in collection, selects the next smallest/biggest
+    - Module 7: Divide and Conquer
+        - Divide: Divide the input data D into two or more disjoint subsets, D1 and D2
+        - Conquer: Recursively solve subproblems
+        - Merge-Sort Algorithm O(m1 + m2) but total is O(nlogn)
+             2^i * n/2^i -> O(n)
+        - Quick-sort Algorithm
+            - In-place implementation
+            - Worst case runtime -> O(n^2)
+    
+"""
+
+# --------------------------------------------------------------------------------------
+
 """Class 15 Notes: 3/23/2023
 
 Last class summary:

@@ -35,12 +35,11 @@ class TestSolvePuzzle(unittest.TestCase):
         res = max_profit(prices)
         truth = max_profit_brute(price_to_profit(prices))
         self.assertEqual(res, truth)
-    
+
     def test_max_profit_center(self):
         prices = [1, 2, 4, 7, 9]
         res = max_profit_center(prices)
         self.assertEqual(max_profit(prices), res)
-        
 
 
 if __name__ == "__main__":

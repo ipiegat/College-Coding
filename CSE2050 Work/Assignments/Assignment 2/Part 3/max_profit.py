@@ -72,11 +72,12 @@ def max_profit_center(prices):
 
 
 bitcoin_prices = []
+# files sorted into list by year
 bitcoin_files_by_year = sorted(glob.glob("bitcoin_prices/*.csv"))
+# iterate through file list
 for filepath in bitcoin_files_by_year:
     with open(filepath) as file:
         csvreader = csv.DictReader(file)
         for row in csvreader:
+            # append dictionary VALUES, or bitcoin prices, to bitcoin_prices list
             bitcoin_prices.append(float(row["Open"].replace(",", "")))
-
-print(max_profit(bitcoin_prices))

@@ -54,3 +54,5 @@ def solveable(p_idxs, k_idx):
             return True
 
     return False
+
+print(solveable((2,6), (2,3)))
