@@ -46,6 +46,31 @@ Exam 2 review:
             - Worst case runtime -> O(n^2)
     
 """
+# go through list and if value is smaller than the one on its left, swap -> O(n^2)
+def insertion_sort(L):
+    # assume first item is sorted, so begin there
+    for i in range(1, len(L)):
+        curNum = L[i]
+        # iterate backwords beginning from left of curNum
+        for j in range(i - 1, 0, -1):
+            # if the number to the left of curNum is smaller,
+            if L[j] < curNum:
+                # swap numbers
+                L[j + 1] = L[j]
+            else:
+                break
+
+
+# find smallest item , swap into first position
+def selection_sort(L):
+    for i in range(0, len(L)-1):
+        minIndex = i
+        for j in range(i+1, len(L)):
+            if L[j] < L[minIndex]:
+                minIndex = j
+            if minIndex != i:
+                L[i], L[minIndex] = L[minIndex], L[i]
+
 
 # --------------------------------------------------------------------------------------
 
@@ -80,43 +105,46 @@ Quick-sort: In-place Implementation
 
 """
 # Algorithm quickSort(D)
-    # Input: sequence D with n elements
-    # Output: sequence D sorted
+# Input: sequence D with n elements
+# Output: sequence D sorted
 
 # if D.size() > 1
-    # pivot <- pick x from D
-    # L <- elements less then x
-    # E <- equal to x
-    # G <- elements greater then x
-    # L = quickSort(L)
-    # G = quickSort(G)
-    # return L + E + G
+# pivot <- pick x from D
+# L <- elements less then x
+# E <- equal to x
+# G <- elements greater then x
+# L = quickSort(L)
+# G = quickSort(G)
+# return L + E + G
 # else:
-    # return D
+# return D
 
 # quickSort(D, L_idx, H_idx) in-place implementation
-    # if L_ifx < H_idx
-        # pivot = partition(D, L_idx, H_idx)
-        # quickSort(D, L_idx, pivot-1)
-        # quickSort(D, pivot+1, H_idx)
-    # end
+# if L_ifx < H_idx
+# pivot = partition(D, L_idx, H_idx)
+# quickSort(D, L_idx, pivot-1)
+# quickSort(D, pivot+1, H_idx)
+# end
+
 
 def partition(D, L, H):
-    pivotindex = (L+H) //2
-    #swap(pivotindex, high)
+    pivotindex = (L + H) // 2
+    # swap(pivotindex, high)
 
     i = L
 
-    for j in range(L, H+1):
+    for j in range(L, H + 1):
         if D[j] <= D[H]:
             i += 1
-    
+
     return i - 1
+
 
 def quickSort(D, L_idx, H_idx):
     if L_idx < H_idx:
         pivot = partition(D, L_idx, H_idx)
-        quickSort(D, L_idx, pivot-1)
+        quickSort(D, L_idx, pivot - 1)
+
 
 # --------------------------------------------------------------------------------------
 
@@ -156,25 +184,27 @@ Module 7: Divide and Conquer
 """
 
 # if D.size() > 1
-    # (D1, D2) <- partition(D, n/2)
-    # mergesort(D1)
-    # mergesort(D2)
-    # D <- merge(D1, D2)
+# (D1, D2) <- partition(D, n/2)
+# mergesort(D1)
+# mergesort(D2)
+# D <- merge(D1, D2)
 
 # --------------------------------------------------------------------------------------
+
 
 def merge(D1, D2, D):
     i = j = 0
 
     while i < len(D1) and j < len(D2):
         if D1[i] < D2[j]:
-            D[i+j] = D1[i]
+            D[i + j] = D1[i]
             i += 1
         else:
-            D[i+j] = D2[j]
+            D[i + j] = D2[j]
             j += 1
-    
-    D[i+j:] = D1[i:] + D2[j:]
+
+    D[i + j :] = D1[i:] + D2[j:]
+
 
 def merge_sort(D):
     if len(D) > 1:
@@ -184,6 +214,7 @@ def merge_sort(D):
         merge(D1)
         merge(D2)
         D = merge(D1, D2, D)
+
 
 # --------------------------------------------------------------------------------------
 
@@ -197,46 +228,52 @@ Sorting Algorithms
 """
 L = []
 
+
 def is_sorted(L):
-    for i in range(len(L) -1):
-        for j in range(i+1, len(L)):
+    for i in range(len(L) - 1):
+        for j in range(i + 1, len(L)):
             if L[i] > L[j]:
                 return False
         return True
 
+
 def is_sorted_better(L):
-    for i in range(len(L)-1):
-        if L[i] > L[i+1]:
+    for i in range(len(L) - 1):
+        if L[i] > L[i + 1]:
             return False
         return True
 
+
 def bubble_sort(L):
-    for el in range(len(L)-1):
-        for i in range(len(L)-1-el):
-            if L[i] > L[i+1]: # If two items are out of order
-                L[i], L[i+1] = L[i+1], L[i] # Switch them, time complexity O(n^2)
-    
+    for el in range(len(L) - 1):
+        for i in range(len(L) - 1 - el):
+            if L[i] > L[i + 1]:  # If two items are out of order
+                L[i], L[i + 1] = L[i + 1], L[i]  # Switch them, time complexity O(n^2)
+
+
 def selection_sort_min(L):
-    for i in range(len(L)-1):
+    for i in range(len(L) - 1):
         min_idx = i
-        for j in range(i+1, len(L)):
+        for j in range(i + 1, len(L)):
             if L[j] < L[min_idx]:
-                min_idx = j 
-        
+                min_idx = j
+
         L[i], L[min_idx] = L[min_idx], L[i]
-        
+
     return L
 
+
 def selection_sort_max(L):
-    for i in range(len(L)-1):
+    for i in range(len(L) - 1):
         max_index = 0
         for j in range(1, len(L) - i):
             if L[j] > L[max_index]:
-                max_index = j 
-        
+                max_index = j
+
         L[-1 - i], L[max_index] = L[max_index], L[-1 - i]
-        
+
     return L
+
 
 # --------------------------------------------------------------------------------------
 
@@ -258,38 +295,43 @@ Binary Search Algorithm: Search for an element in a sorted array by dividing sea
 
 """
 
+
 def binary_search(data, item, count=0):
 
     count += 1
     if len(data) == 0:
         return False, count
-    
+
     else:
         mid_index = len(data) // 2
-                
+
         if item == data[mid_index]:
             return True, count
-        
+
         elif item < data[mid_index]:
-            return binary_search(data[ : mid_index], item, count) # because of slicing, O(n) time complexity
+            return binary_search(
+                data[:mid_index], item, count
+            )  # because of slicing, O(n) time complexity
 
         elif item > data[mid_index]:
-            return binary_search(data[mid_index + 1 : ], item, count) #instead pass index and not entire new list
-        
-        
+            return binary_search(
+                data[mid_index + 1 :], item, count
+            )  # instead pass index and not entire new list
+
+
 def binary_search_imprv(data, item, lower_index, upper_index, count=0):
 
     count += 1
 
     if lower_index > upper_index:
         return False, count
-    
+
     else:
         mid_index = (lower_index + upper_index) // 2
-                
+
         if data == data[mid_index]:
             return True, count
-        
+
         elif data[item] < mid_index:
             return binary_search_imprv(data, item, lower_index, mid_index - 1, count)
 
@@ -301,18 +343,19 @@ def BS_iterative(L, item):
     lower, upper = 0, len(L)
 
     while upper - lower > 0:
-        mid_index = (lower + upper)//2
+        mid_index = (lower + upper) // 2
 
         if item == L[mid_index]:
             return True
-        
+
         elif item < L[mid_index]:
             upper = mid_index
 
         else:
             lower = mid_index
-        
+
     return False
+
 
 # --------------------------------------------------------------------------------------
 
@@ -351,29 +394,33 @@ in the same order
 
 """
 
+
 def fib_sequence(k, fib_array):
-    if k in [0,1]:
+    if k in [0, 1]:
         fib_array[k] = k
         return fib_array[k]
 
     if fib_array[k] != None:
         return fib_array[k]
-    fib_array[k] = fib_sequence(k-1, fib_array) + fib_sequence(k-2, fib_array)
-    
+    fib_array[k] = fib_sequence(k - 1, fib_array) + fib_sequence(k - 2, fib_array)
+
     return fib_array
+
 
 X = "abcd"
 Y = "bc"
 
+
 def LCS(X, Y):
     if X == "" or Y == "":
         return ""
-    
+
     elif X[-1] == Y[-1]:
         return LCS(X[:-1], Y[:-1]) + X[-1]
-    
+
     elif X[-1] != Y[-1]:
         return max(LCS(X[:-1], Y), LCS(X, Y[:-1]))
+
 
 # --------------------------------------------------------------------------------------
 
