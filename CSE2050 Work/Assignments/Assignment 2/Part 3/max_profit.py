@@ -81,3 +81,5 @@ for filepath in bitcoin_files_by_year:
         for row in csvreader:
             # append dictionary VALUES, or bitcoin prices, to bitcoin_prices list
             bitcoin_prices.append(float(row["Open"].replace(",", "")))
+
+print(bitcoin_prices)

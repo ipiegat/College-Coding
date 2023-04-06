@@ -1,3 +1,75 @@
+"""Class 17 Notes: 4/4/2023
+
+Module 8: Mapping and Hashing
+    - Mapping: An association between two objects
+        - Objects are also referred as "key-value" pair
+        - The array of such key-value pairs are sometimes referred as "assofiative arrays" or "maps"
+            - Dictionaries
+            - Key must always be unique
+        - Maps use an array-like syntax for indexing
+            - Currency[ Greece ] tp access a value (currency) associated with key
+            - Can be updated Currency[ Greece ] = new (updates value for greece) or creates new
+        - Indices don't need to be consecutive or numeric
+        - Applications
+            - User data, map DNS hostname, 
+    - Map ADT
+        - get(k) method -> returns value associated with key, k, or error if not present
+        - put(k, v) method
+        - remove(k)
+        - __contains__(k)
+        - __len__()
+        - _entry(k)
+            - FIRST FOUR require list traversal
+        - Minimal implementation using list
+            - Create simple class to hold key-value variables as objects
+    - Hast Tables
+        - The most practical data structure to implement "map"
+        - Used python's dict class implementation
+        - Key -> Hash function -> Indices/code (hash codes)
+        - The goal of hash function,h, is to map each key, k, to an integer in the range [0, N-1]
+        - Many different strategies to generate hash code
+            - Take ASCII value of all characters in a strong and calculate sum of them
+                - "Tim" has ASCII value of 84 + 105 + 109 = 298
+                - Store in N = 11 memory locations
+                    - Take modulo with size M -> 298 % 11 -> 1
+                - Can result in Hash Collision
+        - Collision Handling Schemes
+            - Conceptualize 
+        
+
+
+"""
+
+class Entry:
+    def __init__(self, key, value):
+        self.key = key
+        self.value = value
+
+    def __str__(self):
+        return str(self.key) + ":" + str(self.value)
+
+class SimpleMapping:
+    def __init__(self):
+        self._map = []
+
+    def get(self, key):
+        for e in self._map:
+            if e.key == key:
+                return e.value
+        
+        raise KeyError
+
+    def put(self, key, value):
+        for e in self._map:
+            if e.key == key:
+                key.value = value
+                return 
+
+        self._map.append(Entry(key, value))
+
+
+# --------------------------------------------------------------------------------------
+
 """Class 16 Notes: 3/28/2023
 
 Exam 2 review:
@@ -46,6 +118,29 @@ Exam 2 review:
             - Worst case runtime -> O(n^2)
     
 """
+
+# logn time complexity
+def binary_search_imprv(data, item, lower_index, upper_index, count=0):
+
+    count += 1
+    # gone through the whole list, return false
+    if lower_index > upper_index:
+        return False, count
+
+    else:
+        # split data into two 
+        mid_index = (lower_index + upper_index) // 2
+        # if we just so happen to find the data, return true
+        if data == data[mid_index]:
+            return True, count
+        # if data is smaller than mid_index, pass in lower half of the list
+        elif data[item] < mid_index:
+            return binary_search_imprv(data, item, lower_index, mid_index - 1, count)
+        # if data is larger than mid_index, pass in upper half of the list
+        elif data[item] > mid_index:
+            return binary_search_imprv(data, item, mid_index + 1, upper_index, count)
+
+
 # go through list and if value is smaller than the one on its left, swap -> O(n^2)
 def insertion_sort(L):
     # assume first item is sorted, so begin there
@@ -63,13 +158,77 @@ def insertion_sort(L):
 
 # find smallest item , swap into first position
 def selection_sort(L):
-    for i in range(0, len(L)-1):
+    # iterate through list
+    for i in range(0, len(L) - 1):
+        # set min index
         minIndex = i
-        for j in range(i+1, len(L)):
+        # check the one to the right of min index
+        for j in range(i + 1, len(L)):
+            # if the one to the right is smaller
             if L[j] < L[minIndex]:
+                # set smaller value to min index
                 minIndex = j
+            # if the new min index isn't equal to the last one
             if minIndex != i:
+                # swap both of them
                 L[i], L[minIndex] = L[minIndex], L[i]
+
+    return L
+
+
+def bubble_sort(L):
+    for i in range(0, len(L) - 1):
+        for j in range(len(L) - 1 - i):
+            if L[j] > L[j + 1]:
+                L[j], L[j + 1] = L[j + 1], L[j]
+
+    return L
+
+
+# divide and conquer, nlog(n), efficient for larger data sets
+def merge(D1, D2, D):
+    i = j = 0
+
+    while i < len(D1) and j < len(D2):
+        if D1[i] < D2[j]:
+            D[i + j] = D1[i]
+            i += 1
+        else:
+            D[i + j] = D2[j]
+            j += 1
+
+    D[i + j :] = D1[i:] + D2[j:]
+
+
+def merge_sort(D):
+    if len(D) > 1:
+        n = len(D) // 2
+        D1 = D[:n]
+        D2 = D[n:]
+        merge(D1)
+        merge(D2)
+        D = merge(D1, D2, D)
+
+
+# divide and conquer, recursive, efficient for larger data sets, worst case O(n^2) average case (nlogn)
+# performance depends on pivot selection
+def partition(D, L, H):
+    pivotindex = (L + H) // 2
+    # swap(pivotindex, high)
+
+    border = L
+
+    for j in range(L, H + 1):
+        if D[j] <= D[H]:
+            border += 1
+
+    return border - 1
+
+
+def quickSort(D, L_idx, H_idx):
+    if L_idx < H_idx:
+        pivot = partition(D, L_idx, H_idx)
+        quickSort(D, L_idx, pivot - 1)
 
 
 # --------------------------------------------------------------------------------------
