@@ -1,3 +1,142 @@
+"""Class 18 Notes: 4/11/2023
+
+Module 9: Trees
+    - Tree is an abstract data type that stores elements hierarchically
+    - Non-linear data structure, relationship between objects/data are:
+        - NOT defined as "before and after" relationship
+        - Defined as "above and below" relationship
+        - Examples:
+            - Organizational charts, file systems
+        - Each element in a tree has a parent element and zero.more children elements, 
+          except the first/top element which is called the root. 
+    - Termonology:
+        - Root: Highest-most node without parent
+        - Edge: Connection between two nodes to show relationship between them
+        - Path: A path is an orderd list of nodes connected by edges
+        - Parent:
+        - Descendant: All nodes for which there is a path from x (child, grandchild, etc)
+        - Ancestor: Opposite of descendent (parent, grandparent)
+        - Leaf Node: last node in the tree, or nodes with no children
+        - Subtree: A set of nodes and edges comprised of a parent and 
+        - Height: number of edges in the longest path from the node x to a leaf
+        - Depth/level: Number od edges in path from root to x
+        - Degree of node: The number of the node's children
+        - In a tree, there must only be a single path from the root node to any other node
+    - Trees as Lists
+        - Tree can be defined recursively as a root with zero or more children
+            - Each child can be a subtree
+        - T = ['C', 
+                  ['A',
+                      ['P', 'N']
+                  ]
+    - ADT 
+        - __init__(L): initializes a new tree with data, children (list) and parent
+        - add_child(): 
+        - get_level():
+        - __str__():
+    - Binary Search Trees
+        - Data structures to organize data efficiently
+        - Every node in the tree can have at most 2 children (left and right child)
+            - Left child is amller than the parent node
+            - Right child is greater than the parent node
+        - New data is placed in sorted order so that the search and other operations can use the
+          princible of binary search with O(logn) running time
+        - We can access the root node exclusively as the same we can access head node of linked list
+        - Inserting element would take O(logN) time complexity 
+        - Balanced tree (left and right nodes contain approx. same number of children)
+            - operations are O(logN)
+        - Imbalanced tree (number of children on both sides differ significantly)
+            - operations O(N) time complexity 
+        - Operations:
+            - insert
+            - search (min/max)
+            - delete
+            - traverse
+        - Implementation:
+            - Create node class
+                - Actual data
+                - Parent node
+                - Left child
+                - Right child
+            - Operations:
+                - Insert
+                    - Add root node if it does not exist
+                    - Chec, if the new element is greater/smaller than current parent
+                    - If left/right child does not exist, add node to correct side
+                    - If child node exists, recursively execute steps 2 and 3
+
+"""
+
+
+class BSTNode:
+    def __init__(self, data, parent=None):
+        self.data = data
+        self.parent = parent
+        self.left = None
+        self.right = None
+
+
+class BinarySearchTree:
+    def __init__(self, root=None):
+        self.root = root
+
+    def insert(self, data):
+        if self.root is None:
+            self.root = BSTNode(data)
+
+        else:
+            self._add_child(data, self.root)
+
+    def _add_child(self, data, p_node):
+        if data == p_node.data:
+            print("duplicates not alowed")
+            return
+
+        if data < p_node.data:
+            if p_node.left:
+                self._add_child(data, p_node.left)
+
+            else:
+                p_node.left = BSTNode(data, p_node)
+
+        else:
+            if p_node.right:
+                self._add_child(data, p_node.right)
+            else:
+                p_node.right = BSTNode(data, p_node)
+
+    def search(self, node):
+        pass
+
+    def delete(self, node):
+        pass
+
+    def traverse(self):
+        pass
+
+
+class TreeNode:
+    def __init__(self, data):
+        self.data = data
+        self.children = []
+        self.parent = None
+
+    def get_level(self):
+        level = 0
+        node_parent = self.parent
+        while node_parent != None:
+            level += 1
+            node_parent = node_parent.parent
+
+        return level
+
+    def add_child(self, child):
+        child.parent = self
+        self.children.append(child)
+
+
+# --------------------------------------------------------------------------------------
+
 """Class 18 Notes: 4/6/2023
 
 Hash Tables
@@ -19,7 +158,7 @@ Hash Tables
                 - Get the bucket (using get method) and return the value associated with the key
         - Time Complexity
             - Time to search for bucket is O(1)
-            - 
+            - Locating element in bucket is O(n)
         - A ratio lamda = n/N is called "Load Factor"
             - "n" items of map in a bucket array capacity of "N"
             - Bounded by a small constant (preferably below 1)
@@ -59,7 +198,7 @@ class HashTable:
     def get(self, key):
         bucket = self._get_bucket(key)
         return bucket.get(key)
-    
+
     def _get_bucket(self, key):
         j = hash(key) % self._htsize
         return self._buckets_array[j]
@@ -190,9 +329,9 @@ Exam 2 review:
     
 """
 
+
 # logn time complexity
 def binary_search_imprv(data, item, lower_index, upper_index, count=0):
-
     count += 1
     # gone through the whole list, return false
     if lower_index > upper_index:
@@ -419,8 +558,6 @@ Module 7: Divide and Conquer
 # mergesort(D2)
 # D <- merge(D1, D2)
 
-# --------------------------------------------------------------------------------------
-
 
 def merge(D1, D2, D):
     i = j = 0
@@ -527,7 +664,6 @@ Binary Search Algorithm: Search for an element in a sorted array by dividing sea
 
 
 def binary_search(data, item, count=0):
-
     count += 1
     if len(data) == 0:
         return False, count
@@ -550,7 +686,6 @@ def binary_search(data, item, count=0):
 
 
 def binary_search_imprv(data, item, lower_index, upper_index, count=0):
-
     count += 1
 
     if lower_index > upper_index:
