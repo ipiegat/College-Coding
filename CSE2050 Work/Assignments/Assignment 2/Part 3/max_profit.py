@@ -4,7 +4,6 @@ import glob
 
 
 def price_to_profit(prices):
-
     # create empty list
     daily_change = []
     # iterate though list of prices with indices
@@ -20,7 +19,6 @@ def price_to_profit(prices):
 
 
 def max_profit(prices):
-
     # base case 1: if there is only one window to buy/sell then that is the profit
     if len(price_to_profit(prices)) == 1:
         return price_to_profit(prices)[0]
@@ -50,7 +48,6 @@ def max_profit(prices):
 
 
 def max_profit_center(prices):
-
     left = prices[: len(prices) // 2]
     right = prices[len(prices) // 2 :]
     median = prices[len(prices) // 2]
@@ -83,3 +80,4 @@ for filepath in bitcoin_files_by_year:
             bitcoin_prices.append(float(row["Open"].replace(",", "")))
 
 print(bitcoin_prices)
+print(max_profit(bitcoin_prices))

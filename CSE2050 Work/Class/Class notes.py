@@ -1,3 +1,25 @@
+"""Class 19 Notes: 4/13/2023
+
+Balanced and Inbalanced Trees (more):
+    - Calculate height of a tree (or a node) -> longest path from the root (or node) to a leaf node
+        - height = max(left child's height, right child's height) + 1
+        - height of a NULL node is -1, lead nodes have height 0 
+    - Balance factor: height (left) - height (right)
+        - Tree heights on both sides can differ at most by 1
+        - Negative balance factor: right heavy case
+            - Rotate left to balance
+        - Positive balance factor: left heavy case
+            - Rotate right to balance
+    - Insertion
+
+
+
+"""
+
+
+# --------------------------------------------------------------------------------------
+
+
 """Class 18 Notes: 4/11/2023
 
 Module 9: Trees
@@ -105,13 +127,69 @@ class BinarySearchTree:
             else:
                 p_node.right = BSTNode(data, p_node)
 
-    def search(self, node):
+    def search(self, data):
         pass
 
-    def delete(self, node):
-        pass
+    def delete(self, data):
+        if self.root:
+            self.remove_node(data, self.root)
+    
+    def remove_node(self, data, node):
+            # Deleting leaf node -> node having no children
+            # search for node from root, delete it, change parent
+        # Deleting a node with one child
+            # Update parent's child which is now what once was its grandchild
+            # node.parent.right = node.right
+        # Deleting a node with two children -> root node
+            # Successor: the smallest item in the right subtree
+            # Predecessor: the largest item in the left subtree
+        if node is None:
+            return
+
+        if data < node.data:
+            self.remove_node(data, node.left)
+        elif data > node.data:
+            self.remove_node(data, node.right)
+        else: # once the required node to be deleted is foudn
+            if node.left is None and node.right is None:
+                print(f'Removing a leaf node with data: {node.data}')
+                parent = node.parent
+            
+            if parent is not None:
+                if parent.right == node:
+                    parent.right = None
+                if parent.left == node:
+                    parent.left = None
+            else: # if the element we are removing is root
+                self.root = None
+            
+            del node
+
+    def get_max(self):
+        # If root exist, proceed to step 2, else -> None
+        if self.root:
+            return self._get_right_child(self.root)
+        else:
+            return None
+    
+    def _get_right_child(self, node):
+        if node.right:
+            return self._get_right_child(node.right)
+
+        return node.data
+    
+        # For the current node, check if right child exists
+        # If right child doesn't exist, return current node, else recurse step 2
 
     def traverse(self):
+        # 1. pre-order traversal
+            # visit root node first, then left-subtree and finally right-subtree
+            # root node -> left subtree -> right subtree
+        # 2. post-order traversal
+            # visit left-subtree first, then right subtree, and finaly the root node
+            # left subtree -> right subtree -> root node
+        # 3. in-order traversal
+            # left subtree -> root -> right subtree, in order smallest -> largest
         pass
 
 
