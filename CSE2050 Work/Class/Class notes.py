@@ -1,3 +1,186 @@
+"""Class 21 Notes: 4/25/2023
+
+Priority Queues
+    - Elements are dequeued based on their priority
+    - Stores a collection of items in a (key, value) pair
+        - key defines priority
+        - value is the actual data
+    - highest priority element is the one to come out first
+    - Heaps are data structures that are used to implement priority queues (ADT)
+        - Max heap -> highest priotiy element has the maximum value
+        - Min heap -> vice versa
+
+Shortest Path Problem
+    -Dijkstra's Algorithm
+        - It can handle positive edge weights
+        - It can find the shortest path in a G(V, E) graph from a vertex u to v, alongside constructing a
+        shorted path tree as well
+        - Solves using the greedy approach 
+        - During every iteration, it searches for the minimum distance to the next vertex
+            if D[u] + e(u, v) < D[v]:
+                D[v] = D[u] + e(u, v)
+                v.predecessor = u
+
+Minimum Spanning Tree
+    - Given an undirected graph G with weighted edges, a minumum spanning tree (MST) is a subset of the edges in the graph 
+    which:
+        - connects all vertices together
+        - have no cycles
+        - include edges with minimum weight only
+    - Maintain a priority queue (PQ) of edges
+    - Start algorithm from any vertex V
+        - mark V as visited
+        - iterate over all edges of V and add them to PQ
+    - while PQ is not empty and MST has not been formed (total edges = V-1)
+        - dequeue the next cheapest edge for PQ
+        - if the dequeued edge is outdated (i.e., destination vertex is already visited), skip and poll again
+        - mark the curent vertex V as visited and add the edge to MST
+        - Add V's edges to PQ
+
+"""
+
+# --------------------------------------------------------------------------------------
+
+"""Class 20 Notes: 4/18/2023
+
+Module 11: Graphs
+    - Graph, G, can be represented as pair of set V of vertices and set E of edges G = (V, E)
+    - V = {A, B, C, D}
+        - Directed/Ordered: (A, C) has arrow
+        - Undirected/Unordered: {A, C} no arrow
+    - E = {{A, C}, {A, B}, {B, C}, {B, D}}
+    - Adjacent Vertices
+        - Two vertices, u and v, connected together via same edge
+    - Cycle is a path that starts and ends at the same vertgex and includes at least one edge
+    - Undirected Graphs
+        - Edges do not have a direction
+        - Edge (u, v) will be equivalent to the edge (v, u)
+    - Directed Graphs or Digraphs
+        - Edges have a direction pointing from one vertex to another vertex
+    - Mixed Graphs
+        - Edges have a direction pointong one vertex to another
+        - Some edges are undirected 
+    - Directed Acyclic Graphs
+    - Complete Graphs
+        - All vertices are connected to each other
+    - Weighted vs unwieghted Graphs
+        - Unweighted graphs: all edges are of equal weight - 1
+        - Weighted graphs: have different values associated to edges
+    - Representation
+        - G(V, E)
+        - Edge Set -> Stores a set of vertices and a set of edges
+            - V = {1, 2, 3, 4}
+            - E = {(1, 2), (1, 3), (1, 4), (2, 1), (2, 4), (3, 4), (4, 3)}
+        - Adjacency Set -> Stores a set of vertices and a dictionary of neighbors
+            - V = {1, 2, 3, 4}
+            - nbrs ={1: {2, 3, 4},
+                     2: {1, 4}, 
+                     3: {4},
+                     4: {3},}
+        - For weighted graphs
+            - V = {A, B, C, D}
+            - nbrs ={A: {(2, B), 3, 4},
+                     2: {1, 4}, 
+                     3: {4},
+                     4: {3},}
+    - ADT
+        - __init__(V, E) -> creates a graph with vertex and edge sets V and E
+        - add_vertex(v) -> add vertex v to graph
+        - remove_vertex(v) -> remove vertex v from graph
+        - add_edge(e) -> addd edge e to a graph (assuming e is a 2-tuple)
+        - remove_edge(e) -> removes edge e from graph (assuming e is a 2-tuple)
+        - neighbors(v) -> returns iterable collection of v's neighbors
+    - Graph Traversal
+        - Breadth-First Search (BFS)
+            - Goes in lines of depth horizontally starting from any vertex
+            - Visit the neighbors then the neighbors of these new vertices and so on
+            - Running time complexity O(V+E)
+            - Implementation
+                - Maintain a Queue, Q
+                - Check if the node is visited
+                - Start off with any vertex by enqueuing it and set it to visited
+                - Keep checking until queue is empty
+                    - Dequeue a vertex from front of the queue
+                    - Enqueue the neighbors of dequeued vertex
+        - Depth-First Search(DFS)
+            - Goes down an entire list of nodes at a time
+            - 
+"""
+
+
+class EdgeSet:
+    def __init__(self, V=None, E=None):
+        self.V = set()
+        self.E = set()
+
+        if V is not None:
+            for vertex in V:
+                self.add_vertex(vertex)
+
+        if E is not None:
+            for edge in E:
+                self.add_edge(edge)
+
+    def add_vertex(self, v):
+        self.V.add(v)
+
+    def add_edge(self, e):
+        self.E.add(e)
+
+    def remove_vertex(self, v):
+        if v not in self.V:
+            raise KeyError(f"No vertex {v} exist.")
+        self.V.remove(v)
+
+    def nbrs(self, v):
+        nbrs = set()
+        
+        for u, w in self.E:
+            if u == v:
+                nbrs.add(w)
+            
+        return nbrs
+
+class AdjacencySet:
+    def __init__(self, V=None, E=None):
+        self.V = set()
+        self.nbrs = dict()
+
+        if V is not None:
+            for vertex in V:
+                self.add_vertex(vertex)
+
+        if E is not None:
+            for edge in E:
+                self.add_edge(edge)
+
+    def add_vertex(self, v):
+        self.V.add(v)
+    
+    def add_edge(self, e):
+        u, v = e
+        if u not in self.nbrs:
+            self.nbrs[u].add(v)
+        else:
+            self.nbrs[u].add(v)
+
+    def remove_vertex(self, v):
+        if v not in self.V:
+            raise KeyError(f"No vertex {v} exist.")
+        self.V.remove(v)
+    
+    def remove_edge(self, e):
+        u, v = e
+        if v not in self.nbrs[u]:
+            raise KeyError(f"Vertex {u} has no neighbor")
+        self.nbrs[u].remove(v)
+        if len(self.nbrs[u]) == 0: 
+            self.nbrs.pop(u)
+
+    
+# --------------------------------------------------------------------------------------
+
+
 """Class 19 Notes: 4/13/2023
 
 Balanced and Inbalanced Trees (more):
@@ -133,16 +316,16 @@ class BinarySearchTree:
     def delete(self, data):
         if self.root:
             self.remove_node(data, self.root)
-    
+
     def remove_node(self, data, node):
-            # Deleting leaf node -> node having no children
-            # search for node from root, delete it, change parent
+        # Deleting leaf node -> node having no children
+        # search for node from root, delete it, change parent
         # Deleting a node with one child
-            # Update parent's child which is now what once was its grandchild
-            # node.parent.right = node.right
+        # Update parent's child which is now what once was its grandchild
+        # node.parent.right = node.right
         # Deleting a node with two children -> root node
-            # Successor: the smallest item in the right subtree
-            # Predecessor: the largest item in the left subtree
+        # Successor: the smallest item in the right subtree
+        # Predecessor: the largest item in the left subtree
         if node is None:
             return
 
@@ -150,20 +333,67 @@ class BinarySearchTree:
             self.remove_node(data, node.left)
         elif data > node.data:
             self.remove_node(data, node.right)
-        else: # once the required node to be deleted is foudn
+        else:  # once the required node to be deleted is foudn
             if node.left is None and node.right is None:
-                print(f'Removing a leaf node with data: {node.data}')
+                print(f"Removing a leaf node with data: {node.data}")
                 parent = node.parent
+
+                if parent is not None:
+                    if parent.right == node:
+                        parent.right = None
+                    if parent.left == node:
+                        parent.left = None
+                else:  # if the element we are removing is root
+                    self.root = None
+
+                del node
+
+            elif node.left is None and node.right is not None:
+                print(f'Removing node having a right child with data: {node.data}')
+                parent = node.parent
+
+                if parent is not None:
+                    if parent.right == node:
+                        parent.right = node.right
+                    if parent.left == node:
+                        parent.left = node.right
+                else:
+                    self.root = node.right
+                
+                node.right.parent = parent
+
+                del node
             
-            if parent is not None:
-                if parent.right == node:
-                    parent.right = None
-                if parent.left == node:
-                    parent.left = None
-            else: # if the element we are removing is root
-                self.root = None
+            elif node.left is None and node.right is None:
+                print(f"Removing node having a left child with data: {node.data}")
+                parent = node.parent
+
+                if parent is not None:
+                    if parent.right == node:
+                        parent.right = node.left
+                    if parent.left == node:
+                        parent.left = node.left
+                else:
+                    self.root = node.left
+                
+                node.left.parent = parent
+
+                del node
             
-            del node
+            else: # when both children are present
+                print(f"Removing node having the left child ({node.left.data}) / and right child({node.right.data})")
+
+                predecessor = self.get_predecessor(node.left)
+                print("predecessor before: ", predecessor.data)
+                predecessor.data, node.data = node.data, predecessor.data
+                print("precessor after: ", predecessor.data)
+                self.remove_node(data, predecessor)
+    
+    def get_predecessor(self, node):
+        if node.right:
+            return self.get_predecessor(node.right)
+        
+        return node
 
     def get_max(self):
         # If root exist, proceed to step 2, else -> None
@@ -171,25 +401,25 @@ class BinarySearchTree:
             return self._get_right_child(self.root)
         else:
             return None
-    
+
     def _get_right_child(self, node):
         if node.right:
             return self._get_right_child(node.right)
 
         return node.data
-    
+
         # For the current node, check if right child exists
         # If right child doesn't exist, return current node, else recurse step 2
 
     def traverse(self):
         # 1. pre-order traversal
-            # visit root node first, then left-subtree and finally right-subtree
-            # root node -> left subtree -> right subtree
+        # visit root node first, then left-subtree and finally right-subtree
+        # root node -> left subtree -> right subtree
         # 2. post-order traversal
-            # visit left-subtree first, then right subtree, and finaly the root node
-            # left subtree -> right subtree -> root node
+        # visit left-subtree first, then right subtree, and finaly the root node
+        # left subtree -> right subtree -> root node
         # 3. in-order traversal
-            # left subtree -> root -> right subtree, in order smallest -> largest
+        # left subtree -> root -> right subtree, in order smallest -> largest
         pass
 
 
