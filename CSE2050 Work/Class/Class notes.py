@@ -1,3 +1,89 @@
+"""Class 22 Notes: 4/27/2023
+
+Module 8: Mapping and Hash Tables
+    - Key must always be unique
+    - Python has dictionary data structure to hold key-value pairs
+    - To map keys, hash functions is used to generate the index location
+    - Hash collision -> hash function generate the same code(hash function) for used keys
+    - Collision Handling Scheme
+        - Conceptualize buckets
+        - Worst time complexity to search for the bucket is O(1)
+        - Time to search a key in bucket is O(n) time complexity 
+        - Open addressing - Linear proving
+            - If location occupied, place at next location and repeat till one is empty
+            - Requires additional implentation to search for existing key
+            - Accessing cell array is analogous to probing the bucket to find its content
+        - Load factor = n/N or n items of bucket array in capacity N
+            - Preferably below 1
+
+Module 9: Trees
+    - Definitions
+        - Root, Edge, Path, Parent, Children, Siblings
+        - Descendent, ancestor, leaf node, subtree, degree of node, degree of tree
+            - Descendent: all nodes below and related to node
+            - Leaf nodes: nodes with no children 
+            - Degree of node: Number of nodes children
+            - Degree of tree: Total number of nodes in tree
+    - Binary Search trees
+        - All nodes have at most 2 children (left and right)
+            - Smaller always on left
+            - Larger always on right
+        - Balanced tree
+            - O(logn) time complexity
+        - Imbalanced tree
+            - O(n) time complexity
+        - Search max()
+            - Rightmost element
+        - Search min()
+            - Leftmost element
+        - Predecessor
+            - Largest item in the left subtree
+        - Successor
+            - Smallest item in the right subtree
+    - Tree traversal approach
+        - Preorder: Root -> Left -> Right
+        - Postorder: Left -> Right -> Root
+        - Inorder: Left -> Root -> Right (returns elements in order)
+    - Determine if tree is balanced, balance factgor
+        - Calculate max(left childs height, right childs height) + 1
+        - Height of NULL node is -1
+        - Balance factor: height (left) - height (right)
+            - Negative is right-heavy so rotate left
+            - Positive is left-heavy so rotate right
+            - Left-right heavy
+                - Rotate left first, then rotate right
+            - Right-left heavy
+                - Rotate right, rotate left
+        - Balanced trees are AVL trees
+
+Module 11: Graphs
+    - Edges can connect any vertex
+    - Any vertex can be accessed through any path
+    - Edges can be directed or undirected
+    - Breadth-First Search (BFS)
+        - Based on queue implementation
+    - Dijkstra's Algorithm
+        - Shorted path in a G(V, E) from vertex u to v
+        - Can handle positive edge weights
+    - Minimum spanning tree
+        - Connects all vertices
+        - Have no cycles
+        - Include edges with minimum weight only
+        - Maintain a priority queue
+        
+
+
+
+
+
+
+"""
+
+
+
+
+# --------------------------------------------------------------------------------------
+
 """Class 21 Notes: 4/25/2023
 
 Priority Queues
