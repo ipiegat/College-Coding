@@ -1,5 +1,6 @@
 import time
 import subprocess
+from tqdm import tqdm
 
 def main():
   start_time = time.time()
@@ -7,16 +8,16 @@ def main():
   passwords = set()
   gang_names = set()
   
-  with open("PwnedPWs100k") as pw_file:
+  with open("PwnedPWs100k", encoding="utf8") as pw_file:
     passwords.update(line.strip() for line in pw_file)
   
-  with open("gang") as gang_file:
+  with open("gang", encoding="utf8") as gang_file:
     gang_names.update(line.strip() for line in gang_file)
   
   gang_names.discard("Bonnie")
   gang_names.discard("Adam")
   
-  for password in passwords:
+  for password in tqdm(passwords):
     for name in gang_names:
       result = subprocess.run(['python3', 'Login.pyc', name, password], capture_output=True , text=True)
       if "success" in result.stdout:
