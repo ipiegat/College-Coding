@@ -1,6 +1,6 @@
 import time
 import subprocess
-from tqdm import tqdm
+from tqdm import tqdm 
 
 def main():
   start_time = time.time()
@@ -17,12 +17,13 @@ def main():
   gang_names.discard("Bonnie")
   gang_names.discard("Adam")
   
+  #name = "Kim"
   for password in tqdm(passwords):
-    for name in gang_names:
-      result = subprocess.run(['python3', 'Login.pyc', name, password], capture_output=True , text=True)
-      if "success" in result.stdout:
-        print(name, password)
-        break     
+    #for name in gang_names:
+    result = subprocess.run(['python3', 'Login.pyc', 'Kim', password], capture_output=True , text=True)
+    if "success" in result.stdout:
+      print("Kim", password)
+      break     
   
   end_time = time.time()
   elapsed_time = end_time - start_time
