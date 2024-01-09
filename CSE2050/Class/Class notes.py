@@ -70,17 +70,7 @@ Module 11: Graphs
         - Have no cycles
         - Include edges with minimum weight only
         - Maintain a priority queue
-        
-
-
-
-
-
-
 """
-
-
-
 
 # --------------------------------------------------------------------------------------
 
