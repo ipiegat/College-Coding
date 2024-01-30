@@ -1,4 +1,3 @@
-
 "Addi -> Addition with an immediate"
 addi rd, rsl, imm # rd = rsl + imm
 
