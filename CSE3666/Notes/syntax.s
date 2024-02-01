@@ -24,3 +24,8 @@ and | andi, t0, t1, t2 # t0 = t1 and t2
 or | ori
 xor | xori
 not -> xori rd, rs1, -1 # NOT operation
+
+"loading/storing instructions"
+lb/lh rd, offset(rs1) # load signed (sign extended) byt/halfword
+lbu/lhu rd, offset(rs1) # load unsigned (0 extended) byte/halfword
+sb/sh rs2, offset(rs1) # store the lowest byte/halfword
