@@ -1,9 +1,8 @@
-"Addi -> Addition with an immediate"
-addi rd, rsl, imm # rd = rsl + imm\
-lui # load
+lui rd, immd # load
 
 "operations"
 add s1, s1, 4 # s1 += 4
+addi rd, rsl, imm # rd = rsl + imm\
 sub s2, s2, 1 # s2 -= 1
 li s3, 10 # s3 = 10
 li s4, s3 # s4 = s3
