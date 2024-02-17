@@ -43,60 +43,59 @@ main:
         addi	a1, s2, 0	# [n]
         addi	a2, s3, 0	# [v]
         jal	ra, binary_search
-        
-        
 
+        
+          
 exit:   addi    a7, x0, 10      
         ecall
 
 #### Do not change lines above
 binary_search:
+    # stack allocation
+    addi sp, sp, -16 
+    sw s1, 0(sp)
+    sw s2, 4(sp)
+    sw s3, 8(sp)
+    sw ra, 12(sp)
+    
+    beq s2, x0, bs_empty # Check if array is empty
 
-        # TODO
-        
-        addi	sp, sp, -8		# allocating memory
-        sw	s1, 4(sp)
-        sw	ra, 0(sp)
-        
-        beq	a1, x0, nothing
-       	
-       	srli	t0, a1, 1		# t0 = n/2 [half]
-       	slli	t1, t0, 2		# t1 = (n/2) * 4
-       	add	t2, t1, a0		# memory location of mid
-       	lw	t3, 0(t2)		# t3 = half_v	[half_v = a[half]]
-       	
-       	beq	a2, t3, if		# [if (half_v == v)]
-       	blt	a2, t3, elseif		# [else if (v < half_v)]
-       	bge	a2, t3, else		# [else (v > half_v)]
-       	
-        
-if:
-	add	a0, t0, x0
-	beq	x0, x0, endif
-		
-elseif:
-	add	a1, t0, x0		# n = half
-	jal	ra, binary_search	# binary_search(a, half, v)
-	add	a0, a0, x0
-	beq	x0, x0, endif
-	
-else:
-	addi	s1, t0, 1		# s1 = t0 + 1 [left = half + 1]
-	slli	t5, s1, 2		# t5 = t4 * 4
-	add	a0, a0, t5		# update address of left to address of mid
-	sub	a1, a1, s1		# t5 = a1 - t4 (n - left)
-	jal	ra, binary_search
-	
-	blt	a0, x0, endif
-	add	a0, a0, s1		# rv += left
-	beq	x0, x0, endif
-	
-nothing:
-	addi	a0, x0, -1
+    # Calculate midpoint
+    srli t0, s2, 1 # t0 = n/2
+    slli t1, t0, 2 # t1 = n/2 * 4 (byte offset for word array)
+    add t2, s1, t1 # t2 = address of a[half]
 
-endif:
+    lw t3, 0(t2) # Load value at midpoint
 
-        lw	ra, 0(sp)
-        lw	s1, 4(sp)
-        addi	sp, sp, 8	# deallocating memory
-        jalr	x0, ra, 0
+    # Compare and branch
+    beq s3, t3, bs_found # Target found at midpoint
+    blt s3, t3, bs_search_left # Target is in the left half
+    # Continue to search in the right half
+    addi t4, t0, 1 # Calculate start of right half
+    sub s2, s2, t4 # Adjust size for the right half search
+    slli t5, t4, 2 # Calculate byte offset for the right half
+    add s1, s1, t5 # Adjust array base address for right half
+    jal ra, binary_search # Recursive call for right half
+
+bs_return:
+    # Restore stack and return
+    lw s1, 0(sp)
+    lw s2, 4(sp)
+    lw s3, 8(sp)
+    lw ra, 12(sp)
+    addi sp, sp, 16
+    jalr x0, ra, 0
+
+bs_empty:
+    addi a0, x0, -1 # Set return value to -1 for empty array
+    beq x0, x0, bs_return
+
+bs_found:
+    addi a0, t0, 0 # Set return value to the index of the found element
+    beq x0, x0, bs_return
+
+bs_search_left:
+    # Adjust size for left half search
+    addi s2, t0, 0
+    jal ra, binary_search # Recursive call for left half
+    beq x0, x0, bs_return
