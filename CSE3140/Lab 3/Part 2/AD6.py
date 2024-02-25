@@ -1,0 +1,42 @@
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+
+private_key = RSA.import_key(b'''-----BEGIN RSA PRIVATE KEY-----
+MIIEogIBAAKCAQEAn9hAXjFvkMNEfsJAuzdRGVQNPz6EciYB52yb5IBb9y5A8cFq
+sJAoV3HwQg1UGH8ZHZGq0Ohm96G2Q2gsHVTJWyr67xZ1LfhkJoVpdJg32ROE2X7P
+8kAqWO939iid3D7LLG0KP8Qiks8mjPSl40e4vyuWuasuakz23QJMzxKkINY/TXci
+gSs6xedRtP2jJ1uO+ch0c7VI8TUgJVURdsrZGwyJpsVeg0WVd1zdlMjmBO/qPeo0
+/IHk2Xmx8CTq2RVsUDtFyxveozr04FaSTjiGlJ3QrvigWGVK4yICVyowz9WGqOBS
+G4XCeGzvUl2KRqw7ehmabtX2iq7thqKIww08dwIDAQABAoIBAA6nFzd17AE8NTIy
+18DnED3J0QZkJ7tYX+z5WCJj4IpR03hAlRQnEtuj699SM3b6EluojR0QwNJLIQHK
+3IhlIP7aJh32qWU+aN0zIPikNN0Rsf2cvK6Qp+Z2hUEBINTIw30zaFtyElfyOgQf
+2nkcNlj9Q5g06KYBSiahCFjPH6aMIq8UTnevL8B6ttcgSF3uww+W+TfM85hP7FTf
+HW85k+rf1gkKDxIk5lxl1ICXQN/yfqIkBJX78qREmY96rqxxC27u8xTUFRykki6O
+bHhq3FjDoxgUduskJsuLYApjZhQSAEX9UO96F+i2SkArmbOwEmCZ1G6sVgtxuT05
+9X9jJMECgYEAtxLLhpBWVIa0JP+V5+6ouqsQ+HDb1kCiF1iPYx5yg8XnEozpaFb2
+dIqRSqeQuwtORe0Ch2gMSSILfkatYb4AZWtUQOsSzOtC3v8IY1LrhCZ5eOuf++rf
+/V2DGSI1HUwWvcBvN+XtW8ZG7lb1G2AANOcOUuYbfHFpabWOpGs3lRcCgYEA34Ss
+iZqK3QdJecIgdnNMj25gSzcvJxlAIE1bWbstLN/UyjqCp+oIvXg22Ouq2I32h3DD
+8CPekFu3/C1w2meVREG1sAsuL98Se+5Rpe7t3dBdIwHKvmGZuyIvWwxiz6uR8S1K
+z7fCnQjmAHrA+P63BFDQ205YaOvQbhYsDPdY76ECgYB4l7bdYwKbF0he/sUeTEV1
+AO5i2OTW0yhyvHFnV00TpC88NvohMveReR2P0aUysJXU1fTOgSlmmzh668+WDPRx
+2itbv/1YYrhf8Br0YlClcjqd/ogaB3OYkBqlWbUnIVHxmGsqpRifVZKvuTQn3isE
+rhbvYIhGhuZrLZ9SixXH7QKBgA+d8nwuyxMEZlLWiHQePDQtTxcSRP4jWoKnRQGw
+/UgMX469pdFbnb63PoXLeYVl7dqqu1X0+6D0d5dsCV2JLTm2qZ4iOdjoah80mInS
+dtYvr8I5ZtQEd7xGeC6RX/oIj8rdEkQPH87fB0rzSLZc/aaUivM3tx+lkkuOywcg
+5RrhAoGAO14bgDXBOP+xSJBWhU6ukjIk8RAKEI+QKj28Mc5tmnyU62Rh6OGZbpI4
+7R3QOwx9Zi3dfhanGCxOrKa4XS9gP/l9mwiG/0b8vFMPbFfY+X8BJC2OAsKO70zQ
+0VZPlaI+1PegJIBVQFZxsioiWgwuK5yPfXQwP270ST63c5LphqI=
+-----END RSA PRIVATE KEY-----''')
+
+
+with open("/home/cse/Lab3/Solutions/EncryptedSharedKey", "rb") as file:
+    encrypted_key = file.read()
+
+
+cipher_rsa = PKCS1_OAEP.new(private_key)
+shared_key = cipher_rsa.decrypt(encrypted_key)
+
+
+print(f"{shared_key}")
