@@ -13,15 +13,19 @@ def main():
 		print("Usage: python waveGenerator.py <output filename> <frequency (Hz)> [number of samples] [duration (s)]")
 		exit()
 
-	out = open(argv[1], "w+")
-	fr = float(argv[2])
+	with open(argv[1], "w+") as out_file:
+		fr = float(argv[2])
 
-	if len(argv) > 3: SAMPLES = int(argv[3])
-	if len(argv) == 5: DURATION = int(argv[4])
+		if len(argv) > 3: 
+			SAMPLES = int(argv[3])
 
-	out.write(str(DURATION))
+		if len(argv) == 5: 
+			DURATION = int(argv[4])
 
-	for i in range(SAMPLES):
-		out.write("\n" + str(sin(2*pi*fr * (i*DURATION)/SAMPLES)))
+		out_file.write(str(DURATION))
 
-	out.close()
+		for i in range(SAMPLES):
+			out_file.write("\n" + str(sin(2*pi*fr * (i*DURATION)/SAMPLES)))
+
+if __name__ == "__main__":
+	main()
