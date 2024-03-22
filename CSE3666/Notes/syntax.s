@@ -6,6 +6,13 @@ addi rd, rsl, imm # rd = rsl + imm\
 sub s2, s2, 1 # s2 -= 1
 li s3, 10 # s3 = 10
 li s4, s3 # s4 = s3
+mulh rd, rs1, rs2 # both are signed
+mulhu rd, rs1, rs2 # both are unsigned
+mulhsu rd, rs1, rs2 # rs1 is signed, rs2 is unsigned
+div rd, rs1, rs2 # rs1 / rs2
+rem rd, rs1, rs2 # rs1 % rs2
+divu rd, rs1, rs2
+remu rd, rs1, rs2
 
 "branches"
 beq rs1, rs2, L1 # if (rs1 == rs2) goto L1
