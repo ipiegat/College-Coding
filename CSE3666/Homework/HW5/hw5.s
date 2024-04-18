@@ -81,62 +81,11 @@ exponent - 11111111 = 254 - 127 = 127
 
 0x4B7FFFFF
 
-"Question 4"
 
-float dot_product(float x[], float y[], int n)
-{
-    float sum = 0.0;
-
-    for (int i = 0; i < n; i += 1)
-        sum += x[i] * y[i];
-    return sum;
-}
-
-dot_product:
-    addi sp, sp, -16
-
-    sw ra, 12(sp)
-    sw s2, 8(sp)
-    sw s1, 4(sp)
-    sw s0, 0(sp)
-
-    addi s0, a2, 0 # int n
-    addi s1, a0, 0 # address of x[]
-    addi s2, a1, 0 # address of y[]
-    addi s3, t0, 0 # i
-
-    fmv.w.x f8, 0 # float sum
-    
-
-loop:
-    bge s3, s0, exit
-
-    slli t0, s1, 2 # offset for x
-    slli t1, s2, 2 # offset for y 
-
-    flw f0, t0 # t1 = x[i]
-    flw f1, t1 # t2 = y[i]
-
-    fmul.s f2, f0, f1 # x[i] * y[i]
-    fadd.s f8, f8, f2 # add to sum
-
-    addi s3, s3, 1 # increment i
-
-    beq x0, x0, loop
-
-exit:
-    fmv.s f10, f8 # move sum to return value register
-    
-    lw ra, 16(sp)
-    lw s2, 8(sp)
-    lw s1, 4(sp)
-    lw s0, 0(sp)
-    addi sp, sp, 16
-
-    jalr x0, 0(ra)
+"Question 5"
 
 
-
+a) .1+.4+1.5+.6 = 2.6
 
 
 

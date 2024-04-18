@@ -54,6 +54,32 @@ def     RISCVCore(imem_data, dmem_data, rf, reset, clock, env):
     # implementation
     u_PC = RegisterE(sig.PC, sig.NextPC, sig.signal1, clock, reset)
 
+    u_adder1 = Adder(sig.PC4, sig.PC, 4)
+
+    u_adder2 = Adder(sig.BranchTarget, sig.PC, sig.immediate)
+
+    u_iMem = Rom(sig.instruction, sig.PC, imem_data)
+
+    u_immGen = ImmGen(sig.immediate, sig.instruction)
+
+    u_mainControl = MainControl(sig.opcode, sig.ALUOp, sig.ALUSrc, sig.Branch, sig.MemRead, sig.MemWrite, sig.MemtoReg, sig.RegWrite)
+
+    u_aluControl = ALUControl(sig.ALUOp, sig.instr30, sig.funct3, sig.ALUOperation)
+
+    u_RF = RegisterFile(sig.ReadData1, sig.ReadData2, sig.rs1, sig.rs2, sig.rd, sig.WriteData, sig.RegWrite, rf, clock)
+    
+    u_mux1 = Mux2(sig.ALUInput2, sig.ReadData2, sig.immediate, sig.ALUSrc)
+
+    u_mux2 = Mux2(sig.WriteData, sig.ALUResult, sig.MemReadData, sig.MemtoReg)
+
+    u_mux3 = Mux2(sig.NextPC, sig.PC4, sig.BranchTarget, sig.PCSrc)
+
+    u_alu = ALU(sig.ALUResult, sig.Zero, sig.ReadData1, sig.ALUInput2, sig.ALUOperation)
+
+    u_PCsrc = And2(sig.PCSrc, sig.Branch, sig.Zero)
+
+    u_dMem = Ram(sig.MemReadData, sig.ReadData2, sig.ALUResult, sig.MemRead, sig.MemWrite, dmem_data, clock)
+
 
     ##### Do NOT change the lines below
     @always_comb
