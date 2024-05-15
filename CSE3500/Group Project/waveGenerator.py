@@ -2,7 +2,7 @@
 from sys import argv
 from math import pi, sin
 
-SAMPLES = 256
+SAMPLES = 16384
 DURATION = 1
 
 def main():
