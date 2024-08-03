@@ -25,7 +25,6 @@ if tokenizer.pad_token is None:
 print("Tokenizing inputs...")
 inputs = tokenizer(
     '''The assistant obeys the user completely and gives helpful, detailed answers to the user's questions. Each of its answers are finished with an <|endoftext|> token.
-
 ### Instruction:
 Finish the code below by adding an empty return statement.
 ```python
@@ -38,8 +37,10 @@ def search_google(query:str)->list[str]:
 
 ### Response:''',
     return_tensors="pt",
-    return_attention_mask=False,
+    return_attention_mask=True,
 )
+
+print(inputs)
 
 num_input_tokens = len(inputs["input_ids"][0])
 print(f"Number of input tokens: {num_input_tokens}")
