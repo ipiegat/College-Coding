@@ -10,7 +10,7 @@ import time
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-torch.set_default_device("mps")
+torch.set_default_device("gpu")
 
 print("Loading model...")
 

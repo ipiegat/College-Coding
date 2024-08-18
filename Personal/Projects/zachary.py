@@ -38,6 +38,4 @@ if __name__ == "__main__":
     duplicates = CountDuplicates()
     print(duplicates)
 
-# test 2
-
 
