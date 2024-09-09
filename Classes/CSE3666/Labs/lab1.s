@@ -6,7 +6,7 @@
 main:   
 
         # GCD examples:
-        #     gcd(11, 121) = 11
+        #     gcd(11, 121) = 11 test
         #     gcd(24, 60) = 12
         #     gcd(192, 270) = 6
         #     gcd(14, 97) = 1
