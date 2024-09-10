@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1725994231.54183 "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW1/submission_document.tex" "submission_document.pdf" "submission_document" 1725994232.29838 0
+["pdflatex"] 1725994373.13766 "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW1/submission_document.tex" "submission_document.pdf" "submission_document" 1725994373.96104 0
   "C:/Users/ipieg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1725988295 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/ipieg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1725988132 11548 8962ce9b6cdec6efc8c0b5bdde6fc00d ""
   "C:/Users/ipieg/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725988827 24265333 a4e5fde1dc83767d6a777f26625fb6ce ""
@@ -30,9 +30,9 @@
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1719393830 5048 7ebf0f2edf1ef6783e8fe2201a95d0e8 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1719393830 8448 358bf3de18513f057a13bdc6e6770c41 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/l3backend/l3backend-pdftex.def" 1716480499 29785 9f93ab201fe5dd053afcc6c1bcf7d266 ""
-  "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW1/submission_document.tex" 1725994229 3103 68dacf69e9fbf6ae57eb11f7ecd614b5 ""
-  "submission_document.aux" 1725994232 1349 42ef83306dd69f84209cf5a82b2fac92 "pdflatex"
-  "submission_document.tex" 1725994229 3103 68dacf69e9fbf6ae57eb11f7ecd614b5 ""
+  "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW1/submission_document.tex" 1725994372 3110 e2520eb3462025836d6b5929b27042a7 ""
+  "submission_document.aux" 1725994373 1349 42ef83306dd69f84209cf5a82b2fac92 "pdflatex"
+  "submission_document.tex" 1725994372 3110 e2520eb3462025836d6b5929b27042a7 ""
   (generated)
   "submission_document.aux"
   "submission_document.log"
