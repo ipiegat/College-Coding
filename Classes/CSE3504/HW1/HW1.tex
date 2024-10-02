@@ -1,0 +1,105 @@
+\documentclass{article} % Defines the type of document (e.g., article, report, book)
+\usepackage[utf8]{inputenc} % Handles input encoding
+\usepackage{amsmath}
+
+\title{CSE3504 Homework 1} % Title of your document
+\author{Isaac Piegat} % Author's name
+\date{\today} % Date (you can also set it manually, like \date{September 10, 2024})
+
+\begin{document} % Start of the document
+\maketitle % Generates the title section
+
+
+
+\section{Problem 1:}
+\subsection{Let S = {1, 2, ,,,, 100}. Define \(E_2\) as the event that a number is divisible by 2, and \(E_3\) as event that the number is divisible by 3.}
+\begin{itemize}
+    \item The cardinality of event \(E_2\) is \(100/2 = 50\) and event \(E_3\) is \(100/3 = 33\).
+    \item Even numbers divisible by 3 are also divisible by 2, thus half of all numbers divisible by 3 
+    are also divisible by 2. This means the cardinality between the intersection of \(E_2\) and \(E_3\) 
+    is \(100/3 * 1/2 = 100/6 = 16\).
+\end{itemize}
+
+\section{Problem 2:}
+\subsection{Two teams A and B play a soccer match, and we are interested in the winner. The sample
+space can be defined as: S = {a, b, d} where “a” shows the outcome that A wins, “b” shows
+the outcome that B wins, and “d” shows the outcome that they draw. Suppose that we know
+that the probability that A wins is P(a) = 0.5 and the probability of a draw is P(d) = 0.25.}
+\begin{itemize}
+    \item The probability that B wins is \(P(b) = 1 - P(a) - P(d) = 1 - .5 - .25 = .25\).
+    \item The probability that B wins or a draw occurs is \(P(b or d) = 1- P(a) = .5\).
+\end{itemize}
+
+\section{Problem 3:}
+\subsection{Three factories make .20, .30, and .50 of the computer chips for a company. The
+probability of a defective chip is 0.04, 0.03, and 0.02 for the three factories.}
+
+\begin{itemize}
+    \item The probability that a chip is defective is \(.2*.04 + .3*.03 + .5*.02 = .027\).
+    \item If a chip is defective, the chances it came from factory one is \((.04*.2)/.027 = .296\).
+\end{itemize}
+
+\section{Problem 4:}
+\subsection{A password consists of six characters. These characters are chosen from the 10 digits
+and 26 letters of the alphabet. Passwords are also case sensitive.}
+\begin{itemize}
+    \item There are \(62^6 = 56800235584\) different combinations of passwords (case sensitive).
+    \item Using the non-replacement formula \(N!/(N-k)!\) you get \(62!/(62-56)! = factorial(62) / factorial(56) = 44261653680\).
+    \item A hacker guessing 100 million passwords per second would take \(62^6/10^8 = 568s\).
+    \item To choose a password with a letter and a number you would have to first select from 52 letters. There are a total of 
+    \(62^6\) passwords with no constraints and \(52^6\) passwords with no digits (there are 10 total digits and 5 remaining 
+    characters). Thus, the
+    number of valid passwords would be \(52*(62^5-52^5) =27868297600\).
+    \item \(27868297600/100,000,000 = 278s\).
+
+\end{itemize}
+
+\section{Problem 5:}
+\subsection{A hash table contains slots, and a hash function assigns values to these slots using a hash
+function. A collision is said to occur if more than one value hashes into any particular slot.}
+\begin{itemize}
+    \item \(P(no collision) = 100/100 * 99/100 * 98/100 * 97/100 * 96/100 * 95/100 * 94/100 * 93/100 * 92/100 * 91/100 = .6281\)
+    thus \(P(collision) = 1 - P(no collision) = 1 - .6281 = .3719\) or in R \(pbirthday(n = 10, classes = 100) = .3719\).
+    \item Simply guess and check. \(P(no collision) = 100/100 * 99/100 * 98/100 * 97/100 * 96/100 = .902 \geq .9\) thus six values
+    will drop the percentage below 90 percent. In R this would be \(qbirthday(prob = 0.10, classes = 100) = 6\)
+
+\end{itemize}
+
+\section{Problem 6:}
+\subsection{A family has n children, \(n \geq 2\). We pick one of them at random and find out that she is a
+girl. What is the probability that all their children are girls, given at least one of them is a girl?}
+
+Given that at least one is a girl, and the minimum amount of children is two, the highest probability of all 
+children being girls is when n is at its lowest (2). At n = 2, there is a 50 percent chance all children are girls
+as it is a simple coin flip for one child. At n = 3, this percentage drops by half  to 25 percent as it is now two 
+coin flips. This trend continues and can be moduled by the equation \(chance = .5 * (1/2)^{n-1}, n \geq 2\).
+
+
+\section{Problem 7:}
+\subsection{A manufacturing process produces integrated circuit chips. Over the long run the fraction
+of bad chips produced by the process is around .20. Thoroughly testing a chip to determine
+whether it is good or bad is rather expensive, so a cheap test is tried. All good chips will
+pass the cheap test, but so will .10, of the bad chips}
+\begin{itemize}
+    \item  \(P(Pass) = P(Pass|Good) * P(Good) + P(Pass|Bad) * P(Bad) = 1 * .8 + .1 * .2 = .82\). Now 
+    plugging into the formula \(P(Good|Pass) = (P(Pass|Good) *P(Good)) / P(Pass) = (1*.8)/(.82) = .9756\).
+    \item \(1-.9756=.0244\) thus 2.44 percent. 
+
+\end{itemize}
+
+\section{Problem 8:}
+\subsection{There are 20 black cell phones and 30 white cell phones in a store. An employee takes
+10 phones at random. Find the probability that:}
+\begin{itemize}
+    \item To find the probability of selecting four black phones you use the Hypergeometric Distribution Formula 
+    \(P(X = k) = \frac{\binom{K}{k} \binom{N - K}{n - k}}{\binom{N}{n}}\).
+    where \(N = 50, K = 20, n = 10, k = k\). Plugging this values in you get 
+    \(P(X = 4) = \frac{\binom{20}{4} \binom{30}{6}}{\binom{50}{10}}\) which can be calculated in R using the command
+    \(dhyper(4, 20, 30, 10) = .28\) or 28 percent. 
+    \item To find the probability of less than three black phones you use the same formula as above, however, 
+    you sum each result. In R this would be \(sum(dhyper(0, 20, 30, 10), dhyper(1, 20, 30, 10), dhyper(2, 20, 30, 10)) = 
+    .139\) or 13.9 percent.
+
+\end{itemize}
+
+\end{document}
