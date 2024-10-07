@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1728268983.28754 "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW3/hw3.tex" "hw3.pdf" "hw3" 1728268984.25659 0
+["pdflatex"] 1728339011.47076 "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW3/hw3.tex" "hw3.pdf" "hw3" 1728339012.06432 0
   "C:/Users/ipieg/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1727828426 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ipieg/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1727392070 14064 10f07d3a559a3427ea6bc5cdc6b267f5 ""
   "C:/Users/ipieg/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1725988827 24265333 a4e5fde1dc83767d6a777f26625fb6ce ""
@@ -30,6 +30,7 @@
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1247596667 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/00miktex/epstopdf-sys.cfg" 1616067285 584 2a1075dd71571459f59146da9f7502ad ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/amsfonts.sty" 1358197772 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
@@ -61,9 +62,9 @@
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/tools/theorem.sty" 1718356376 4956 6e559071f22138800525418e87153986 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/tools/thp.sty" 1718356376 1908 5fa75347055b144adc918ef80d6061f0 ""
   "C:/Users/ipieg/AppData/Local/Programs/MiKTeX/tex/latex/version/version.sty" 1253075893 5218 96885a5919b5c5dc93cc0fbf2be00587 ""
-  "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW3/hw3.tex" 1728268982 9934 c0f572acd9c3ba81a37290400be6119f ""
-  "hw3.aux" 1728268983 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
-  "hw3.tex" 1728268982 9934 c0f572acd9c3ba81a37290400be6119f ""
+  "c:/Users/ipieg/College-Coding/Classes/CSE3400/HW3/hw3.tex" 1728339010 9818 2946bdadcbe94a1daba2d87d32c3bcae ""
+  "hw3.aux" 1728339011 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "hw3.tex" 1728339010 9818 2946bdadcbe94a1daba2d87d32c3bcae ""
   (generated)
   "hw3.aux"
   "hw3.log"
