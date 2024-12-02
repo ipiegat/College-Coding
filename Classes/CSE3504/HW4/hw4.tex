@@ -1,0 +1,165 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\title{CSE3504 Homework}
+\author{Isaac Piegat}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1}
+\begin{enumerate}
+    \item[(a)] 
+    \begin{align*}
+        \mu_X &= \sum_{x=0}^2 x \cdot p(X) = 2.8 \\
+        \text{Var}(X) &= \sum_{x=0}^2 x^2 p(X) - \mu_X^2 = 1.66 \\
+        \sigma_X &= \sqrt{\text{Var}(X)} = 1.288
+    \end{align*}
+
+    \item[(b)]
+    \begin{align*}
+        \mu_Y &= \sum_{y=0}^2 y \cdot p(Y) = 1.7 \\
+        \text{Var}(Y) &= \sum_{y=0}^2 y^2 \cdot p(Y) - \mu_Y^2 = 0.61 \\
+        \sigma_Y &= \sqrt{\text{Var}(Y)} = 0.781
+    \end{align*}
+
+    \item[(c)]
+    \begin{align*}
+        \mu_C &= 3 \cdot \mu_X = 8.4 \\
+        \text{Var}(C) &= 3^2 \cdot \text{Var}(X) = 14.94 \\
+        \sigma_C &= \sqrt{\text{Var}(C)} = 3.865
+    \end{align*}
+
+    \item[(d)]
+    \begin{align*}
+        \mu_B &= 10 \cdot \mu_Y = 7 \\
+        \text{Var}(B) &= 10^2 \cdot \text{Var}(Y) = 61 \\
+        \sigma_B &= \sqrt{\text{Var}(B)} = 7.81
+    \end{align*}
+
+    \item[(e)]
+    \begin{align*}
+        \mu_Z &= \mu_X + \mu_Y = 3.5 \\
+        \text{Var}(Z) &= \text{Var}(X) + \text{Var}(Y) = 2.27 \\
+        \sigma_Z &= \sqrt{\text{Var}(Z)} = 1.507
+    \end{align*}
+
+    \item[(f)]
+    \begin{align*}
+        \mu_W &= \mu_C + \mu_B = 15.4 \\
+        \text{Var}(W) &= \text{Var}(C) + \text{Var}(B) = 75.94 \\
+        \sigma_W &= \sqrt{\text{Var}(W)} = 8.714
+    \end{align*}
+
+    \item[(g)]
+    \begin{align*}
+        \mu_D &= \mu_X - \mu_Y = 2.1 \\
+        \text{Var}(D) &= \text{Var}(X) + \text{Var}(Y) = 2.27 \\
+        \sigma_D &= \sqrt{\text{Var}(D)} = 1.507
+    \end{align*}
+\end{enumerate}
+
+\section*{Problem 2}
+\begin{enumerate}
+    \item[(a)]
+    \begin{align*}
+        \mu_X &= \int_1^\infty x \cdot \frac{3}{x^4} \, dx = \int_1^\infty 3x^{-3} \, dx = \frac{3}{2}
+    \end{align*}
+
+    \item[(b)]
+    \begin{align*}
+        \int_1^\infty x^2 \cdot \frac{3}{x^4} \, dx = \int_1^\infty 3x^{-2} \, dx = 3
+    \end{align*}
+
+    \item[(c)]
+    \begin{align*}
+        \text{Var}(X) &= 3 - \left( \frac{3}{2} \right)^2 = \frac{3}{4}
+    \end{align*}
+\end{enumerate}
+
+\section*{Problem 3}
+\begin{enumerate}
+    \item[(a)] Use the \texttt{pbinom} function in R.
+    
+    \item[(b)]
+    \begin{align*}
+        \mu &= 400 \cdot 0.2 = 80 \\
+        \sigma &= \sqrt{400 \cdot 0.2 \cdot 0.8} = 8
+    \end{align*}
+
+    \item[(c)]
+    \begin{align*}
+        z &= \frac{74.5 - 80}{8} = -0.6875 \\
+        z &= \frac{100.5 - 80}{8} = 2.5625
+    \end{align*}
+\end{enumerate}
+
+\section*{Problem 4}
+\begin{enumerate}
+    \item[(a)]
+    \begin{align*}
+        Z &= P_{\text{hole}} - P_{\text{peg}} \\
+        \mu_Z &= 0.253 - 0.25 = 0.003 \\
+        \sigma_Z &= \sqrt{0.002^2 + 0.006^2} = 0.00632 \\
+        P_{\text{fit}} &= 0.6825
+    \end{align*}
+
+    \item[(b)]
+    \begin{align*}
+        \mu_Z &= 0.25553 - 0.25 = 0.00553 \\
+        \sigma_Z &= 0.00632 \\
+        P_{\text{fit}} &= 0.8092
+    \end{align*}
+\end{enumerate}
+
+\section*{Problem 5}
+\begin{align*}
+    \sum_{k=2}^\infty \frac{1}{2^k} (1 - p)^{k-1} p &= p \sum_{k=1}^\infty \frac{(1-p)^{k-1}}{2^k}
+\end{align*}
+
+\section*{Problem 6}
+\begin{align*}
+    1 &= -2 \, E[X] + 3 \\
+    -2 &= -2 \, E[X] \\
+    E[X] &= 1 \\
+    \text{Var}(X) &= E[X^2] - E[X]^2 = 2
+\end{align*}
+
+\section*{Problem 7}
+\begin{align*}
+    E[T] &= 12 \cdot 62.5 = 750 \text{ milliseconds} \\
+    \text{Var}(T) &= 12 \cdot 5^2 = 300 \\
+    \sigma &= \sqrt{300} = 17.32 \text{ milliseconds} \\
+    z &= \frac{750 - 780}{17.32} = -1.73 \\
+    z &= \frac{825 - 750}{17.32} = 2.60 \\
+    P_{ttc} &= 0.9537
+\end{align*}
+
+\section*{Problem 8}
+\begin{enumerate}
+    \item[(a)]
+    \begin{align*}
+        p(X=2) &= \frac{1}{2}, \quad p(X=3) = \frac{1}{3}, \quad p(X=5) = \frac{1}{3}, \quad p(X=8) = \frac{1}{2}
+    \end{align*}
+
+    \item[(b)]
+    \begin{align*}
+        E[X] &= 2 \cdot \frac{1}{2} + 3 \cdot \frac{1}{3} + 5 \cdot \frac{1}{3} + 8 \cdot \frac{1}{2} = 4.14
+    \end{align*}
+
+    \item[(c)]
+    \begin{align*}
+        E[X^2] &= 2^2 \cdot \frac{1}{2} + 3^2 \cdot \frac{1}{3} + 5^2 \cdot \frac{1}{3} + 8^2 \cdot \frac{1}{2} = 20.71
+    \end{align*}
+
+    \item[(d)]
+    \begin{align*}
+        \text{Var}(X) &= 20.71 - (4.14)^2 = 3.55
+    \end{align*}
+\end{enumerate}
+
+\end{document}
+
