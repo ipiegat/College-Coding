@@ -1,0 +1,278 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath}
+\geometry{a4paper, margin=1in}
+
+\title{Cryptography Cheat Sheet}
+\author{Isaac Piegat}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Cryptographic Hash Functions (CRHFs)}
+\subsection*{Description}
+A hash function maps an input of arbitrary size to a fixed-size output, ensuring unique "fingerprints" for data. A \textbf{CRHF} specifically ensures collision resistance.
+
+\subsection*{Conditions}
+\begin{itemize}
+    \item \textbf{Collision Resistance:} Hard to find two inputs \(x \neq x'\) such that \(h(x) = h(x')\).
+    \item \textbf{Second-Preimage Resistance:} Given \(x\), hard to find \(x' \neq x\) where \(h(x) = h(x')\).
+    \item \textbf{Preimage Resistance:} Given \(y\), hard to find any \(x\) where \(h(x) = y\).
+\end{itemize}
+
+\subsection*{Weaknesses/Common Attacks}
+\begin{itemize}
+    \item \textbf{Collision Attacks:} Exploiting weaknesses in the hash function to find two inputs with the same output (e.g., MD5, SHA-1).
+    \item \textbf{Length Extension Attacks:} Extending valid hashes without knowing the original input.
+    \item \textbf{Birthday Attacks:} Using the birthday paradox to find collisions faster than brute force.
+\end{itemize}
+
+\section*{One-Way Functions (OWFs)}
+\subsection*{Description}
+A function \(f(x)\) that is easy to compute but computationally infeasible to invert. Used for securing data such as passwords.
+
+\subsection*{Conditions}
+\begin{itemize}
+    \item \textbf{Easy to Compute:} \(f(x)\) is efficient to evaluate.
+    \item \textbf{Hard to Invert:} Given \(y = f(x)\), it’s computationally infeasible to find \(x\).
+\end{itemize}
+
+\subsection*{Weaknesses/Common Attacks}
+\begin{itemize}
+    \item \textbf{Brute-Force Attacks:} If the input space is small, attackers can try all possibilities.
+    \item \textbf{Weak Randomness:} Predictable inputs compromise security.
+    \item \textbf{Structural Weaknesses:} Poorly designed OWFs can have shortcuts for inversion.
+\end{itemize}
+
+\section*{Hashes}
+\subsection*{Description}
+Hash functions compress data into fixed-size values for integrity, signatures, and authentication. Cryptographic hashes are a secure subset used in protocols.
+
+\subsection*{Conditions}
+\begin{itemize}
+    \item \textbf{Fixed Output Size:} Maps any input to a specific-length output.
+    \item \textbf{Deterministic:} Same input always produces the same output.
+    \item \textbf{Avalanche Effect:} A small change in input drastically changes the output.
+\end{itemize}
+
+\subsection*{Weaknesses/Common Attacks}
+\begin{itemize}
+    \item \textbf{Collision Attacks:} Finding two inputs with the same hash.
+    \item \textbf{Rainbow Table Attacks:} Precomputed hash chains to reverse hashes.
+    \item \textbf{Timing Attacks:} Using timing information to guess the hash process or input.
+\end{itemize}
+
+\section*{Shared Key Protocols (SKPs)}
+\subsection*{Description}
+Protocols used to securely establish a shared secret key between two parties over an insecure channel. The key is then used for encryption or authentication.
+
+\subsection*{Conditions}
+\begin{itemize}
+    \item \textbf{Authentication:} Each party verifies the identity of the other.
+    \item \textbf{Confidentiality:} The key remains secret during exchange.
+    \item \textbf{Integrity:} Messages exchanged during the protocol must not be altered.
+\end{itemize}
+
+\subsection*{Weaknesses/Common Attacks}
+\begin{itemize}
+    \item \textbf{Replay Attacks:} Reusing intercepted messages to impersonate one party.
+    \item \textbf{Man-in-the-Middle (MitM) Attacks:} Intercepting and modifying communication.
+    \item \textbf{Weak Nonces or Counters:} Predictable or reused values compromise security.
+    \item \textbf{Reflection Attacks:} Tricking parties into processing their own messages.
+\end{itemize}
+
+\section*{Message Authentication Codes (MACs)}
+\subsection*{Description}
+A Message Authentication Code (MAC) is a cryptographic tool used to ensure the authenticity and integrity of a message. It uses a shared secret key \( K \) known only to the communicating parties.
+
+\subsection*{How It Works}
+Given a message \( m \) and a shared key \( K \):
+\[
+\text{MAC} = \text{MAC}_K(m)
+\]
+The recipient can verify that:
+\begin{itemize}
+    \item \( m \) has not been tampered with (integrity).
+    \item \( m \) originates from someone who knows \( K \) (authenticity).
+\end{itemize}
+
+\subsection*{Conditions for a Secure MAC}
+\begin{itemize}
+    \item \textbf{Key-Dependent:} The MAC must depend on the secret key \( K \). Without \( K \), an attacker should not be able to forge a valid MAC.
+    \item \textbf{Unforgeability:} It must be computationally infeasible to generate a valid MAC without knowing \( K \).
+    \item \textbf{Resistance to Replay Attacks:} Often achieved by including a nonce or timestamp with the message.
+\end{itemize}
+
+\subsection*{Types of MACs}
+\begin{itemize}
+    \item \textbf{HMAC:} Hash-based MACs use a cryptographic hash function (e.g., SHA-256) combined with a secret key.
+    \item \textbf{CBC-MAC:} Cipher Block Chaining MACs are based on block ciphers and operate on fixed-size message blocks.
+    \item \textbf{GMAC:} A MAC based on Galois Field arithmetic, used in authenticated encryption schemes.
+\end{itemize}
+
+\subsection*{Applications}
+\begin{itemize}
+    \item Authenticating messages in communication protocols (e.g., SSL/TLS, IPsec).
+    \item Ensuring data integrity in storage systems.
+    \item Preventing tampering in distributed systems.
+\end{itemize}
+
+\subsection*{Weaknesses/Common Attacks}
+\begin{itemize}
+    \item \textbf{Key Compromise:} If \( K \) is leaked, the attacker can forge valid MACs.
+    \item \textbf{Length Extension Attacks:} A poorly implemented MAC based on hash functions can be vulnerable if intermediate states of the hash are exposed.
+    \item \textbf{Reused Nonces:} If a MAC includes a nonce that is reused, it can allow replay attacks.
+\end{itemize}
+
+\section*{Combining Encryption and Authentication}
+There are three primary methods to combine encryption and authentication in cryptographic protocols:
+
+\subsection*{Encrypt-then-MAC (EtM)}
+\begin{itemize}
+    \item \textbf{How It Works:} First, the plaintext is encrypted to produce the ciphertext. Then, a MAC is calculated over the ciphertext using a secret key.
+    \item \textbf{Order of Operations:}
+    \[
+    \text{Ciphertext} = E_k(\text{plaintext})
+    \]
+    \[
+    \text{MAC} = \mathrm{MAC}_k(\text{Ciphertext})
+    \]
+    \item \textbf{Advantages:} 
+    \begin{itemize}
+        \item Provides strong security.
+        \item Detects tampering with the ciphertext before decryption.
+    \end{itemize}
+    \item \textbf{Example Use Case:} IPsec.
+\end{itemize}
+
+\subsection*{MAC-then-Encrypt (MtE)}
+\begin{itemize}
+    \item \textbf{How It Works:} First, a MAC is computed on the plaintext. Then, the plaintext and its MAC are encrypted together.
+    \item \textbf{Order of Operations:}
+    \[
+    \text{MAC} = \mathrm{MAC}_k(\text{plaintext})
+    \]
+    \[
+    \text{Ciphertext} = E_k(\text{plaintext} \| \text{MAC})
+    \]
+    \item \textbf{Advantages:}
+    \begin{itemize}
+        \item Protects both the plaintext and the MAC.
+    \end{itemize}
+    \item \textbf{Disadvantages:}
+    \begin{itemize}
+        \item Vulnerable if decryption is performed before verifying the MAC.
+    \end{itemize}
+    \item \textbf{Example Use Case:} SSL/TLS (pre-TLS 1.3).
+\end{itemize}
+
+\subsection*{Encrypt-and-MAC (E\&M)}
+\begin{itemize}
+    \item \textbf{How It Works:} The plaintext is both encrypted and authenticated independently.
+    \item \textbf{Order of Operations:}
+    \[
+    \text{Ciphertext} = E_k(\text{plaintext})
+    \]
+    \[
+    \text{MAC} = \mathrm{MAC}_k(\text{plaintext})
+    \]
+    \item \textbf{Advantages:}
+    \begin{itemize}
+        \item Simpler conceptually; failures in one process (encryption or MAC) do not compromise the other.
+    \end{itemize}
+    \item \textbf{Disadvantages:}
+    \begin{itemize}
+        \item Less efficient because encryption and authentication are independent.
+    \end{itemize}
+    \item \textbf{Example Use Case:} Rarely used in modern protocols.
+\end{itemize}
+
+\section*{MACs vs. Hash Functions}
+\subsection*{Message Authentication Codes (MACs)}
+\begin{itemize}
+    \item \textbf{Description:} A MAC binds a message to a shared secret key \( K \), providing integrity and authenticity.
+    \item \textbf{Purpose:} Ensures that the message is from an authenticated sender and has not been tampered with.
+\end{itemize}
+
+\subsection*{Hash Functions}
+\begin{itemize}
+    \item \textbf{Description:} A hash function produces a fixed-length digest of a message but does not use a secret key.
+    \item \textbf{Limitation:} Hash functions do not provide authenticity; anyone can compute a valid hash for a modified message.
+\end{itemize}
+
+\subsection*{Why MACs Are Superior}
+\begin{itemize}
+    \item \textbf{Key Binding:} A MAC ensures that the message is bound to the shared secret \( K \), preventing forgery.
+    \item \textbf{Tamper Resistance:} An attacker cannot recompute a valid MAC without knowing \( K \).
+    \item \textbf{Man-in-the-Middle Defense:} MACs resist MitM attacks, where a hash function might fail due to lack of key-dependency.
+\end{itemize}
+
+\section*{Modular Arithmetic}
+\subsection*{Basic Operations}
+Modular arithmetic operates within the range \( \{0, 1, \dots, n-1\} \) for a modulus \( n \). The key operations include:
+
+\subsubsection*{Addition Modulo \( n \)}
+\[
+(a + b) \mod n = ((a \mod n) + (b \mod n)) \mod n
+\]
+
+\subsubsection*{Multiplication Modulo \( n \)}
+\[
+(a \cdot b) \mod n = ((a \mod n) \cdot (b \mod n)) \mod n
+\]
+
+\subsubsection*{Subtraction Modulo \( n \)}
+\[
+(a - b) \mod n = ((a \mod n) - (b \mod n)) \mod n
+\]
+
+\subsection*{Distributive Property}
+For any integers \( a, b, c \):
+\[
+(a \cdot (b + c)) \mod n = ((a \cdot b) + (a \cdot c)) \mod n
+\]
+
+\section*{Fermat's Little Theorem}
+\textbf{Statement:} If \( p \) is a prime number and \( a \) is an integer such that \( p \not\mid a \), then:
+\[
+a^{p-1} \equiv 1 \mod p
+\]
+
+\section*{Euler's Totient Function}
+\subsection*{Definition}
+The totient function \( \phi(n) \) counts the integers between \( 1 \) and \( n \) that are coprime to \( n \).
+
+\subsection*{Formula for \( \phi(n) \)}
+For \( n = p_1^{e_1} \cdot p_2^{e_2} \cdot \dots \cdot p_k^{e_k} \):
+\[
+\phi(n) = n \cdot \prod_{i=1}^{k} \left(1 - \frac{1}{p_i}\right)
+\]
+
+\section*{RSA Key Generation}
+\subsection*{Steps to Generate Keys}
+1. Select two large prime numbers \( p \) and \( q \).
+2. Compute \( n = p \cdot q \).
+3. Compute \( \phi(n) = (p-1) \cdot (q-1) \).
+4. Choose \( e \) such that \( 1 < e < \phi(n) \) and \( \gcd(e, \phi(n)) = 1 \).
+5. Compute \( d \) such that:
+\[
+e \cdot d \equiv 1 \mod \phi(n)
+\]
+6. Public key: \( (e, n) \). Private key: \( d \).
+
+\subsection*{Encryption and Decryption}
+\begin{itemize}
+    \item \textbf{Encryption:} Given message \( m \):
+    \[
+    c \equiv m^e \mod n
+    \]
+    \item \textbf{Decryption:} Recover \( m \) from \( c \):
+    \[
+    m \equiv c^d \mod n
+    \]
+\end{itemize}
+
+
+\end{document}

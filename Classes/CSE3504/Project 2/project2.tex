@@ -128,12 +128,10 @@ steady_state_probabilities <- function(p, q) {
   return(steady_state)
 }
 
-# Vary q between 0.1 and 0.9, p is fixed at 0.5
 q_values <- seq(0.1, 0.9, by = 0.1)
 p <- 0.5
 results <- sapply(q_values, function(q) steady_state_probabilities(p, q))
 
-# Plot the probabilities
 plot(q_values, results[,1], type = "o", col = "blue", ylim = c(0, 1),
      xlab = "Probability q", ylab = "Steady-State Probability",
      main = "Steady-State Probabilities as a Function of q")
@@ -180,8 +178,8 @@ Q =
 R code:
 
 \begin{verbatim}
-lambda <- 6  # Arrival rate (per hour)
-mu <- 4      # Service rate per server (per hour)
+lambda <- 6  
+mu <- 4      
 
 Q <- matrix(c(
   -lambda, lambda, 0, 0, 0, 0,
@@ -194,7 +192,7 @@ Q <- matrix(c(
 
 n <- nrow(Q)
 A <- t(Q)
-A[n, ] <- 1  # Replace last row for normalization
+A[n, ] <- 1  
 b <- c(rep(0, n-1), 1)  # Right-hand side
 steady_state <- solve(A, b)
 

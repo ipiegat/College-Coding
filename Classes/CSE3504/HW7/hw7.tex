@@ -1,0 +1,160 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{CSE 3504: Project 2}
+\author{Isaac Piegat}
+\date{12/2/2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem 1:}
+
+\subsection*{1a.}
+
+\begin{enumerate}
+    \item \textbf{System States:}
+    \begin{itemize}
+        \item State 0: Both copier 1 and copier 2 are operational.
+        \item State 1: Copier 1 is operational, and copier 2 is down.
+        \item State 2: Copier 2 is operational, and copier 1 is down.
+        \item State 3: Both copiers are down, and the repairman is working on copier 1.
+        \item State 4: Both copiers are down, and the repairman is working on copier 2.
+    \end{itemize}
+
+    \item \textbf{Transition Dynamics:}
+    \begin{itemize}
+        \item The system transitions between states due to:
+        \begin{itemize}
+            \item Failures, governed by failure rates $\gamma_1, \gamma_2$.
+            \item Repairs, governed by repair rates $\beta_1, \beta_2$.
+        \end{itemize}
+        \item The repairman prioritizes copier 1 over copier 2 when both are down:
+        \begin{itemize}
+            \item If copier 2 is being repaired and copier 1 fails, the repairman switches to copier 1.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{State Transition Diagram:}
+    \begin{itemize}
+        \item From State 0:
+        \begin{itemize}
+            \item Transition to State 1 at rate $\gamma_2$.
+            \item Transition to State 2 at rate $\gamma_1$.
+        \end{itemize}
+        \item From State 1:
+        \begin{itemize}
+            \item Transition to State 0 at rate $\beta_2$.
+            \item Transition to State 3 at rate $\gamma_1$.
+        \end{itemize}
+        \item From State 2:
+        \begin{itemize}
+            \item Transition to State 0 at rate $\beta_1$.
+            \item Transition to State 4 at rate $\gamma_2$.
+        \end{itemize}
+        \item From State 3:
+        \begin{itemize}
+            \item Transition to State 1 at rate $\beta_1$.
+        \end{itemize}
+        \item From State 4:
+        \begin{itemize}
+            \item Transition to State 2 at rate $\beta_2$.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Priority Rule:}
+    \begin{itemize}
+        \item Repair work on copier 2 is interrupted if copier 1 fails, transitioning the system to State 3.
+    \end{itemize}
+\end{enumerate}
+
+\subsection*{1b.}
+
+\[
+\begin{aligned}
+\text{State 0: } & \text{Both copiers are operational.} \\
+\text{State 1: } & \text{Copier 1 is operational, copier 2 is down.} \\
+\text{State 2: } & \text{Copier 2 is operational, copier 1 is down.} \\
+\text{State 3: } & \text{Both copiers are down, repairman is working on copier 1.} \\
+\text{State 4: } & \text{Both copiers are down, repairman is working on copier 2.}
+\end{aligned}
+\]
+
+\[
+Q =
+\begin{bmatrix}
+-(\gamma_1 + \gamma_2) & \gamma_2 & \gamma_1 & 0 & 0 \\
+\beta_2 & -(\beta_2 + \gamma_1) & 0 & \gamma_1 & 0 \\
+\beta_1 & 0 & -(\beta_1 + \gamma_2) & 0 & \gamma_2 \\
+0 & \beta_1 & 0 & -\beta_1 & 0 \\
+0 & 0 & \beta_2 & 0 & -\beta_2
+\end{bmatrix}
+\]
+
+\subsection*{1c.}
+
+\[
+\gamma_1 = 1, \quad \gamma_2 = 3, \quad \beta_1 = 2, \quad \beta_2 = 4
+\]
+
+\[
+p = [p_0, p_1, p_2, p_3, p_4] = [0.3627, 0.3040, 0.0853, 0.1840, 0.0640]
+\]\newline
+
+\begin{itemize}
+    \item \(p_0 = 0.3627\): Both copiers are operational 36.27\% of the time.
+    \item \(p_1 = 0.3040\): Copier 1 is operational, and copier 2 is down 30.40\% of the time.
+    \item \(p_2 = 0.0853\): Copier 2 is operational, and copier 1 is down 8.53\% of the time.
+    \item \(p_3 = 0.1840\): Both copiers are down, and the repairman is working on copier 1, 18.40\% of the time.
+    \item \(p_4 = 0.0640\): Both copiers are down, and the repairman is working on copier 2, 6.40\% of the time.\newline
+\end{itemize}
+
+\textbf{Long-Run Proportions:}
+\begin{itemize}
+    \item \textbf{Copier 1 Operational:}
+    \[
+    P(\text{Copier 1 Operational}) = p_0 + p_1 = 0.3627 + 0.3040 = 0.6667 \, (66.67\%).
+    \]
+    \item \textbf{Copier 2 Operational:}
+    \[
+    P(\text{Copier 2 Operational}) = p_0 + p_2 = 0.3627 + 0.0853 = 0.4480 \, (44.80\%).
+    \]
+    \item \textbf{Repairman Busy:}
+    \[
+    P(\text{Repairman Busy}) = p_3 + p_4 = 0.1840 + 0.0640 = 0.2480 \, (24.80\%).
+    \]
+\end{itemize}
+
+\section*{Problem 2:}
+
+\subsection*{Configuration (a):}
+\[
+R_s = R_m \times R_c
+\]
+\[
+R_s = 0.9 \times 0.9 = 0.81
+\]
+
+\subsection*{Configuration (b):}
+\begin{itemize}
+    \item Reliability of each subsystem:
+    \[
+    R_{\text{sub}} = R_m \times R_c = 0.9 \times 0.9 = 0.81
+    \]
+    \item Reliability of the parallel system:
+    \[
+    R_s = 1 - (1 - R_{\text{sub}})^2
+    \]
+    \[
+    R_s = 1 - (1 - 0.81)^2 = 1 - (0.19)^2 = 1 - 0.0361 = 0.9639
+    \]
+\end{itemize}
+
+\subsection*{Conclusion}
+Configuration (b) is better because its reliability (\(0.9639\)) is significantly higher than that of configuration (a) (\(0.81\)). This improvement is due to the redundancy provided by the parallel subsystems, which ensures that the system functions as long as at least one subsystem is operational.
+
+
+\end{document}
