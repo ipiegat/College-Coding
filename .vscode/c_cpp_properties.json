@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/MinGW/include",
+                "C:/MinGW/lib/gcc/mingw32/13.2.0/include",
+                "C:/MinGW/lib/gcc/mingw32/13.2.0/include/c++",
+                "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/include",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/ucrt",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared",
+                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/um"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64",
+            "compilerPath": "C:/MinGW/bin/g++.exe"
+        }
+    ],
+    "version": 4
+}
