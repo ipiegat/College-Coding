@@ -4,6 +4,8 @@ get text from it
 run sentiment analysis
 
 print page name and analysis result
+
+to execute: 'python webcrawler.py'
 """
 
 import urllib.request

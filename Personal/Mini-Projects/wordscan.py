@@ -1,3 +1,10 @@
+"""
+find most used words in current directory
+print words and amount of times used
+
+to execute: 'python wordscan.py'
+"""
+
 import os
 import argparse
 
