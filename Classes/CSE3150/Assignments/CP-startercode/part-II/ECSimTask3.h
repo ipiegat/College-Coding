@@ -100,51 +100,99 @@ private:
 // Consecutive task: a task that can early abort
 // This class modifies the passed-in task to have the consecutive property
 
-class ECSimConsecutiveTask 
+class ECSimConsecutiveTask : public ECSimTask
 {
 public:
   ECSimConsecutiveTask(ECSimTask *pTask);
-  
-  // your code ehre 
-    
+
+  virtual std::string GetId() const override;
+  virtual bool IsReadyToRun(int tick) const override;
+  virtual void Run(int tick, int duration) override;
+  virtual void Wait(int tick, int duration) override;
+  virtual bool IsFinished(int tick) const override;
+  virtual bool IsAborted(int tick) const override;
+  virtual int GetTotRunTime() const override;
+  virtual int GetTotWaitTime() const override;
+
+private:
+  ECSimTask *pBase;
+  bool hasRun;
+  bool aborted;
 };
 
 //***********************************************************
 // Periodic task: a task that can early abort
 // This class modifies the passed-in task to have the early abort property
 
-class ECSimPeriodicTask 
+class ECSimPeriodicTask : public ECSimTask
 {
 public:
   ECSimPeriodicTask(ECSimTask *pTask, int lenSleep);
 
-  // your code here
-    
+  std::string GetId() const override;
+  bool        IsReadyToRun(int tick) const override;
+  void        Run(int tick, int duration) override;
+  void        Wait(int tick, int duration) override;
+  bool        IsFinished(int tick) const override;
+  bool        IsAborted(int tick) const override;
+  int         GetTotRunTime() const override;
+  int         GetTotWaitTime() const override;
+
+private:
+  ECSimTask *pBase;
+  int        lenSleep;
+
+  // first actual Run() tick
+  mutable int  origStart;
+  // last  actual Run() tick (contiguous)
+  mutable int  origEnd;
+  // still mapping out the first window?
+  mutable bool recording;
 };
 
 //***********************************************************
 // Task with a deadline to start: a task that must start by some time; otherwise terminate
 // This class modifies the passed-in task to have a deadline to start 
 
-class ECSimStartDeadlineTask 
-{
+class ECSimStartDeadlineTask : public ECSimTask {
 public:
   ECSimStartDeadlineTask(ECSimTask *pTask, int tmStartDeadline);
 
-  // your code here
+  std::string GetId() const override;
+  bool IsReadyToRun(int tick) const override;
+  void Run(int tick, int duration) override;
+  void Wait(int tick, int duration) override;
+  bool IsFinished(int tick) const override;
+  bool IsAborted(int tick) const override;
+  int GetTotRunTime() const override;
+  int GetTotWaitTime() const override;
+
+private:
+  ECSimTask *pBase;
+  int tmStartDeadline;
 };
 
 //***********************************************************
 // Task must end by some fixed time click: this is useful e.g. when a task is periodic
 // This class modifies the passed-in task to have a deadline to end 
 
-class ECSimEndDeadlineTask 
+class ECSimEndDeadlineTask : public ECSimTask
 {
 public:
   ECSimEndDeadlineTask(ECSimTask *pTask, int tmEndDeadline);
 
-  // your code here
-    
+  std::string GetId() const override;
+  bool        IsReadyToRun(int tick) const override;
+  void        Run(int tick, int duration) override;
+  void        Wait(int tick, int duration) override;
+  bool        IsFinished(int tick) const override;
+  bool        IsAborted(int tick) const override;
+  int         GetTotRunTime() const override;
+  int         GetTotWaitTime() const override;
+
+private:
+  ECSimTask *pBase;
+  int        tmEndDeadline;
 };
 
 //***********************************************************
@@ -154,14 +202,25 @@ class ECSimCompositeTask : public ECSimTask
 {
 public:
   ECSimCompositeTask(const std::string &tidIn);
-    
-  virtual std::string GetId() const;
-    
-  // Add subtask
-  void AddSubtask(ECSimTask *pt);
 
-  // your code ehre
-    
+  // ECSimTask interface
+  std::string GetId() const override;
+  bool        IsReadyToRun(int tick) const override;
+  void        Run(int tick, int duration) override;
+  void        Wait(int tick, int duration) override;
+  bool        IsFinished(int tick) const override;
+  bool        IsAborted(int tick) const override;
+  int         GetTotRunTime() const override;
+  int         GetTotWaitTime() const override;
+
+  // add another subtask
+  void AddSubtask(ECSimTask *pTask);
+
+private:
+  std::string               tid;
+  std::vector<ECSimTask*>   subs;
+  int                       tmTotRun;
+  int                       tmTotWait;
 };
 
 #endif /* ECSimTask3_h */

@@ -210,7 +210,7 @@ static void Test7()
     ASSERT_EQ( t2.GetTotWaitTime(), 0);
     // t3: run [2,2], [5,6],
     ASSERT_EQ( t3.GetTotRunTime(), 3);
-    // t3: wait [5,5], [8,9]
+    // t3: wait [3,3], [8,9]
     ASSERT_EQ( t3.GetTotWaitTime(), 3);
 }
 */
