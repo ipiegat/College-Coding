@@ -1,343 +1,32 @@
 [
   {
-    "name": "Ryzen 7 7700X Raphael AM5 4.5GHz 8-Core Boxed Processor - Heatsink Not Included",
-    "price": 259.99,
-    "link": "https://www.microcenter.com/product/674502/amd-ryzen-7-7700x-raphael-am5-45ghz-8-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 9800X3D Granite Ridge AM5 4.70GHz 8-Core Boxed Processor - Heatsink Not Included",
-    "price": 479.99,
-    "link": "https://www.microcenter.com/product/687907/amd-ryzen-7-9800x3d-granite-ridge-am5-470ghz-8-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 7600X Raphael AM5 4.7GHz 6-Core Boxed Processor - Heatsink Not Included",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/674522/amd-ryzen-5-7600x-raphael-am5-47ghz-6-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 7800X3D Raphael AM5 4.2GHz 8-Core Boxed Processor - Heatsink Not Included",
-    "price": 359.99,
-    "link": "https://www.microcenter.com/product/674503/amd-ryzen-7-7800x3d-raphael-am5-42ghz-8-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 9700X Granite Ridge AM5 3.80GHz 8-Core Boxed Processor - Heatsink Not Included",
-    "price": 289.99,
-    "link": "https://www.microcenter.com/product/682199/amd-ryzen-7-9700x-granite-ridge-am5-380ghz-8-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 9900X Granite Ridge AM5 4.40GHz 12-Core Boxed Processor - Heatsink Not Included",
-    "price": 359.99,
-    "link": "https://www.microcenter.com/product/682198/amd-ryzen-9-9900x-granite-ridge-am5-440ghz-12-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 9600X Granite Ridge AM5 3.90GHz 6-Core Boxed Processor - Heatsink Not Included",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/682205/amd-ryzen-5-9600x-granite-ridge-am5-390ghz-6-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 7600X3D Raphael AM5 4.1GHz 6-Core Boxed Processor - Heatsink Not Included",
-    "price": 299.99,
-    "link": "https://www.microcenter.com/product/684484/amd-ryzen-5-7600x3d-raphael-am5-41ghz-6-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 9950X Granite Ridge AM5 4.30GHz 16-Core Boxed Processor - Heatsink Not Included",
-    "price": 499.99,
-    "link": "https://www.microcenter.com/product/682197/amd-ryzen-9-9950x-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i9-14900K Raptor Lake-S Refresh 3.2GHz Twenty Four-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 419.99,
-    "link": "https://www.microcenter.com/product/670841/intel-core-i9-14900k-raptor-lake-s-refresh-32ghz-twenty-four-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core Ultra 7 265K Arrow Lake Twenty-Core LGA 1851 Boxed Processor - Heatsink Not Included",
-    "price": 279.99,
-    "link": "https://www.microcenter.com/product/685301/intel-core-ultra-7-265k-arrow-lake-twenty-core-lga-1851-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i7-14700K Raptor Lake-S Refresh 3.4GHz Twenty-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 299.99,
-    "link": "https://www.microcenter.com/product/670842/intel-core-i7-14700k-raptor-lake-s-refresh-34ghz-twenty-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 9950X3D Granite Ridge AM5 4.30GHz 16-Core Boxed Processor - Heatsink Not Included",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/691349/amd-ryzen-9-9950x3d-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i9-12900K Alder Lake 3.2GHz Sixteen-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 299.99,
-    "link": "https://www.microcenter.com/product/641915/intel-core-i9-12900k-alder-lake-32ghz-sixteen-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 5800XT Vermeer AM4 3.80GHz 8-Core Boxed Processor - Wraith Prism Cooler",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/682196/amd-ryzen-7-5800xt-vermeer-am4-380ghz-8-core-boxed-processor-wraith-prism-cooler"
-  },
-  {
-    "name": "Core i7-12700K Alder Lake 3.6GHz Twelve-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 199.99,
-    "link": "https://www.microcenter.com/product/641917/intel-core-i7-12700k-alder-lake-36ghz-twelve-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5500 Cezanne 3.6GHz 6-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 69.99,
-    "link": "https://www.microcenter.com/product/674520/amd-ryzen-5-5500-cezanne-36ghz-6-core-am4-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen 7 5700G Cezanne 3.8GHz 8-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 129.99,
-    "link": "https://www.microcenter.com/product/674507/amd-ryzen-7-5700g-cezanne-38ghz-8-core-am4-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen 9 9900X3D Granite Ridge AM5 4.40GHz 12-Core Boxed Processor - Heatsink Not Included",
-    "price": 569.99,
-    "link": "https://www.microcenter.com/product/691350/amd-ryzen-9-9900x3d-granite-ridge-am5-440ghz-12-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core Ultra 9 285K Arrow Lake Twenty Four-Core LGA 1851 Boxed Processor - Heatsink Not Included",
-    "price": 569.99,
-    "link": "https://www.microcenter.com/product/685300/intel-core-ultra-9-285k-arrow-lake-twenty-four-core-lga-1851-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 5700X Vermeer 3.4GHz 8-Core AM4 Boxed Processor - Heatsink Not Included",
-    "price": 129.99,
-    "link": "https://www.microcenter.com/product/674523/amd-ryzen-7-5700x-vermeer-34ghz-8-core-am4-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i5-14600K Raptor Lake 3.5GHz Fourteen-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 179.99,
-    "link": "https://www.microcenter.com/product/670843/intel-core-i5-14600k-raptor-lake-35ghz-fourteen-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 5900XT Vermeer AM4 3.30GHz 16-Core Boxed Processor - Heatsink Not Included",
-    "price": 269.99,
-    "link": "https://www.microcenter.com/product/682195/amd-ryzen-9-5900xt-vermeer-am4-330ghz-16-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i5-14400 Raptor Lake Ten-Core LGA 1700 Boxed Processor - Intel Laminar RM1 Cooler Included",
-    "price": 169.99,
-    "link": "https://www.microcenter.com/product/676177/intel-core-i5-14400-raptor-lake-ten-core-lga-1700-boxed-processor-intel-laminar-rm1-cooler-included"
-  },
-  {
-    "name": "Ryzen 5 7600 Raphael AM5 3.8GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 179.99,
-    "link": "https://www.microcenter.com/product/674517/amd-ryzen-5-7600-raphael-am5-38ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen 9 7950X3D Raphael AM5 4.2GHz 16-Core Boxed Processor - Heatsink Not Included",
-    "price": 599.99,
-    "link": "https://www.microcenter.com/product/674513/amd-ryzen-9-7950x3d-raphael-am5-42ghz-16-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i3-14100 Raptor Lake Quad-Core LGA 1700 Boxed Processor - Intel Laminar RM1 Cooler Included",
-    "price": 109.99,
-    "link": "https://www.microcenter.com/product/676005/intel-core-i3-14100-raptor-lake-quad-core-lga-1700-boxed-processor-intel-laminar-rm1-cooler-included"
-  },
-  {
-    "name": "Ryzen 5 4500 Renoir 3.6GHz 6-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 59.99,
-    "link": "https://www.microcenter.com/product/674525/amd-ryzen-5-4500-renoir-36ghz-6-core-am4-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen 5 8500G Phoenix AM5 3.5GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/676050/amd-ryzen-5-8500g-phoenix-am5-35ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Core i5-12400 Alder Lake 2.5GHz Six-Core LGA 1700 Boxed Processor - Intel Stock Cooler Included",
-    "price": 129.99,
-    "link": "https://www.microcenter.com/product/645582/intel-core-i5-12400-alder-lake-25ghz-six-core-lga-1700-boxed-processor-intel-stock-cooler-included"
-  },
-  {
-    "name": "Core i9-14900KS Raptor Lake 3.2GHz Twenty Four-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 649.99,
-    "link": "https://www.microcenter.com/product/678679/intel-core-i9-14900ks-raptor-lake-32ghz-twenty-four-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 7900X Raphael AM5 4.7GHz 12-Core Boxed Processor - Heatsink Not Included",
-    "price": 319.99,
-    "link": "https://www.microcenter.com/product/674504/amd-ryzen-9-7900x-raphael-am5-47ghz-12-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5600XT Vermeer 3.7GHz 6-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 124.99,
-    "link": "https://www.microcenter.com/product/688611/amd-ryzen-5-5600xt-vermeer-37ghz-6-core-am4-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Core i5-12600K Alder Lake 3.7GHz Ten-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 159.99,
-    "link": "https://www.microcenter.com/product/641920/intel-core-i5-12600k-alder-lake-37ghz-ten-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i5-12600KF Alder Lake 3.7GHz Ten-Core LGA 1700 Boxed Processor - Heatsink Not Included",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/677153/intel-core-i5-12600kf-alder-lake-37ghz-ten-core-lga-1700-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 8600G AM5 4.3GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 169.99,
-    "link": "https://www.microcenter.com/product/676049/amd-ryzen-5-8600g-am5-43ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Core i7-14700 Raptor Lake-S Refresh Twenty-Core LGA 1700 Boxed Processor - Intel Laminar RM1 Cooler Included",
-    "price": 299.99,
-    "link": "https://www.microcenter.com/product/676001/intel-core-i7-14700-raptor-lake-s-refresh-twenty-core-lga-1700-boxed-processor-intel-laminar-rm1-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper 7970X Storm Peak 4.0GHz 32-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 2249.99,
-    "link": "https://www.microcenter.com/product/674278/amd-ryzen-threadripper-7970x-storm-peak-40ghz-32-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5600GT Cezanne AM4 3.6GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 129.99,
-    "link": "https://www.microcenter.com/product/676053/amd-ryzen-5-5600gt-cezanne-am4-36ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper 7960X Storm Peak 4.2GHz 24-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 1299.99,
-    "link": "https://www.microcenter.com/product/674310/amd-ryzen-threadripper-7960x-storm-peak-42ghz-24-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 7965WX Storm Peak 4.2GHz 24-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 2549.99,
-    "link": "https://www.microcenter.com/product/674314/amd-ryzen-threadripper-pro-7965wx-storm-peak-42ghz-24-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core Ultra 5 245K Arrow Lake Fourteen-Core LGA 1851 Boxed Processor - Heatsink Not Included",
-    "price": 259.99,
-    "link": "https://www.microcenter.com/product/685302/intel-core-ultra-5-245k-arrow-lake-fourteen-core-lga-1851-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5500GT Cezanne AM4 3.7GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 124.99,
-    "link": "https://www.microcenter.com/product/676054/amd-ryzen-5-5500gt-cezanne-am4-37ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper 7980X Storm Peak 3.2GHz 64-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 4399.99,
-    "link": "https://www.microcenter.com/product/674269/amd-ryzen-threadripper-7980x-storm-peak-32ghz-64-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 7950X Raphael AM5 4.5GHz 16-Core Boxed Processor - Heatsink Not Included",
-    "price": 449.99,
-    "link": "https://www.microcenter.com/product/674519/amd-ryzen-9-7950x-raphael-am5-45ghz-16-core-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5600T Vermeer 3.5GHz 6-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/688612/amd-ryzen-5-5600t-vermeer-35ghz-6-core-am4-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Ryzen 7 7700 Raphael AM5 3.8GHz 8-Core Boxed Processor - Wraith Prism Cooler Included",
-    "price": 259.99,
-    "link": "https://www.microcenter.com/product/674526/amd-ryzen-7-7700-raphael-am5-38ghz-8-core-boxed-processor-wraith-prism-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 5955WX Chagall PRO 4.0GHz 16-Core sWRX8 Boxed Processor - Heatsink Not Included",
-    "price": 899.99,
-    "link": "https://www.microcenter.com/product/660754/amd-ryzen-threadripper-pro-5955wx-chagall-pro-40ghz-16-core-swrx8-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Xeon W5-3435X Sapphire Rapids 3.10GHz Sixteen-Core LGA 4677 Boxed Processor - Heatsink Not Included",
-    "price": 1599.99,
-    "link": "https://www.microcenter.com/product/683068/intel-xeon-w5-3435x-sapphire-rapids-310ghz-sixteen-core-lga-4677-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 8700F Phoenix AM5 4.10GHz 8-Core Boxed Processor - Wraith Spire Cooler Included",
-    "price": 239.99,
-    "link": "https://www.microcenter.com/product/680435/amd-ryzen-7-8700f-phoenix-am5-410ghz-8-core-boxed-processor-wraith-spire-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 5965WX Chagall PRO 3.8GHz 24-Core sWRX8 Boxed Processor - Heatsink Not Included",
-    "price": 1199.99,
-    "link": "https://www.microcenter.com/product/651159/amd-ryzen-threadripper-pro-5965wx-chagall-pro-38ghz-24-core-swrx8-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 5600X Vermeer 3.7GHz 6-Core AM4 OEM Processor - Heatsink Not Included",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/650427/amd-ryzen-5-5600x-vermeer-37ghz-6-core-am4-oem-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 7995WX Storm Peak 2.5GHz 96-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 9699.99,
-    "link": "https://www.microcenter.com/product/674311/amd-ryzen-threadripper-pro-7995wx-storm-peak-25ghz-96-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Core i9-14900 Raptor Lake-S Refresh 2.0GHz Twenty Four-Core LGA 1700 Boxed Processor - Intel Laminar RH1 Cooler Included",
-    "price": 559.99,
-    "link": "https://www.microcenter.com/product/675999/intel-core-i9-14900-raptor-lake-s-refresh-20ghz-twenty-four-core-lga-1700-boxed-processor-intel-laminar-rh1-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 7985WX Storm Peak 3.2GHz 64-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 7249.99,
-    "link": "https://www.microcenter.com/product/674312/amd-ryzen-threadripper-pro-7985wx-storm-peak-32ghz-64-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 5 8400F Phoenix AM5 4.20GHz 6-Core Boxed Processor - Wraith Stealth Cooler Included",
-    "price": 149.99,
-    "link": "https://www.microcenter.com/product/680439/amd-ryzen-5-8400f-phoenix-am5-420ghz-6-core-boxed-processor-wraith-stealth-cooler-included"
-  },
-  {
-    "name": "Xeon w5-2455X Sapphire Rapids 3.2GHz Twelve-Core LGA 4677 Boxed Processor - Heatsink Not Included",
-    "price": 1049.99,
-    "link": "https://www.microcenter.com/product/683069/intel-xeon-w5-2455x-sapphire-rapids-32ghz-twelve-core-lga-4677-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 9 7900 Raphael AM5 3.7GHz 12-Core Boxed Processor - Wraith Prism Cooler Included",
-    "price": 359.99,
-    "link": "https://www.microcenter.com/product/674527/amd-ryzen-9-7900-raphael-am5-37ghz-12-core-boxed-processor-wraith-prism-cooler-included"
-  },
-  {
-    "name": "Ryzen 7 8700G Phoenix AM5 4.2GHz 8-Core Boxed Processor - Wraith Spire Cooler Included",
-    "price": 289.99,
-    "link": "https://www.microcenter.com/product/676044/amd-ryzen-7-8700g-phoenix-am5-42ghz-8-core-boxed-processor-wraith-spire-cooler-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 7975WX Storm Peak 4.0GHz 32-Core sTR5 Boxed Processor - Heatsink Not Included",
-    "price": 3699.99,
-    "link": "https://www.microcenter.com/product/674313/amd-ryzen-threadripper-pro-7975wx-storm-peak-40ghz-32-core-str5-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen Threadripper PRO 5995WX Chagall PRO 2.7GHz 64-Core sWRX8 Boxed Processor - Heatsink Not Included",
-    "price": 4199.99,
-    "link": "https://www.microcenter.com/product/651156/amd-ryzen-threadripper-pro-5995wx-chagall-pro-27ghz-64-core-swrx8-boxed-processor-heatsink-not-included"
-  },
-  {
-    "name": "Ryzen 7 5700 Cezanne AM4 3.7GHz 8-Core Boxed Processor - Wraith Spire Cooler Included",
-    "price": 174.99,
-    "link": "https://www.microcenter.com/product/676052/amd-ryzen-7-5700-cezanne-am4-37ghz-8-core-boxed-processor-wraith-spire-cooler-included"
-  },
-  {
     "name": "Core Ultra 7 265KF Arrow Lake Twenty-Core LGA 1851 Boxed Processor - Heatsink Not Included",
-    "price": 399.99,
-    "link": "https://www.microcenter.com/product/685322/intel-core-ultra-7-265kf-arrow-lake-twenty-core-lga-1851-boxed-processor-heatsink-not-included"
+    "price": 259.99,
+    "link": "https://www.microcenter.com/product/685322/intel-core-ultra-7-265kf-arrow-lake-twenty-core-lga-1851-boxed-processor-heatsink-not-included",
+    "delta": -140.0
   },
   {
-    "name": "NVIDIA GeForce RTX 5090 SOLID Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 2899.99,
-    "link": "https://www.microcenter.com/product/690694/zotac-nvidia-geforce-rtx-5090-solid-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 ROG Astral Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3359.99,
+    "link": "https://www.microcenter.com/product/690032/asus-nvidia-geforce-rtx-5090-rog-astral-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5090 Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3399.99,
-    "link": "https://www.microcenter.com/product/690483/pny-nvidia-geforce-rtx-5090-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Ti ARGB EPIC-X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 849.99,
+    "link": "https://www.microcenter.com/product/690476/pny-nvidia-geforce-rtx-5070-ti-argb-epic-x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -150.0
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 WINDFORCE SFF Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 609.99,
-    "link": "https://www.microcenter.com/product/691231/gigabyte-nvidia-geforce-rtx-5070-windforce-sff-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Prime Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 599.99,
+    "link": "https://www.microcenter.com/product/691194/asus-nvidia-geforce-rtx-5070-prime-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": -100.0
   },
   {
-    "name": "AMD Radeon RX 9070 XT Steel Legend Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/691100/asrock-amd-radeon-rx-9070-xt-steel-legend-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 Ti Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 999.99,
-    "link": "https://www.microcenter.com/product/690475/pny-nvidia-geforce-rtx-5070-ti-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5080 Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1299.99,
+    "link": "https://www.microcenter.com/product/690481/pny-nvidia-geforce-rtx-5080-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -200.0
   },
   {
     "name": "NVIDIA GeForce RTX 5070 Ti WINDFORCE SFF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
@@ -345,24 +34,15 @@
     "link": "https://www.microcenter.com/product/691225/gigabyte-nvidia-geforce-rtx-5070-ti-windforce-sff-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "AMD Radeon RX 9070 XT Taichi Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 849.99,
-    "link": "https://www.microcenter.com/product/691099/asrock-amd-radeon-rx-9070-xt-taichi-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 Aorus Master Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2999.99,
+    "link": "https://www.microcenter.com/product/690448/gigabyte-nvidia-geforce-rtx-5090-aorus-master-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 Ti WINDFORCE SFF Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 824.99,
-    "link": "https://www.microcenter.com/product/692089/gigabyte-nvidia-geforce-rtx-5070-ti-windforce-sff-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 Ti TUF Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 999.99,
-    "link": "https://www.microcenter.com/product/690046/asus-nvidia-geforce-rtx-5070-ti-tuf-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 GAMING Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1539.99,
-    "link": "https://www.microcenter.com/product/690002/gigabyte-nvidia-geforce-rtx-5080-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 MASTER ICE Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2999.99,
+    "link": "https://www.microcenter.com/product/690489/gigabyte-nvidia-geforce-rtx-5090-master-ice-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
   },
   {
     "name": "NVIDIA GeForce RTX 5070 Ti AERO Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
@@ -370,14 +50,56 @@
     "link": "https://www.microcenter.com/product/691221/gigabyte-nvidia-geforce-rtx-5070-ti-aero-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 AORUS MASTER ICE Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1629.99,
-    "link": "https://www.microcenter.com/product/690453/gigabyte-nvidia-geforce-rtx-5080-aorus-master-ice-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 9060 XT GAMING Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 389.99,
+    "link": "https://www.microcenter.com/product/696371/gigabyte-amd-radeon-rx-9060-xt-gaming-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 VENTUS 3X PLUS Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1449.99,
-    "link": "https://www.microcenter.com/product/690267/msi-nvidia-geforce-rtx-5080-ventus-3x-plus-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5080 Prime Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1399.99,
+    "link": "https://www.microcenter.com/product/689737/asus-nvidia-geforce-rtx-5080-prime-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 7900 XT Triple Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 699.99,
+    "link": "https://www.microcenter.com/product/661400/sapphire-technology-amd-radeon-rx-7900-xt-triple-fan-20gb-gddr6-pcie-40-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 VANGUARD SOC Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3059.99,
+    "link": "https://www.microcenter.com/product/690488/msi-nvidia-geforce-rtx-5090-vanguard-soc-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 Astral LC Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3719.99,
+    "link": "https://www.microcenter.com/product/690499/asus-nvidia-geforce-rtx-5090-astral-lc-overclocked-liquid-cooled-32gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 SUPRIM LIQUID SOC Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3279.99,
+    "link": "https://www.microcenter.com/product/690466/msi-nvidia-geforce-rtx-5090-suprim-liquid-soc-overclocked-liquid-cooled-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9060 XT Steel Legend Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 389.99,
+    "link": "https://www.microcenter.com/product/696275/asrock-amd-radeon-rx-9060-xt-steel-legend-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 TUF Gaming Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 649.99,
+    "link": "https://www.microcenter.com/product/691193/asus-nvidia-geforce-rtx-5070-tuf-gaming-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": -90.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti TUF Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 999.99,
+    "link": "https://www.microcenter.com/product/690046/asus-nvidia-geforce-rtx-5070-ti-tuf-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
     "name": "NVIDIA GeForce RTX 5080 ROG Astral Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
@@ -385,59 +107,39 @@
     "link": "https://www.microcenter.com/product/689735/asus-nvidia-geforce-rtx-5080-rog-astral-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 Ti Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 969.99,
-    "link": "https://www.microcenter.com/product/691222/gigabyte-nvidia-geforce-rtx-5070-ti-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 9070 XT Gaming Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 729.99,
+    "link": "https://www.microcenter.com/product/690004/gigabyte-amd-radeon-rx-9070-xt-gaming-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 Ti ARGB EPIC-X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 999.99,
-    "link": "https://www.microcenter.com/product/690476/pny-nvidia-geforce-rtx-5070-ti-argb-epic-x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7700 XT Speedster SWFT 210 Dual Fan 12GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 429.99,
-    "link": "https://www.microcenter.com/product/686535/xfx-amd-radeon-rx-7700-xt-speedster-swft-210-dual-fan-12gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5060 Ti Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 529.99,
-    "link": "https://www.microcenter.com/product/694735/gigabyte-nvidia-geforce-rtx-5060-ti-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Swift Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 829.99,
-    "link": "https://www.microcenter.com/product/691890/xfx-amd-radeon-rx-9070-xt-swift-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5060 Ti WINDFORCE Dual Fan 8GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 419.99,
-    "link": "https://www.microcenter.com/product/694799/gigabyte-nvidia-geforce-rtx-5060-ti-windforce-dual-fan-8gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XTX Phantom Gaming RGB Overclocked Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 999.99,
-    "link": "https://www.microcenter.com/product/661895/asrock-amd-radeon-rx-7900-xtx-phantom-gaming-rgb-overclocked-triple-fan-24gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5090 AMP Extreme Infinity Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3299.99,
-    "link": "https://www.microcenter.com/product/690693/zotac-nvidia-geforce-rtx-5090-amp-extreme-infinity-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 VENTUS 3X White Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1449.99,
-    "link": "https://www.microcenter.com/product/690266/msi-nvidia-geforce-rtx-5080-ventus-3x-white-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 TUF Gaming Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2759.99,
+    "link": "https://www.microcenter.com/product/690037/asus-nvidia-geforce-rtx-5090-tuf-gaming-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
     "name": "NVIDIA GeForce RTX 5070 Ti VENTUS 3X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 924.99,
-    "link": "https://www.microcenter.com/product/691459/msi-nvidia-geforce-rtx-5070-ti-ventus-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "price": 899.99,
+    "link": "https://www.microcenter.com/product/691459/msi-nvidia-geforce-rtx-5070-ti-ventus-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -25.0
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 AERO Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 719.99,
-    "link": "https://www.microcenter.com/product/691227/gigabyte-nvidia-geforce-rtx-5070-aero-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 9070 XT Hellhound Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 839.99,
+    "link": "https://www.microcenter.com/product/689902/powercolor-amd-radeon-rx-9070-xt-hellhound-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": -20.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 ARGB EPIC-X Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 579.99,
+    "link": "https://www.microcenter.com/product/690480/pny-nvidia-geforce-rtx-5070-argb-epic-x-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": -120.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti GAMING TRIO PLUS Overclocked Triple Fan 16G GDDR7 PCIe 5.0 Graphics Card",
+    "price": 989.99,
+    "link": "https://www.microcenter.com/product/696024/msi-nvidia-geforce-rtx-5070-ti-gaming-trio-plus-overclocked-triple-fan-16g-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
     "name": "NVIDIA GeForce RTX 5080 TUF Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
@@ -445,34 +147,94 @@
     "link": "https://www.microcenter.com/product/689736/asus-nvidia-geforce-rtx-5080-tuf-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 AORUS MASTER Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "name": "NVIDIA GeForce RTX 5080 SHADOW 3X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1389.99,
+    "link": "https://www.microcenter.com/product/690268/msi-nvidia-geforce-rtx-5080-shadow-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti ROG Strix Overclocked Triple Fan 16G GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1079.99,
+    "link": "https://www.microcenter.com/product/696435/asus-nvidia-geforce-rtx-5070-ti-rog-strix-overclocked-triple-fan-16g-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 4090 Verto Triple Fan 24GB GDDR6X PCIe 4.0 Graphics Card",
+    "price": 2499.99,
+    "link": "https://www.microcenter.com/product/663856/pny-nvidia-geforce-rtx-4090-verto-triple-fan-24gb-gddr6x-pcie-40-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9070 XT Reaper Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 799.99,
+    "link": "https://www.microcenter.com/product/689903/powercolor-amd-radeon-rx-9070-xt-reaper-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 VENTUS 3X Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2949.99,
+    "link": "https://www.microcenter.com/product/690491/msi-nvidia-geforce-rtx-5090-ventus-3x-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Prime Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 609.99,
+    "link": "https://www.microcenter.com/product/691195/asus-nvidia-geforce-rtx-5070-prime-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 AORUS MASTER ICE Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
     "price": 1629.99,
-    "link": "https://www.microcenter.com/product/690454/gigabyte-nvidia-geforce-rtx-5080-aorus-master-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "link": "https://www.microcenter.com/product/690453/gigabyte-nvidia-geforce-rtx-5080-aorus-master-ice-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 TUF Gaming Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 739.99,
-    "link": "https://www.microcenter.com/product/691193/asus-nvidia-geforce-rtx-5070-tuf-gaming-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 ARGB Epic-X Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2999.99,
+    "link": "https://www.microcenter.com/product/690486/pny-nvidia-geforce-rtx-5090-argb-epic-x-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 GAMING TRIO Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1614.99,
-    "link": "https://www.microcenter.com/product/690264/msi-nvidia-geforce-rtx-5080-gaming-trio-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 7900 XTX Phantom Gaming RGB Overclocked Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 999.99,
+    "link": "https://www.microcenter.com/product/661895/asrock-amd-radeon-rx-7900-xtx-phantom-gaming-rgb-overclocked-triple-fan-24gb-gddr6-pcie-40-graphics-card"
   },
   {
-    "name": "AMD Radeon RX 7600 Gaming Overclocked Triple Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 289.99,
-    "link": "https://www.microcenter.com/product/667476/gigabyte-amd-radeon-rx-7600-gaming-overclocked-triple-fan-8gb-gddr6-pcie-40-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 GAMING SOLID White Edition Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3099.99,
+    "link": "https://www.microcenter.com/product/694132/zotac-nvidia-geforce-rtx-5090-gaming-solid-white-edition-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "AMD Radeon RX 9070 XT Quicksilver Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 869.99,
-    "link": "https://www.microcenter.com/product/691503/xfx-amd-radeon-rx-9070-xt-quicksilver-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5060 Prime Triple Fan 8GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 329.99,
+    "link": "https://www.microcenter.com/product/695552/asus-nvidia-geforce-rtx-5060-prime-triple-fan-8gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5090 XTREME WATERFORCE Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3149.99,
-    "link": "https://www.microcenter.com/product/690625/gigabyte-nvidia-geforce-rtx-5090-xtreme-waterforce-overclocked-liquid-cooled-32gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Ti WINDFORCE SFF Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 824.99,
+    "link": "https://www.microcenter.com/product/692089/gigabyte-nvidia-geforce-rtx-5070-ti-windforce-sff-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 GAMING TRIO White Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 759.99,
+    "link": "https://www.microcenter.com/product/692296/msi-nvidia-geforce-rtx-5070-gaming-trio-white-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 WINDFORCE SFF Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 609.99,
+    "link": "https://www.microcenter.com/product/691231/gigabyte-nvidia-geforce-rtx-5070-windforce-sff-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 WINDFORCE SFF Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 604.99,
+    "link": "https://www.microcenter.com/product/692304/gigabyte-nvidia-geforce-rtx-5070-windforce-sff-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 EPIC-X RGB Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1399.99,
+    "link": "https://www.microcenter.com/product/690482/pny-nvidia-geforce-rtx-5080-epic-x-rgb-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -200.0
   },
   {
     "name": "NVIDIA GeForce RTX 5090 GAMING TRIO Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
@@ -485,9 +247,19 @@
     "link": "https://www.microcenter.com/product/694739/gigabyte-nvidia-geforce-rtx-5060-ti-windforce-overclocked-dual-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 WINDFORCE SFF Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 604.99,
-    "link": "https://www.microcenter.com/product/692304/gigabyte-nvidia-geforce-rtx-5070-windforce-sff-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5090 TUF Gaming Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2999.99,
+    "link": "https://www.microcenter.com/product/690033/asus-nvidia-geforce-rtx-5090-tuf-gaming-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 969.99,
+    "link": "https://www.microcenter.com/product/691222/gigabyte-nvidia-geforce-rtx-5070-ti-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 GAMING TRIO Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1614.99,
+    "link": "https://www.microcenter.com/product/690264/msi-nvidia-geforce-rtx-5080-gaming-trio-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
     "name": "NVIDIA GeForce RTX 3060 Ventus 2x Overclocked Dual Fan 12GB GDDR6 PCIe 4.0 Graphics Card",
@@ -495,74 +267,9 @@
     "link": "https://www.microcenter.com/product/633840/msi-nvidia-geforce-rtx-3060-ventus-2x-overclocked-dual-fan-12gb-gddr6-pcie-40-graphics-card"
   },
   {
-    "name": "AMD Radeon RX 7800 XT Speedster SWFT 210 Dual Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 589.99,
-    "link": "https://www.microcenter.com/product/694192/xfx-amd-radeon-rx-7800-xt-speedster-swft-210-dual-fan-16gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Swift White Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 849.99,
-    "link": "https://www.microcenter.com/product/691506/xfx-amd-radeon-rx-9070-xt-swift-white-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Gaming Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 729.99,
-    "link": "https://www.microcenter.com/product/690004/gigabyte-amd-radeon-rx-9070-xt-gaming-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 AERO SFF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1579.99,
-    "link": "https://www.microcenter.com/product/690455/gigabyte-nvidia-geforce-rtx-5080-aero-sff-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7600 XT Speedster SWFT210 Core Dual Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 379.99,
-    "link": "https://www.microcenter.com/product/677145/xfx-amd-radeon-rx-7600-xt-speedster-swft210-core-dual-fan-16gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 AORUS XTREME WATERFORCE Liquid Cooled 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1699.99,
-    "link": "https://www.microcenter.com/product/690452/gigabyte-nvidia-geforce-rtx-5080-aorus-xtreme-waterforce-liquid-cooled-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Mercury White Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 899.99,
-    "link": "https://www.microcenter.com/product/691502/xfx-amd-radeon-rx-9070-xt-mercury-white-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 ARGB EPIC-X Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/690480/pny-nvidia-geforce-rtx-5070-argb-epic-x-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5090 MASTER ICE Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 2999.99,
-    "link": "https://www.microcenter.com/product/690489/gigabyte-nvidia-geforce-rtx-5090-master-ice-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 GAMING Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/691228/gigabyte-nvidia-geforce-rtx-5070-gaming-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XTX Speedster MERC 310 Black Edition Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 1169.99,
-    "link": "https://www.microcenter.com/product/675143/xfx-amd-radeon-rx-7900-xtx-speedster-merc-310-black-edition-triple-fan-24gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XTX Hellhound Overclocked Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 1099.99,
-    "link": "https://www.microcenter.com/product/661859/powercolor-amd-radeon-rx-7900-xtx-hellhound-overclocked-triple-fan-24gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7800 XT Speedster QICK 319 Triple Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 599.99,
-    "link": "https://www.microcenter.com/product/691891/xfx-amd-radeon-rx-7800-xt-speedster-qick-319-triple-fan-16gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 4060 Gaming RGB Overclocked Triple Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 349.99,
-    "link": "https://www.microcenter.com/product/668349/gigabyte-nvidia-geforce-rtx-4060-gaming-rgb-overclocked-triple-fan-8gb-gddr6-pcie-40-graphics-card"
+    "name": "AMD Radeon RX 6600 Challenger D Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/643624/asrock-amd-radeon-rx-6600-challenger-d-dual-fan-8gb-gddr6-pcie-40-graphics-card"
   },
   {
     "name": "AMD Radeon RX 9070 XT Mercury Magnetic Air Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
@@ -570,64 +277,79 @@
     "link": "https://www.microcenter.com/product/691500/xfx-amd-radeon-rx-9070-xt-mercury-magnetic-air-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 EPIC-X RGB Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1599.99,
-    "link": "https://www.microcenter.com/product/690482/pny-nvidia-geforce-rtx-5080-epic-x-rgb-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5080 VENTUS 3X PLUS Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1449.99,
+    "link": "https://www.microcenter.com/product/690267/msi-nvidia-geforce-rtx-5080-ventus-3x-plus-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5060 Ti Prime Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 529.99,
-    "link": "https://www.microcenter.com/product/694264/asus-nvidia-geforce-rtx-5060-ti-prime-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5090 SUPRIM SOC Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3229.99,
-    "link": "https://www.microcenter.com/product/690484/msi-nvidia-geforce-rtx-5090-suprim-soc-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 3050 2X XS Overclocked Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 229.99,
-    "link": "https://www.microcenter.com/product/670041/msi-nvidia-geforce-rtx-3050-2x-xs-overclocked-dual-fan-8gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Hellhound Spectral White Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 899.99,
-    "link": "https://www.microcenter.com/product/693405/powercolor-amd-radeon-rx-9070-xt-hellhound-spectral-white-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 Prime Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 659.99,
-    "link": "https://www.microcenter.com/product/689792/asus-amd-radeon-rx-9070-prime-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XT SPEEDSTER MERC 310 Overclocked Triple Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
+    "name": "AMD Radeon RX 9070 XT PURE Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
     "price": 879.99,
-    "link": "https://www.microcenter.com/product/689571/xfx-amd-radeon-rx-7900-xt-speedster-merc-310-overclocked-triple-fan-20gb-gddr6-pcie-40-graphics-card"
+    "link": "https://www.microcenter.com/product/690171/sapphire-technology-amd-radeon-rx-9070-xt-pure-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA RTX A4000 Single Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 1079.99,
-    "link": "https://www.microcenter.com/product/652306/pny-nvidia-rtx-a4000-single-fan-16gb-gddr6-pcie-40-graphics-card"
+    "name": "NVIDIA GeForce RTX 5060 Ti Prime Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 479.99,
+    "link": "https://www.microcenter.com/product/694111/asus-nvidia-geforce-rtx-5060-ti-prime-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "AMD Radeon RX 9070 XT Hellhound Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 859.99,
-    "link": "https://www.microcenter.com/product/689902/powercolor-amd-radeon-rx-9070-xt-hellhound-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 9060 XT Hellhound Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 399.99,
+    "link": "https://www.microcenter.com/product/696102/powercolor-amd-radeon-rx-9060-xt-hellhound-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "AMD Radeon RX 9070 XT Reaper Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 799.99,
-    "link": "https://www.microcenter.com/product/689903/powercolor-amd-radeon-rx-9070-xt-reaper-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5080 GAMING Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1539.99,
+    "link": "https://www.microcenter.com/product/690002/gigabyte-nvidia-geforce-rtx-5080-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 GAMING TRIO Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 729.99,
-    "link": "https://www.microcenter.com/product/692297/msi-nvidia-geforce-rtx-5070-gaming-trio-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Ti Shadow 3X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 834.99,
+    "link": "https://www.microcenter.com/product/692063/msi-nvidia-geforce-rtx-5070-ti-shadow-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5090 Astral LC Overclocked Liquid Cooled 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3719.99,
-    "link": "https://www.microcenter.com/product/690499/asus-nvidia-geforce-rtx-5090-astral-lc-overclocked-liquid-cooled-32gb-gddr7-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 7900 XT Triple Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 699.99,
+    "link": "https://www.microcenter.com/product/667359/xfx-amd-radeon-rx-7900-xt-triple-fan-20gb-gddr6-pcie-40-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 7900 XTX Speedster MERC 310 Black Edition Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 1169.99,
+    "link": "https://www.microcenter.com/product/675143/xfx-amd-radeon-rx-7900-xtx-speedster-merc-310-black-edition-triple-fan-24gb-gddr6-pcie-40-graphics-card"
+  },
+  {
+    "name": "AMD Radeon RX 9060 XT SWIFT White Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 419.99,
+    "link": "https://www.microcenter.com/product/696362/xfx-amd-radeon-rx-9060-xt-swift-white-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 Gaming Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 2919.99,
+    "link": "https://www.microcenter.com/product/690449/gigabyte-nvidia-geforce-rtx-5090-gaming-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9070 Swift White Overclocked Triple Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 659.99,
+    "link": "https://www.microcenter.com/product/691510/xfx-amd-radeon-rx-9070-swift-white-overclocked-triple-fan-16gb-gddr6-pcie-40-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 AERO Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 699.99,
+    "link": "https://www.microcenter.com/product/691227/gigabyte-nvidia-geforce-rtx-5070-aero-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": -20.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5060 Ti VENTUS 2X Overclocked Dual Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 469.99,
+    "link": "https://www.microcenter.com/product/696023/msi-nvidia-geforce-rtx-5060-ti-ventus-2x-overclocked-dual-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
     "name": "AMD Radeon RX 9070 Hellhound Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
@@ -635,89 +357,20 @@
     "link": "https://www.microcenter.com/product/689905/powercolor-amd-radeon-rx-9070-hellhound-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
   },
   {
+    "name": "NVIDIA GeForce RTX 5080 AERO SFF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1579.99,
+    "link": "https://www.microcenter.com/product/690455/gigabyte-nvidia-geforce-rtx-5080-aero-sff-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 849.99,
+    "link": "https://www.microcenter.com/product/690475/pny-nvidia-geforce-rtx-5070-ti-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -150.0
+  },
+  {
     "name": "NVIDIA GeForce RTX 5070 Ti PRIME Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
     "price": 939.99,
     "link": "https://www.microcenter.com/product/690048/asus-nvidia-geforce-rtx-5070-ti-prime-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 XTREME WATERFORCE WB Liquid Cooled 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1659.99,
-    "link": "https://www.microcenter.com/product/690451/gigabyte-nvidia-geforce-rtx-5080-xtreme-waterforce-wb-liquid-cooled-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5080 Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1499.99,
-    "link": "https://www.microcenter.com/product/690481/pny-nvidia-geforce-rtx-5080-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 MASTER Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 769.99,
-    "link": "https://www.microcenter.com/product/691226/gigabyte-nvidia-geforce-rtx-5070-master-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7600 Speedster SWFT210 Core Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 319.99,
-    "link": "https://www.microcenter.com/product/677143/xfx-amd-radeon-rx-7600-speedster-swft210-core-dual-fan-8gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5090 TUF Gaming Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 2999.99,
-    "link": "https://www.microcenter.com/product/690033/asus-nvidia-geforce-rtx-5090-tuf-gaming-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XT SPEEDSTER MERC310 Triple Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 859.99,
-    "link": "https://www.microcenter.com/product/691161/xfx-amd-radeon-rx-7900-xt-speedster-merc310-triple-fan-20gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7800 XT Dual Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 599.99,
-    "link": "https://www.microcenter.com/product/689972/powercolor-amd-radeon-rx-7800-xt-dual-fan-16gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 7900 XT Triple Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/661656/powercolor-amd-radeon-rx-7900-xt-triple-fan-20gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 Reaper Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 679.99,
-    "link": "https://www.microcenter.com/product/689906/powercolor-amd-radeon-rx-9070-reaper-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 Prime Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 699.99,
-    "link": "https://www.microcenter.com/product/691194/asus-nvidia-geforce-rtx-5070-prime-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5090 ROG Astral Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 3359.99,
-    "link": "https://www.microcenter.com/product/690032/asus-nvidia-geforce-rtx-5090-rog-astral-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 5070 Ti SOLID SFF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 979.99,
-    "link": "https://www.microcenter.com/product/693841/zotac-nvidia-geforce-rtx-5070-ti-solid-sff-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA GeForce RTX 3050 LP Dual Fan 6GB GDDR6 PCIe 4.0 Low Profile Graphics Card",
-    "price": 199.99,
-    "link": "https://www.microcenter.com/product/693900/msi-nvidia-geforce-rtx-3050-lp-dual-fan-6gb-gddr6-pcie-40-low-profile-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT PULSE Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 849.99,
-    "link": "https://www.microcenter.com/product/690172/sapphire-technology-amd-radeon-rx-9070-xt-pulse-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 XT Quicksilver White Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 889.99,
-    "link": "https://www.microcenter.com/product/691504/xfx-amd-radeon-rx-9070-xt-quicksilver-white-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "NVIDIA RTX A4500 Single Fan 20GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 1499.99,
-    "link": "https://www.microcenter.com/product/652517/pny-nvidia-rtx-a4500-single-fan-20gb-gddr6-pcie-40-graphics-card"
   },
   {
     "name": "AMD Radeon RX 9070 XT NITRO Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
@@ -725,29 +378,136 @@
     "link": "https://www.microcenter.com/product/690170/sapphire-technology-amd-radeon-rx-9070-xt-nitro-triple-fan-16gb-gddr6-pcie-50-graphics-card"
   },
   {
+    "name": "NVIDIA GeForce RTX 5080 VENTUS 3X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1449.99,
+    "link": "https://www.microcenter.com/product/693011/msi-nvidia-geforce-rtx-5080-ventus-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9070 XT Mercury White Magnetic Air Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 879.99,
+    "link": "https://www.microcenter.com/product/691501/xfx-amd-radeon-rx-9070-xt-mercury-white-magnetic-air-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": -60.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5060 Ti Prime Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 529.99,
+    "link": "https://www.microcenter.com/product/694264/asus-nvidia-geforce-rtx-5060-ti-prime-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5060 Ti Twin Edge Overclocked Dual Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 479.99,
+    "link": "https://www.microcenter.com/product/694732/zotac-nvidia-geforce-rtx-5060-ti-twin-edge-overclocked-dual-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 7900 XTX Hellhound Overclocked Triple Fan 24GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 999.99,
+    "link": "https://www.microcenter.com/product/661859/powercolor-amd-radeon-rx-7900-xtx-hellhound-overclocked-triple-fan-24gb-gddr6-pcie-40-graphics-card",
+    "delta": -100.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5090 SUPRIM SOC Overclocked Triple Fan 32GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 3229.99,
+    "link": "https://www.microcenter.com/product/690484/msi-nvidia-geforce-rtx-5090-suprim-soc-overclocked-triple-fan-32gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "AMD Radeon RX 9070 XT Hellhound Spectral White Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 849.99,
+    "link": "https://www.microcenter.com/product/693405/powercolor-amd-radeon-rx-9070-xt-hellhound-spectral-white-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": -50.0
+  },
+  {
+    "name": "AMD Radeon RX 7800 XT Dual Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 569.99,
+    "link": "https://www.microcenter.com/product/689972/powercolor-amd-radeon-rx-7800-xt-dual-fan-16gb-gddr6-pcie-40-graphics-card",
+    "delta": -30.0
+  },
+  {
+    "name": "AMD Radeon RX 9070 Swift Overclocked Triple Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 659.99,
+    "link": "https://www.microcenter.com/product/691508/xfx-amd-radeon-rx-9070-swift-overclocked-triple-fan-16gb-gddr6-pcie-40-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 AMP Extreme Infinity Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1449.99,
+    "link": "https://www.microcenter.com/product/690262/zotac-nvidia-geforce-rtx-5080-amp-extreme-infinity-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9060 XT SWIFT Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 399.99,
+    "link": "https://www.microcenter.com/product/696363/xfx-amd-radeon-rx-9060-xt-swift-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5070 Ti SOLID SFF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 899.99,
+    "link": "https://www.microcenter.com/product/693841/zotac-nvidia-geforce-rtx-5070-ti-solid-sff-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": -80.0
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 XTREME WATERFORCE WB Liquid Cooled 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1659.99,
+    "link": "https://www.microcenter.com/product/690451/gigabyte-nvidia-geforce-rtx-5080-xtreme-waterforce-wb-liquid-cooled-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5080 VANGUARD SOC Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1669.99,
+    "link": "https://www.microcenter.com/product/690235/msi-nvidia-geforce-rtx-5080-vanguard-soc-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "AMD Radeon RX 9060 XT PULSE Overclocked Dual Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 389.99,
+    "link": "https://www.microcenter.com/product/696462/sapphire-technology-amd-radeon-rx-9060-xt-pulse-overclocked-dual-fan-16gb-gddr6-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5060 WINDFORCE Overclocked Dual Fan 8GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 299.99,
+    "link": "https://www.microcenter.com/product/695971/gigabyte-nvidia-geforce-rtx-5060-windforce-overclocked-dual-fan-8gb-gddr7-pcie-50-graphics-card",
+    "delta": null
+  },
+  {
+    "name": "NVIDIA GeForce RTX 5060 Ti Gaming Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 529.99,
+    "link": "https://www.microcenter.com/product/694735/gigabyte-nvidia-geforce-rtx-5060-ti-gaming-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+  },
+  {
+    "name": "AMD Radeon RX 9070 XT Swift White Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 849.99,
+    "link": "https://www.microcenter.com/product/691506/xfx-amd-radeon-rx-9070-xt-swift-white-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+  },
+  {
     "name": "NVIDIA GeForce RTX 5070 VANGUARD SOC Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 789.99,
-    "link": "https://www.microcenter.com/product/692295/msi-nvidia-geforce-rtx-5070-vanguard-soc-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
+    "price": 649.99,
+    "link": "https://www.microcenter.com/product/692295/msi-nvidia-geforce-rtx-5070-vanguard-soc-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card",
+    "delta": -140.0
   },
   {
-    "name": "NVIDIA GeForce RTX 5080 GAMING SOLID Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 1399.99,
-    "link": "https://www.microcenter.com/product/690263/zotac-nvidia-geforce-rtx-5080-gaming-solid-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Ti PRIME Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 829.99,
+    "link": "https://www.microcenter.com/product/690049/asus-nvidia-geforce-rtx-5070-ti-prime-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5070 VENTUS 2X White Overclocked Dual Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 674.99,
-    "link": "https://www.microcenter.com/product/692301/msi-nvidia-geforce-rtx-5070-ventus-2x-white-overclocked-dual-fan-12gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 Ti INSPIRE 3X Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 949.99,
+    "link": "https://www.microcenter.com/product/693391/msi-nvidia-geforce-rtx-5070-ti-inspire-3x-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce GT 1030 Low Profile D4 Single Fan 2GB GDDR4 PCIe 3.0 Graphics Card",
-    "price": 79.99,
-    "link": "https://www.microcenter.com/product/638152/gigabyte-nvidia-geforce-gt-1030-low-profile-d4-single-fan-2gb-gddr4-pcie-30-graphics-card"
+    "name": "NVIDIA GeForce RTX 5060 Ti Aero Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 539.99,
+    "link": "https://www.microcenter.com/product/694734/gigabyte-nvidia-geforce-rtx-5060-ti-aero-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "NVIDIA GeForce RTX 5060 Ti TUF Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
-    "price": 599.99,
-    "link": "https://www.microcenter.com/product/694110/asus-nvidia-geforce-rtx-5060-ti-tuf-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5070 GAMING TRIO Overclocked Triple Fan 12GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 729.99,
+    "link": "https://www.microcenter.com/product/692297/msi-nvidia-geforce-rtx-5070-gaming-trio-overclocked-triple-fan-12gb-gddr7-pcie-50-graphics-card"
   },
   {
     "name": "NVIDIA GeForce RTX 3050 Dual Overclocked Dual Fan 6GB GDDR6 PCIe 4.0 Graphics Card",
@@ -755,49 +515,39 @@
     "link": "https://www.microcenter.com/product/677063/asus-nvidia-geforce-rtx-3050-dual-overclocked-dual-fan-6gb-gddr6-pcie-40-graphics-card"
   },
   {
-    "name": "AMD Radeon RX 9070 XT Mercury White Magnetic Air Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 939.99,
-    "link": "https://www.microcenter.com/product/691501/xfx-amd-radeon-rx-9070-xt-mercury-white-magnetic-air-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "NVIDIA GeForce RTX 5060 Ti Ventus 2X Plus Overclocked Dual Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 479.99,
+    "link": "https://www.microcenter.com/product/694558/msi-nvidia-geforce-rtx-5060-ti-ventus-2x-plus-overclocked-dual-fan-16gb-gddr7-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "AMD Radeon RX 6600 Challenger White Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/673700/asrock-amd-radeon-rx-6600-challenger-white-dual-fan-8gb-gddr6-pcie-40-graphics-card"
+    "name": "NVIDIA GeForce RTX 5060 Ti WINDFORCE Dual Fan 8GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 379.99,
+    "link": "https://www.microcenter.com/product/694799/gigabyte-nvidia-geforce-rtx-5060-ti-windforce-dual-fan-8gb-gddr7-pcie-50-graphics-card",
+    "delta": -40.0
   },
   {
-    "name": "AMD Radeon RX 6600 Challenger D Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/643624/asrock-amd-radeon-rx-6600-challenger-d-dual-fan-8gb-gddr6-pcie-40-graphics-card"
+    "name": "NVIDIA GeForce RTX 5080 GAMING SOLID Overclocked Triple Fan 16GB GDDR7 PCIe 5.0 Graphics Card",
+    "price": 1399.99,
+    "link": "https://www.microcenter.com/product/690263/zotac-nvidia-geforce-rtx-5080-gaming-solid-overclocked-triple-fan-16gb-gddr7-pcie-50-graphics-card"
   },
   {
-    "name": "AMD Radeon RX 9070 XT Devil Spectral White Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 899.99,
-    "link": "https://www.microcenter.com/product/693404/powercolor-amd-radeon-rx-9070-xt-devil-spectral-white-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
+    "name": "AMD Radeon RX 9060 XT Dual Dual Fan 8GB GDDR6 PCIe 5.0 Graphics Card",
+    "price": 299.99,
+    "link": "https://www.microcenter.com/product/695999/asus-amd-radeon-rx-9060-xt-dual-dual-fan-8gb-gddr6-pcie-50-graphics-card",
+    "delta": null
   },
   {
-    "name": "AMD Radeon RX 9070 XT TUF Gaming Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 799.99,
-    "link": "https://www.microcenter.com/product/689789/asus-amd-radeon-rx-9070-xt-tuf-gaming-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 9070 Gaming Overclocked Triple Fan 16GB GDDR6 PCIe 5.0 Graphics Card",
-    "price": 669.99,
-    "link": "https://www.microcenter.com/product/690003/gigabyte-amd-radeon-rx-9070-gaming-overclocked-triple-fan-16gb-gddr6-pcie-50-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 6600 Speedster SWFT 210 Core Dual Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
-    "price": 259.99,
-    "link": "https://www.microcenter.com/product/677142/xfx-amd-radeon-rx-6600-speedster-swft-210-core-dual-fan-8gb-gddr6-pcie-40-graphics-card"
-  },
-  {
-    "name": "AMD Radeon RX 580 GTS XXX Edition Overclocked Dual Fan 8GB GDDR5 PCIe 3.0 Graphics Card",
-    "price": 159.99,
-    "link": "https://www.microcenter.com/product/602733/xfx-amd-radeon-rx-580-gts-xxx-edition-overclocked-dual-fan-8gb-gddr5-pcie-30-graphics-card"
+    "name": "AMD Radeon RX 9070 PULSE Dual Fan 16GB GDDR6 PCIe 4.0 Graphics Card",
+    "price": 759.99,
+    "link": "https://www.microcenter.com/product/690176/sapphire-technology-amd-radeon-rx-9070-pulse-dual-fan-16gb-gddr6-pcie-40-graphics-card",
+    "delta": null
   },
   {
     "name": "B650-E TUF Gaming WiFi AMD AM5 ATX Motherboard",
-    "price": 179.99,
-    "link": "https://www.microcenter.com/product/679451/asus-b650-e-tuf-gaming-wifi-amd-am5-atx-motherboard"
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/679451/asus-b650-e-tuf-gaming-wifi-amd-am5-atx-motherboard",
+    "delta": 20.0
   },
   {
     "name": "Z890 AYW GAMING WIFI W Intel LGA 1851 ATX Motherboard",
@@ -805,19 +555,15 @@
     "link": "https://www.microcenter.com/product/692551/asus-z890-ayw-gaming-wifi-w-intel-lga-1851-atx-motherboard"
   },
   {
+    "name": "B550 EAGLE WIFI6 AMD AM4 ATX Motherboard",
+    "price": 129.99,
+    "link": "https://www.microcenter.com/product/692065/gigabyte-b550-eagle-wifi6-amd-am4-atx-motherboard",
+    "delta": null
+  },
+  {
     "name": "TRX50 AI TOP AMD sTR5 eATX Motherboard",
     "price": 899.99,
     "link": "https://www.microcenter.com/product/691990/gigabyte-trx50-ai-top-amd-str5-eatx-motherboard"
-  },
-  {
-    "name": "B860M-A Prime WiFi-CSM Intel LGA 1851 microATX Motherboard",
-    "price": 169.99,
-    "link": "https://www.microcenter.com/product/689580/asus-b860m-a-prime-wifi-csm-intel-lga-1851-microatx-motherboard"
-  },
-  {
-    "name": "B860M AORUS ELITE WIFI6E ICE Intel LGA 1851 microATX Motherboard",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/690014/gigabyte-b860m-aorus-elite-wifi6e-ice-intel-lga-1851-microatx-motherboard"
   },
   {
     "name": "B860M EAGLE PLUS WIFI6E Intel LGA 1851 microATX Motherboard",
@@ -825,19 +571,9 @@
     "link": "https://www.microcenter.com/product/690011/gigabyte-b860m-eagle-plus-wifi6e-intel-lga-1851-microatx-motherboard"
   },
   {
-    "name": "B860M D3HP Intel LGA 1851 microATX Motherboard",
-    "price": 129.99,
-    "link": "https://www.microcenter.com/product/690013/gigabyte-b860m-d3hp-intel-lga-1851-microatx-motherboard"
-  },
-  {
-    "name": "B860M-A PRO WIFI Intel LGA 1851 microATX Motherboard",
-    "price": 209.99,
-    "link": "https://www.microcenter.com/product/689510/msi-b860m-a-pro-wifi-intel-lga-1851-microatx-motherboard"
-  },
-  {
-    "name": "B860 EAGLE WIFI6E Intel LGA 1851 ATX Motherboard",
+    "name": "B860M-A Prime WiFi-CSM Intel LGA 1851 microATX Motherboard",
     "price": 169.99,
-    "link": "https://www.microcenter.com/product/690008/gigabyte-b860-eagle-wifi6e-intel-lga-1851-atx-motherboard"
+    "link": "https://www.microcenter.com/product/689580/asus-b860m-a-prime-wifi-csm-intel-lga-1851-microatx-motherboard"
   },
   {
     "name": "B860 MAG TOMAHAWK WIFI Intel LGA 1851 ATX Motherboard",
@@ -845,9 +581,36 @@
     "link": "https://www.microcenter.com/product/689503/msi-b860-mag-tomahawk-wifi-intel-lga-1851-atx-motherboard"
   },
   {
+    "name": "B860M-A PRO WIFI Intel LGA 1851 microATX Motherboard",
+    "price": 209.99,
+    "link": "https://www.microcenter.com/product/689510/msi-b860m-a-pro-wifi-intel-lga-1851-microatx-motherboard"
+  },
+  {
+    "name": "B860M D3HP Intel LGA 1851 microATX Motherboard",
+    "price": 129.99,
+    "link": "https://www.microcenter.com/product/690013/gigabyte-b860m-d3hp-intel-lga-1851-microatx-motherboard"
+  },
+  {
+    "name": "B860 EAGLE WIFI6E Intel LGA 1851 ATX Motherboard",
+    "price": 169.99,
+    "link": "https://www.microcenter.com/product/690008/gigabyte-b860-eagle-wifi6e-intel-lga-1851-atx-motherboard"
+  },
+  {
+    "name": "B860I AORUS PRO ICE Intel LGA 1851 Mini-ITX Motherboard",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/690016/gigabyte-b860i-aorus-pro-ice-intel-lga-1851-mini-itx-motherboard",
+    "delta": null
+  },
+  {
+    "name": "B860M AORUS ELITE WIFI6E ICE Intel LGA 1851 microATX Motherboard",
+    "price": 189.99,
+    "link": "https://www.microcenter.com/product/690014/gigabyte-b860m-aorus-elite-wifi6e-ice-intel-lga-1851-microatx-motherboard"
+  },
+  {
     "name": "VENGEANCE RGB 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH64GX5M2M6000Z30 - Gray",
-    "price": 214.99,
-    "link": "https://www.microcenter.com/product/692365/corsair-vengeance-rgb-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh64gx5m2m6000z30-gray"
+    "price": 229.99,
+    "link": "https://www.microcenter.com/product/692365/corsair-vengeance-rgb-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh64gx5m2m6000z30-gray",
+    "delta": 15.0
   },
   {
     "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2M6000Z36 - Black",
@@ -861,8 +624,15 @@
   },
   {
     "name": "T-Create Expert 32GB Kit (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CTCED532G6000HC30DC01 - Black",
-    "price": 92.99,
-    "link": "https://www.microcenter.com/product/668884/teamgroup-t-create-expert-32gb-kit-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-ctced532g6000hc30dc01-black"
+    "price": 91.99,
+    "link": "https://www.microcenter.com/product/668884/teamgroup-t-create-expert-32gb-kit-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-ctced532g6000hc30dc01-black",
+    "delta": -1.0
+  },
+  {
+    "name": "VENGEANCE 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMK64GX5M2B6000Z30 - Black",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/689368/corsair-vengeance-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmk64gx5m2b6000z30-black",
+    "delta": 15.0
   },
   {
     "name": "Trident Z5 Royal Neo RGB Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-TZ5NRW - Silver",
@@ -870,14 +640,33 @@
     "link": "https://www.microcenter.com/product/689353/gskill-trident-z5-royal-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-tz5nrw-silver"
   },
   {
-    "name": "Vengeance LPX Series 16GB (2 x 8GB) DDR4-3200 PC4-25600 CL16 Dual Channel Desktop Memory Kit CMK16GX4M2B3200C16 - Black",
-    "price": 40.99,
-    "link": "https://www.microcenter.com/product/675551/corsair-vengeance-lpx-series-16gb-(2-x-8gb)-ddr4-3200-pc4-25600-cl16-dual-channel-desktop-memory-kit-cmk16gx4m2b3200c16-black"
+    "name": "T-Create Expert 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL34 Dual Channel Desktop Memory Kit CTCED564G6000HC34BDC01 - Black",
+    "price": 169.99,
+    "link": "https://www.microcenter.com/product/668886/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl34-dual-channel-desktop-memory-kit-ctced564g6000hc34bdc01-black",
+    "delta": -7.0
   },
   {
     "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH32GX5M2B6000Z30K - Black",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/689370/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh32gx5m2b6000z30k-black"
+    "price": 124.99,
+    "link": "https://www.microcenter.com/product/689370/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh32gx5m2b6000z30k-black",
+    "delta": 5.0
+  },
+  {
+    "name": "T-Create Expert 32GB Kit (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CTCWD532G6000HC30DC01 - White",
+    "price": 91.99,
+    "link": "https://www.microcenter.com/product/668885/teamgroup-t-create-expert-32gb-kit-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-ctcwd532g6000hc30dc01-white",
+    "delta": -1.0
+  },
+  {
+    "name": "Ripjaws M5 Neo RGB Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-RM5NRK - Black",
+    "price": 129.99,
+    "link": "https://www.microcenter.com/product/689350/gskill-ripjaws-m5-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-rm5nrk-black",
+    "delta": 5.0
+  },
+  {
+    "name": "T-Create EXPERT 96GB (2 x 48GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD596G6400HC32ADC01 - White",
+    "price": 379.99,
+    "link": "https://www.microcenter.com/product/690646/teamgroup-t-create-expert-96gb-(2-x-48gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd596g6400hc32adc01-white"
   },
   {
     "name": "T-Create EXPERT 96GB (2 x 48GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCED596G6400HC32ADC01 - Black",
@@ -890,6 +679,139 @@
     "link": "https://www.microcenter.com/product/689351/gskill-ripjaws-m5-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-rm5nrkw-white"
   },
   {
+    "name": "Vengeance 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMK32GX5M2B6000C30 - Black",
+    "price": 127.99,
+    "link": "https://www.microcenter.com/product/669660/corsair-vengeance-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmk32gx5m2b6000c30-black",
+    "delta": -1.0
+  },
+  {
+    "name": "Dominator Titanium RGB 64GB (2 x 32GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP64GX5M2X6600C32W - White",
+    "price": 314.99,
+    "link": "https://www.microcenter.com/product/674281/corsair-dominator-titanium-rgb-64gb-(2-x-32gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp64gx5m2x6600c32w-white",
+    "delta": 15.0
+  },
+  {
+    "name": "Dominator Titanium RGB 64GB (2 x 32GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP64GX5M2X6600C32 - Black",
+    "price": 314.99,
+    "link": "https://www.microcenter.com/product/674280/corsair-dominator-titanium-rgb-64gb-(2-x-32gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp64gx5m2x6600c32-black"
+  },
+  {
+    "name": "Trident Z5 Royal RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit F5-6400J3239G16GX2-TR5S - Silver",
+    "price": 134.99,
+    "link": "https://www.microcenter.com/product/684516/gskill-trident-z5-royal-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-f5-6400j3239g16gx2-tr5s-silver"
+  },
+  {
+    "name": "T-Create EXPERT 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit CTCED564G6400HC34BDC01 - Black",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/680461/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ctced564g6400hc34bdc01-black"
+  },
+  {
+    "name": "T-Force Vulcan ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit FLESD532G6000HC30DC01 - Silver",
+    "price": 97.99,
+    "link": "https://www.microcenter.com/product/675489/teamgroup-t-force-vulcan-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-flesd532g6000hc30dc01-silver",
+    "delta": -5.0
+  },
+  {
+    "name": "16GB DDR4-2666 PC4-21300 CL19 Single Channel ECC Server Memory Module KTD-PE426E/16G - Green",
+    "price": 69.99,
+    "link": "https://www.microcenter.com/product/680015/kingston-16gb-ddr4-2666-pc4-21300-cl19-single-channel-ecc-server-memory-module-ktd-pe426e-16g-green"
+  },
+  {
+    "name": "32GB (2 x 16GB) DDR5-5600 PC5-44800 CL46 Dual Channel Desktop Memory Kit CT2K16G56C46U5 - Black",
+    "price": 77.99,
+    "link": "https://www.microcenter.com/product/661340/crucial-32gb-(2-x-16gb)-ddr5-5600-pc5-44800-cl46-dual-channel-desktop-memory-kit-ct2k16g56c46u5-black",
+    "delta": -27.0
+  },
+  {
+    "name": "Vengeance LPX Series 16GB (2 x 8GB) DDR4-3200 PC4-25600 CL16 Dual Channel Desktop Memory Kit CMK16GX4M2B3200C16 - Black",
+    "price": 37.99,
+    "link": "https://www.microcenter.com/product/675551/corsair-vengeance-lpx-series-16gb-(2-x-8gb)-ddr4-3200-pc4-25600-cl16-dual-channel-desktop-memory-kit-cmk16gx4m2b3200c16-black",
+    "delta": -3.0
+  },
+  {
+    "name": "T-Create Expert 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL34 Dual Channel Desktop Memory Kit CTCWD564G6000HC34BDC01 - White",
+    "price": 169.99,
+    "link": "https://www.microcenter.com/product/668887/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl34-dual-channel-desktop-memory-kit-ctcwd564g6000hc34bdc01-white",
+    "delta": -7.0
+  },
+  {
+    "name": "Vengeance RGB 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH64GX5M2B6000C30 - Black",
+    "price": 229.99,
+    "link": "https://www.microcenter.com/product/669663/corsair-vengeance-rgb-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh64gx5m2b6000c30-black",
+    "delta": null
+  },
+  {
+    "name": "T-Create EXPERT 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit CTCWD564G6400HC34BDC01 - White",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/680462/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ctcwd564g6400hc34bdc01-white"
+  },
+  {
+    "name": "Pro 96GB (2 x 48GB) DDR5-5600 PC5-44800 CL46 Dual Channel Desktop Memory Kit CP2K48G56C46U5 - Black",
+    "price": 209.99,
+    "link": "https://www.microcenter.com/product/669829/crucial-pro-96gb-(2-x-48gb)-ddr5-5600-pc5-44800-cl46-dual-channel-desktop-memory-kit-cp2k48g56c46u5-black"
+  },
+  {
+    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KTL-TS432E/32G - Green",
+    "price": 134.99,
+    "link": "https://www.microcenter.com/product/680021/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ktl-ts432e-32g-green"
+  },
+  {
+    "name": "Dominator Titanium RGB 48GB (2 x 24GB) DDR5-7200 PC5-57600 CL36 Dual Channel Desktop Memory Kit CMP48GX5M2X7200C36 - Black",
+    "price": 249.99,
+    "link": "https://www.microcenter.com/product/674270/corsair-dominator-titanium-rgb-48gb-(2-x-24gb)-ddr5-7200-pc5-57600-cl36-dual-channel-desktop-memory-kit-cmp48gx5m2x7200c36-black",
+    "delta": 5.0
+  },
+  {
+    "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP32GX5M2X6600C32W - White",
+    "price": 189.99,
+    "link": "https://www.microcenter.com/product/674283/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp32gx5m2x6600c32w-white",
+    "delta": null
+  },
+  {
+    "name": "Trident Z5 Royal RGB 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit F5-7200J3445G16GX2-TR5S - Silver",
+    "price": 154.99,
+    "link": "https://www.microcenter.com/product/684517/gskill-trident-z5-royal-rgb-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-f5-7200j3445g16gx2-tr5s-silver",
+    "delta": 5.0
+  },
+  {
+    "name": "DOMINATOR TITANIUM RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMP32GX5M2B6400C32W - White",
+    "price": 179.99,
+    "link": "https://www.microcenter.com/product/689398/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp32gx5m2b6400c32w-white"
+  },
+  {
+    "name": "THOR 16GB (2 x 8GB) DDR4-3200 PC4-25600 CL16 Dual Channel Desktop Memory Kit LD4U08G32C16LG-RUD - Black",
+    "price": 34.99,
+    "link": "https://www.microcenter.com/product/685117/lexar-media-thor-16gb-(2-x-8gb)-ddr4-3200-pc4-25600-cl16-dual-channel-desktop-memory-kit-ld4u08g32c16lg-rud-black"
+  },
+  {
+    "name": "Trident Z5 Neo RGB Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-TZ5NRW - White",
+    "price": 134.99,
+    "link": "https://www.microcenter.com/product/689352/gskill-trident-z5-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-tz5nrw-white"
+  },
+  {
+    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KTL-TS432E/16G - Green",
+    "price": 69.99,
+    "link": "https://www.microcenter.com/product/680020/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ktl-ts432e-16g-green",
+    "delta": null
+  },
+  {
+    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KSM32ED8/16HD - Green",
+    "price": 69.99,
+    "link": "https://www.microcenter.com/product/679981/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ksm32ed8-16hd-green"
+  },
+  {
+    "name": "Dominator Titanium RGB 96GB (2 x 48GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP96GX5M2B6600C32W - White",
+    "price": 424.99,
+    "link": "https://www.microcenter.com/product/674279/corsair-dominator-titanium-rgb-96gb-(2-x-48gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp96gx5m2b6600c32w-white",
+    "delta": 14.0
+  },
+  {
+    "name": "T-FORCE DELTA RGB ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit FF4D532G6000HC28ADC01 - White",
+    "price": 134.99,
+    "link": "https://www.microcenter.com/product/688829/teamgroup-t-force-delta-rgb-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-ff4d532g6000hc28adc01-white",
+    "delta": 15.0
+  },
+  {
     "name": "Vengeance 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMK64GX5M2B6000C30 - Black",
     "price": 224.99,
     "link": "https://www.microcenter.com/product/669662/corsair-vengeance-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmk64gx5m2b6000c30-black"
@@ -900,104 +822,22 @@
     "link": "https://www.microcenter.com/product/689348/gskill-flare-x5-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-fx5-black"
   },
   {
-    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KSM32ED8/32HC - Green",
-    "price": 134.99,
-    "link": "https://www.microcenter.com/product/680010/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ksm32ed8-32hc-green"
+    "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMH32GX5M2M6400C32 - Black",
+    "price": 119.99,
+    "link": "https://www.microcenter.com/product/676483/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmh32gx5m2m6400c32-black",
+    "delta": 6.0
   },
   {
-    "name": "VENGEANCE 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMK64GX5M2B6000Z30 - Black",
-    "price": 204.99,
-    "link": "https://www.microcenter.com/product/689368/corsair-vengeance-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmk64gx5m2b6000z30-black"
+    "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit CMP32GX5M2X7200C34 - Black",
+    "price": 215.99,
+    "link": "https://www.microcenter.com/product/674265/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-cmp32gx5m2x7200c34-black",
+    "delta": 11.0
   },
   {
-    "name": "Pro 96GB (2 x 48GB) DDR5-5600 PC5-44800 CL46 Dual Channel Desktop Memory Kit CP2K48G56C46U5 - Black",
-    "price": 209.99,
-    "link": "https://www.microcenter.com/product/669829/crucial-pro-96gb-(2-x-48gb)-ddr5-5600-pc5-44800-cl46-dual-channel-desktop-memory-kit-cp2k48g56c46u5-black"
-  },
-  {
-    "name": "Dominator Titanium RGB 96GB (2 x 48GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP96GX5M2B6600C32W - White",
-    "price": 410.99,
-    "link": "https://www.microcenter.com/product/674279/corsair-dominator-titanium-rgb-96gb-(2-x-48gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp96gx5m2b6600c32w-white"
-  },
-  {
-    "name": "T-Create Master Overclocking 64GB (4 x 16GB) DDR5-6000 PC5-48000 CL32 Quad Channel ECC Registered Memory Kit CTCMD564G6000HC32AQC01 - Black",
-    "price": 435.99,
-    "link": "https://www.microcenter.com/product/675483/teamgroup-t-create-master-overclocking-64gb-(4-x-16gb)-ddr5-6000-pc5-48000-cl32-quad-channel-ecc-registered-memory-kit-ctcmd564g6000hc32aqc01-black"
-  },
-  {
-    "name": "Vengeance RGB 32GB DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH32GX5M2B6000C30 - Black",
-    "price": 135.99,
-    "link": "https://www.microcenter.com/product/669661/corsair-vengeance-rgb-32gb-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh32gx5m2b6000c30-black"
-  },
-  {
-    "name": "Dominator Titanium RGB 64GB (2 x 32GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP64GX5M2X6600C32W - White",
-    "price": 299.99,
-    "link": "https://www.microcenter.com/product/674281/corsair-dominator-titanium-rgb-64gb-(2-x-32gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp64gx5m2x6600c32w-white"
-  },
-  {
-    "name": "Vengeance RGB 64GB DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH64GX5M2B6000C30 - Black",
-    "price": 214.99,
-    "link": "https://www.microcenter.com/product/669663/corsair-vengeance-rgb-64gb-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh64gx5m2b6000c30-black"
-  },
-  {
-    "name": "THOR 16GB (2 x 8GB) DDR4-3200 PC4-25600 CL16 Dual Channel Desktop Memory Kit LD4U08G32C16LG-RUD - Black",
-    "price": 34.99,
-    "link": "https://www.microcenter.com/product/685117/lexar-media-thor-16gb-(2-x-8gb)-ddr4-3200-pc4-25600-cl16-dual-channel-desktop-memory-kit-ld4u08g32c16lg-rud-black"
-  },
-  {
-    "name": "T-Force Vulcan ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit FLESD532G6000HC30DC01 - Silver",
-    "price": 102.99,
-    "link": "https://www.microcenter.com/product/675489/teamgroup-t-force-vulcan-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-flesd532g6000hc30dc01-silver"
-  },
-  {
-    "name": "Ripjaws M5 Neo RGB Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-RM5NRK - Black",
-    "price": 124.99,
-    "link": "https://www.microcenter.com/product/689350/gskill-ripjaws-m5-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-rm5nrk-black"
-  },
-  {
-    "name": "T-Create Expert 32GB Kit (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CTCWD532G6000HC30DC01 - White",
-    "price": 92.99,
-    "link": "https://www.microcenter.com/product/668885/teamgroup-t-create-expert-32gb-kit-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-ctcwd532g6000hc30dc01-white"
-  },
-  {
-    "name": "T-FORCE DELTA RGB 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit FF3D564G6400HC34EDC01 - Black",
-    "price": 229.99,
-    "link": "https://www.microcenter.com/product/690648/teamgroup-t-force-delta-rgb-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ff3d564g6400hc34edc01-black"
-  },
-  {
-    "name": "32GB DDR4-2666 PC4-21300 CL19 Single Channel ECC Server Memory Module KSM26ED8/32HC - Green",
-    "price": 134.99,
-    "link": "https://www.microcenter.com/product/679980/kingston-32gb-ddr4-2666-pc4-21300-cl19-single-channel-ecc-server-memory-module-ksm26ed8-32hc-green"
-  },
-  {
-    "name": "T-Create Expert 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL34 Dual Channel Desktop Memory Kit CTCWD564G6000HC34BDC01 - White",
-    "price": 176.99,
-    "link": "https://www.microcenter.com/product/668887/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl34-dual-channel-desktop-memory-kit-ctcwd564g6000hc34bdc01-white"
-  },
-  {
-    "name": "Trident Z5 Neo RGB Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-TZ5NRW - White",
-    "price": 134.99,
-    "link": "https://www.microcenter.com/product/689352/gskill-trident-z5-neo-rgb-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-tz5nrw-white"
-  },
-  {
-    "name": "Dominator Titanium RGB 64GB (2 x 32GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP64GX5M2X6600C32 - Black",
-    "price": 314.99,
-    "link": "https://www.microcenter.com/product/674280/corsair-dominator-titanium-rgb-64gb-(2-x-32gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp64gx5m2x6600c32-black"
-  },
-  {
-    "name": "Vengeance 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMK32GX5M2B6000C30 - Black",
-    "price": 128.99,
-    "link": "https://www.microcenter.com/product/669660/corsair-vengeance-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmk32gx5m2b6000c30-black"
-  },
-  {
-    "name": "32GB (2 x 16GB) DDR5-5600 PC5-44800 CL46 Dual Channel Desktop Memory Kit CT2K16G56C46U5 - Black",
-    "price": 104.99,
-    "link": "https://www.microcenter.com/product/661340/crucial-32gb-(2-x-16gb)-ddr5-5600-pc5-44800-cl46-dual-channel-desktop-memory-kit-ct2k16g56c46u5-black"
-  },
-  {
-    "name": "32GB DDR5-5600 PC5-44800 CL46 Single Channel ECC Registered Server Memory Module MTC20F1045S1RC5 - Green",
-    "price": 199.99,
-    "link": "https://www.microcenter.com/product/693757/crucial-32gb-ddr5-5600-pc5-44800-cl46-single-channel-ecc-registered-server-memory-module-mtc20f1045s1rc5-green"
+    "name": "Vengeance Series 64GB (2 x 32GB) DDR5-5600 PC5-44800 CL40 Dual Channel Desktop Memory Kit CMK64GX5M2B5600C40 - Black",
+    "price": 144.99,
+    "link": "https://www.microcenter.com/product/675552/corsair-vengeance-series-64gb-(2-x-32gb)-ddr5-5600-pc5-44800-cl40-dual-channel-desktop-memory-kit-cmk64gx5m2b5600c40-black",
+    "delta": -5.0
   },
   {
     "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMH32GX5M2B640Z - Gray",
@@ -1005,19 +845,39 @@
     "link": "https://www.microcenter.com/product/685510/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmh32gx5m2b640z-gray"
   },
   {
-    "name": "T-FORCE DELTA RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit FF3D532G6000HC28ADC01 - Black",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/688828/teamgroup-t-force-delta-rgb-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-ff3d532g6000hc28adc01-black"
+    "name": "T-Create Master Overclocking 64GB (4 x 16GB) DDR5-6800 PC5-54400 CL34 Quad Channel ECC Registered Memory Kit CTCMD564G6800HC34BQC01 - Black",
+    "price": 519.99,
+    "link": "https://www.microcenter.com/product/675481/teamgroup-t-create-master-overclocking-64gb-(4-x-16gb)-ddr5-6800-pc5-54400-cl34-quad-channel-ecc-registered-memory-kit-ctcmd564g6800hc34bqc01-black",
+    "delta": -10.0
   },
   {
-    "name": "Trident Z5 Royal RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit F5-6400J3239G16GX2-TR5S - Silver",
-    "price": 134.99,
-    "link": "https://www.microcenter.com/product/684516/gskill-trident-z5-royal-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-f5-6400j3239g16gx2-tr5s-silver"
+    "name": "VENGEANCE 48GB (2 x 24GB) DDR5-8400 PC5-67200 CL40 Dual Channel Desktop Memory Kit CMKC48GX5M2X8400C40 - Gray",
+    "price": 386.99,
+    "link": "https://www.microcenter.com/product/690385/corsair-vengeance-48gb-(2-x-24gb)-ddr5-8400-pc5-67200-cl40-dual-channel-desktop-memory-kit-cmkc48gx5m2x8400c40-gray",
+    "delta": null
   },
   {
-    "name": "Dominator Titanium RGB 48GB (2 x 24GB) DDR5-7200 PC5-57600 CL36 Dual Channel Desktop Memory Kit CMP48GX5M2X7200C36W - White",
-    "price": 244.99,
-    "link": "https://www.microcenter.com/product/674271/corsair-dominator-titanium-rgb-48gb-(2-x-24gb)-ddr5-7200-pc5-57600-cl36-dual-channel-desktop-memory-kit-cmp48gx5m2x7200c36w-white"
+    "name": "16GB DDR4-2666 PC4-21300 CL19 Single Channel ECC Server Memory Module KSM26ED8/16HD - Green",
+    "price": 69.99,
+    "link": "https://www.microcenter.com/product/679966/kingston-16gb-ddr4-2666-pc4-21300-cl19-single-channel-ecc-server-memory-module-ksm26ed8-16hd-green",
+    "delta": null
+  },
+  {
+    "name": "Dominator Titanium RGB 96GB (2 x 48GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP96GX5M2B6600C32 - Black",
+    "price": 419.99,
+    "link": "https://www.microcenter.com/product/674277/corsair-dominator-titanium-rgb-96gb-(2-x-48gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp96gx5m2b6600c32-black",
+    "delta": 9.0
+  },
+  {
+    "name": "Flare X5 Series 16GB DDR5-6000 PC5-48000 CL32 Single Channel Desktop Memory Module F5-6000J3238F16GX1-FX5 - Black",
+    "price": 52.99,
+    "link": "https://www.microcenter.com/product/682530/gskill-flare-x5-series-16gb-ddr5-6000-pc5-48000-cl32-single-channel-desktop-memory-module-f5-6000j3238f16gx1-fx5-black"
+  },
+  {
+    "name": "T-Create EXPERT 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD532G6400HC32ADC01 - White",
+    "price": 109.99,
+    "link": "https://www.microcenter.com/product/680458/teamgroup-t-create-expert-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd532g6400hc32adc01-white",
+    "delta": 10.0
   },
   {
     "name": "VENGEANCE 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL36 Dual Channel Desktop Memory Kit CMK32GX5M2B6400Z36 - Black",
@@ -1025,19 +885,10 @@
     "link": "https://www.microcenter.com/product/689369/corsair-vengeance-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl36-dual-channel-desktop-memory-kit-cmk32gx5m2b6400z36-black"
   },
   {
-    "name": "T-Create Expert 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL34 Dual Channel Desktop Memory Kit CTCED564G6000HC34BDC01 - Black",
-    "price": 176.99,
-    "link": "https://www.microcenter.com/product/668886/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl34-dual-channel-desktop-memory-kit-ctced564g6000hc34bdc01-black"
-  },
-  {
-    "name": "Flare X5 Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-FX5W - White",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/689349/gskill-flare-x5-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-fx5w-white"
-  },
-  {
-    "name": "T-Create Expert 48GB Kit (2 x 24GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit CTCWD548G7200HC34ADC01 - White",
-    "price": 168.99,
-    "link": "https://www.microcenter.com/product/668881/teamgroup-t-create-expert-48gb-kit-(2-x-24gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-ctcwd548g7200hc34adc01-white"
+    "name": "Vengeance RGB 32GB DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit CMH32GX5M2B6000C30 - Black",
+    "price": 140.99,
+    "link": "https://www.microcenter.com/product/669661/corsair-vengeance-rgb-32gb-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-cmh32gx5m2b6000c30-black",
+    "delta": 5.0
   },
   {
     "name": "Pro 64GB (2 x 32GB) DDR5-5600 PC5-44800 CL46 Dual Channel Desktop Memory Kit CP2K32G56C46U5 - Black",
@@ -1050,219 +901,9 @@
     "link": "https://www.microcenter.com/product/689400/corsair-dominator-titanium-rgb-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp64gx5m2b6400c32w-white"
   },
   {
-    "name": "Dominator Titanium RGB 96GB (2 x 48GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP96GX5M2B6600C32 - Black",
-    "price": 410.99,
-    "link": "https://www.microcenter.com/product/674277/corsair-dominator-titanium-rgb-96gb-(2-x-48gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp96gx5m2b6600c32-black"
-  },
-  {
-    "name": "Pro 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL48 Dual Channel Desktop Memory Kit CP2K16G60C48U5 - Black",
-    "price": 84.99,
-    "link": "https://www.microcenter.com/product/677125/crucial-pro-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl48-dual-channel-desktop-memory-kit-cp2k16g60c48u5-black"
-  },
-  {
-    "name": "Vengeance Series 64GB (2 x 32GB) DDR5-5600 PC5-44800 CL40 Dual Channel Desktop Memory Kit CMK64GX5M2B5600C40 - Black",
-    "price": 149.99,
-    "link": "https://www.microcenter.com/product/675552/corsair-vengeance-series-64gb-(2-x-32gb)-ddr5-5600-pc5-44800-cl40-dual-channel-desktop-memory-kit-cmk64gx5m2b5600c40-black"
-  },
-  {
-    "name": "Trident Z5 Royal RGB 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit F5-7200J3445G16GX2-TR5S - Silver",
-    "price": 149.99,
-    "link": "https://www.microcenter.com/product/684517/gskill-trident-z5-royal-rgb-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-f5-7200j3445g16gx2-tr5s-silver"
-  },
-  {
-    "name": "T-FORCE DELTA RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit FF3D532G6400HC32ADC01 - Black",
-    "price": 111.99,
-    "link": "https://www.microcenter.com/product/688832/teamgroup-t-force-delta-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ff3d532g6400hc32adc01-black"
-  },
-  {
-    "name": "VENGEANCE 32GB (2 x 16GB) DDR5-5600 PC5-44800 CL40 Dual Channel Desktop Memory Kit CMK32GX5M2B5600C40 - Black",
-    "price": 103.99,
-    "link": "https://www.microcenter.com/product/673323/corsair-vengeance-32gb-(2-x-16gb)-ddr5-5600-pc5-44800-cl40-dual-channel-desktop-memory-kit-cmk32gx5m2b5600c40-black"
-  },
-  {
-    "name": "T-Create EXPERT 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit CTCWD564G6400HC34BDC01 - White",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/680462/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ctcwd564g6400hc34bdc01-white"
-  },
-  {
-    "name": "T-Create EXPERT 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit CTCED564G6400HC34BDC01 - Black",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/680461/teamgroup-t-create-expert-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ctced564g6400hc34bdc01-black"
-  },
-  {
-    "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2B6400Z36 - Black",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/689374/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl36-dual-channel-desktop-memory-kit-cmh32gx5m2b6400z36-black"
-  },
-  {
-    "name": "Flare X5 Series 16GB DDR5-6000 PC5-48000 CL32 Single Channel Desktop Memory Module F5-6000J3238F16GX1-FX5 - Black",
-    "price": 52.99,
-    "link": "https://www.microcenter.com/product/682530/gskill-flare-x5-series-16gb-ddr5-6000-pc5-48000-cl32-single-channel-desktop-memory-module-f5-6000j3238f16gx1-fx5-black"
-  },
-  {
-    "name": "T-FORCE DELTA RGB ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit FF4D532G6000HC28ADC01 - White",
-    "price": 119.99,
-    "link": "https://www.microcenter.com/product/688829/teamgroup-t-force-delta-rgb-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-ff4d532g6000hc28adc01-white"
-  },
-  {
-    "name": "16GB DDR4-2666 PC4-21300 CL19 Single Channel ECC Server Memory Module KTD-PE426E/16G - Green",
-    "price": 69.99,
-    "link": "https://www.microcenter.com/product/680015/kingston-16gb-ddr4-2666-pc4-21300-cl19-single-channel-ecc-server-memory-module-ktd-pe426e-16g-green"
-  },
-  {
-    "name": "T-Force Xtreem ARGB 48GB (2 x 24GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FF9D548G7600HC36EDC01 - Black",
-    "price": 229.99,
-    "link": "https://www.microcenter.com/product/680468/teamgroup-t-force-xtreem-argb-48gb-(2-x-24gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ff9d548g7600hc36edc01-black"
-  },
-  {
-    "name": "XTREEM CKD 48GB (2 x 24GB) DDR5-8800 PC5-70400 CL42 Dual Channel Desktop Memory Kit FFXD548G8800HC42ADC-CU01 - Black",
-    "price": 359.99,
-    "link": "https://www.microcenter.com/product/688837/teamgroup-xtreem-ckd-48gb-(2-x-24gb)-ddr5-8800-pc5-70400-cl42-dual-channel-desktop-memory-kit-ffxd548g8800hc42adc-cu01-black"
-  },
-  {
-    "name": "T-Force Xtreem ARGB 32GB (2 x 16GB) DDR5-8000 PC5-64000 CL38 Dual Channel Desktop Memory Kit FF9D532G8000HC38DDC01 - Black",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/680467/teamgroup-t-force-xtreem-argb-32gb-(2-x-16gb)-ddr5-8000-pc5-64000-cl38-dual-channel-desktop-memory-kit-ff9d532g8000hc38ddc01-black"
-  },
-  {
-    "name": "Pro Overclocking 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CP2K16G60C36U5B - Black",
-    "price": 89.99,
-    "link": "https://www.microcenter.com/product/677126/crucial-pro-overclocking-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl36-dual-channel-desktop-memory-kit-cp2k16g60c36u5b-black"
-  },
-  {
-    "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-6600 PC5-52800 CL32 Dual Channel Desktop Memory Kit CMP32GX5M2X6600C32 - Black",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/674282/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-6600-pc5-52800-cl32-dual-channel-desktop-memory-kit-cmp32gx5m2x6600c32-black"
-  },
-  {
-    "name": "T-Create Expert 96GB Kit (2 x 48GB) DDR5-6800 PC5-54400 CL36 Dual Channel Desktop Memory Kit CTCED596G6800HC36DDC01 - Black",
-    "price": 355.99,
-    "link": "https://www.microcenter.com/product/668882/teamgroup-t-create-expert-96gb-kit-(2-x-48gb)-ddr5-6800-pc5-54400-cl36-dual-channel-desktop-memory-kit-ctced596g6800hc36ddc01-black"
-  },
-  {
-    "name": "DOMINATOR TITANIUM RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMP32GX5M2B6400C32W - White",
-    "price": 179.99,
-    "link": "https://www.microcenter.com/product/689398/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp32gx5m2b6400c32w-white"
-  },
-  {
-    "name": "Dominator Titanium RGB 48GB (2 x 24GB) DDR5-7200 PC5-57600 CL36 Dual Channel Desktop Memory Kit CMP48GX5M2X7200C36 - Black",
-    "price": 244.99,
-    "link": "https://www.microcenter.com/product/674270/corsair-dominator-titanium-rgb-48gb-(2-x-24gb)-ddr5-7200-pc5-57600-cl36-dual-channel-desktop-memory-kit-cmp48gx5m2x7200c36-black"
-  },
-  {
-    "name": "T-Force Xtreem Overclocking 48GB Kit (2 x 24GB) DDR5-8000 PC5-64000 CL38 Dual Channel Desktop Memory Kit FFXD548G8000HC38EDC01 - Black",
-    "price": 219.99,
-    "link": "https://www.microcenter.com/product/675485/teamgroup-t-force-xtreem-overclocking-48gb-kit-(2-x-24gb)-ddr5-8000-pc5-64000-cl38-dual-channel-desktop-memory-kit-ffxd548g8000hc38edc01-black"
-  },
-  {
-    "name": "T-Create EXPERT 48GB (2 x 24GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCED548G6400HC32ADC01 - Black",
-    "price": 182.99,
-    "link": "https://www.microcenter.com/product/680459/teamgroup-t-create-expert-48gb-(2-x-24gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctced548g6400hc32adc01-black"
-  },
-  {
-    "name": "T-Create EXPERT 48GB (2 x 24GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD548G6400HC32ADC01 - White",
-    "price": 182.99,
-    "link": "https://www.microcenter.com/product/680460/teamgroup-t-create-expert-48gb-(2-x-24gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd548g6400hc32adc01-white"
-  },
-  {
-    "name": "Trident Z5 Royal RGB 48GB (2 x 24GB) DDR5-7200 PC5-57600 CL36 Dual Channel Desktop Memory Kit F5-7200J3646F24GX2-TR5S - Silver",
-    "price": 199.99,
-    "link": "https://www.microcenter.com/product/684518/gskill-trident-z5-royal-rgb-48gb-(2-x-24gb)-ddr5-7200-pc5-57600-cl36-dual-channel-desktop-memory-kit-f5-7200j3646f24gx2-tr5s-silver"
-  },
-  {
-    "name": "Pro 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL40 Dual Channel Desktop Memory Kit CP2K32G60C40U5B - Black",
-    "price": 182.99,
-    "link": "https://www.microcenter.com/product/690336/crucial-pro-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl40-dual-channel-desktop-memory-kit-cp2k32g60c40u5b-black"
-  },
-  {
-    "name": "T-Force Xtreem ARGB 32GB (2 x 16GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FF9D532G7600HC36FDC01 - Black",
-    "price": 189.99,
-    "link": "https://www.microcenter.com/product/680469/teamgroup-t-force-xtreem-argb-32gb-(2-x-16gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ff9d532g7600hc36fdc01-black"
-  },
-  {
-    "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMH32GX5M2M6400C32 - Black",
-    "price": 113.99,
-    "link": "https://www.microcenter.com/product/676483/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmh32gx5m2m6400c32-black"
-  },
-  {
-    "name": "Pro Overclocking 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CP2K16G60C36U5W - White",
-    "price": 94.99,
-    "link": "https://www.microcenter.com/product/680863/crucial-pro-overclocking-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl36-dual-channel-desktop-memory-kit-cp2k16g60c36u5w-white"
-  },
-  {
-    "name": "T-Create EXPERT 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD532G6400HC32ADC01 - White",
-    "price": 99.99,
-    "link": "https://www.microcenter.com/product/680458/teamgroup-t-create-expert-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd532g6400hc32adc01-white"
-  },
-  {
-    "name": "Pro 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL38 Dual Channel Desktop Memory Kit CP2K16G64C38U5B - Black",
-    "price": 104.99,
-    "link": "https://www.microcenter.com/product/686765/crucial-pro-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl38-dual-channel-desktop-memory-kit-cp2k16g64c38u5b-black"
-  },
-  {
-    "name": "Pro 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL38 Dual Channel Desktop Memory Kit CP2K16G64C38U5W - White",
-    "price": 109.99,
-    "link": "https://www.microcenter.com/product/686766/crucial-pro-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl38-dual-channel-desktop-memory-kit-cp2k16g64c38u5w-white"
-  },
-  {
-    "name": "T-Create EXPERT 96GB (2 x 48GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD596G6400HC32ADC01 - White",
-    "price": 379.99,
-    "link": "https://www.microcenter.com/product/690646/teamgroup-t-create-expert-96gb-(2-x-48gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd596g6400hc32adc01-white"
-  },
-  {
-    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KSM32RD8/16HDR - Green",
-    "price": 74.99,
-    "link": "https://www.microcenter.com/product/680011/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ksm32rd8-16hdr-green"
-  },
-  {
-    "name": "THOR 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL32 Dual Channel Desktop Memory Kit LD5U16G60C32LG-RUD - Black",
-    "price": 107.99,
-    "link": "https://www.microcenter.com/product/685118/lexar-media-thor-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl32-dual-channel-desktop-memory-kit-ld5u16g60c32lg-rud-black"
-  },
-  {
-    "name": "T-Create EXPERT 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCED532G6400HC32ADC01 - Black",
-    "price": 99.99,
-    "link": "https://www.microcenter.com/product/680457/teamgroup-t-create-expert-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctced532g6400hc32adc01-black"
-  },
-  {
-    "name": "VENGEANCE 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMK32GX5M2B640Z - Gray",
-    "price": 114.99,
-    "link": "https://www.microcenter.com/product/685509/corsair-vengeance-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmk32gx5m2b640z-gray"
-  },
-  {
-    "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit CMP32GX5M2X7200C34 - Black",
-    "price": 204.99,
-    "link": "https://www.microcenter.com/product/674265/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-cmp32gx5m2x7200c34-black"
-  },
-  {
-    "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit CMP32GX5M2X7200C34W - White",
-    "price": 204.99,
-    "link": "https://www.microcenter.com/product/674268/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-cmp32gx5m2x7200c34w-white"
-  },
-  {
-    "name": "T-FORCE XTREEM 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit FFWD532G7200HC34ADC01 - White",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/688836/teamgroup-t-force-xtreem-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-ffwd532g7200hc34adc01-white"
-  },
-  {
-    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KTD-PE432D8/16G - Green",
-    "price": 74.99,
-    "link": "https://www.microcenter.com/product/680017/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ktd-pe432d8-16g-green"
-  },
-  {
-    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KSM32RD8/32MFR - Green",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/680014/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ksm32rd8-32mfr-green"
-  },
-  {
-    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KSM32ED8/16HD - Green",
-    "price": 69.99,
-    "link": "https://www.microcenter.com/product/679981/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ksm32ed8-16hd-green"
-  },
-  {
-    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KTL-TS432/32G - Green",
-    "price": 139.99,
-    "link": "https://www.microcenter.com/product/680018/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ktl-ts432-32g-green"
+    "name": "DOMINATOR TITANIUM RGB 64GB (4 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMP64GX5M4B6400C32 - Black",
+    "price": 369.99,
+    "link": "https://www.microcenter.com/product/689399/corsair-dominator-titanium-rgb-64gb-(4-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp64gx5m4b6400c32-black"
   },
   {
     "name": "T-Force Xtreem Overclocking 32GB (2 x 16GB) DDR5-8000 PC5-64000 CL38 Dual Channel Desktop Memory Kit FFXD532G8000HC38DDC01 - Black",
@@ -1270,34 +911,211 @@
     "link": "https://www.microcenter.com/product/675486/teamgroup-t-force-xtreem-overclocking-32gb-(2-x-16gb)-ddr5-8000-pc5-64000-cl38-dual-channel-desktop-memory-kit-ffxd532g8000hc38ddc01-black"
   },
   {
+    "name": "T-Force Xtreem ARGB 32GB (2 x 16GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FF9D532G7600HC36FDC01 - Black",
+    "price": 209.99,
+    "link": "https://www.microcenter.com/product/680469/teamgroup-t-force-xtreem-argb-32gb-(2-x-16gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ff9d532g7600hc36fdc01-black",
+    "delta": 20.0
+  },
+  {
     "name": "Dominator Titanium RGB 32GB (2 x 16GB) DDR5-7000 PC5-56000 CL34 Dual Channel Desktop Memory Kit CMP32GX5M2X7000C34W - White",
-    "price": 204.99,
-    "link": "https://www.microcenter.com/product/674274/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-7000-pc5-56000-cl34-dual-channel-desktop-memory-kit-cmp32gx5m2x7000c34w-white"
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/674274/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-7000-pc5-56000-cl34-dual-channel-desktop-memory-kit-cmp32gx5m2x7000c34w-white",
+    "delta": -5.0
   },
   {
-    "name": "VENGEANCE 48GB (2 x 24GB) DDR5-8800 PC5-70400 CL42 Dual Channel Desktop Memory Kit CMKC48GX5M2X8800C42 - Gray",
-    "price": 390.99,
-    "link": "https://www.microcenter.com/product/690386/corsair-vengeance-48gb-(2-x-24gb)-ddr5-8800-pc5-70400-cl42-dual-channel-desktop-memory-kit-cmkc48gx5m2x8800c42-gray"
+    "name": "T-Create Expert 96GB Kit (2 x 48GB) DDR5-6800 PC5-54400 CL36 Dual Channel Desktop Memory Kit CTCWD596G6800HC36DDC01 - White",
+    "price": 355.99,
+    "link": "https://www.microcenter.com/product/668883/teamgroup-t-create-expert-96gb-kit-(2-x-48gb)-ddr5-6800-pc5-54400-cl36-dual-channel-desktop-memory-kit-ctcwd596g6800hc36ddc01-white",
+    "delta": null
   },
   {
-    "name": "DOMINATOR TITANIUM RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMP32GX5M2B6400C32 - Black",
+    "name": "T-Create Expert 96GB Kit (2 x 48GB) DDR5-6800 PC5-54400 CL36 Dual Channel Desktop Memory Kit CTCED596G6800HC36DDC01 - Black",
+    "price": 355.99,
+    "link": "https://www.microcenter.com/product/668882/teamgroup-t-create-expert-96gb-kit-(2-x-48gb)-ddr5-6800-pc5-54400-cl36-dual-channel-desktop-memory-kit-ctced596g6800hc36ddc01-black"
+  },
+  {
+    "name": "T-Force Xtreem Overclocking 48GB Kit (2 x 24GB) DDR5-8000 PC5-64000 CL38 Dual Channel Desktop Memory Kit FFXD548G8000HC38EDC01 - Black",
+    "price": 219.99,
+    "link": "https://www.microcenter.com/product/675485/teamgroup-t-force-xtreem-overclocking-48gb-kit-(2-x-24gb)-ddr5-8000-pc5-64000-cl38-dual-channel-desktop-memory-kit-ffxd548g8000hc38edc01-black"
+  },
+  {
+    "name": "Pro 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL38 Dual Channel Desktop Memory Kit CP2K16G64C38U5W - White",
+    "price": 94.99,
+    "link": "https://www.microcenter.com/product/686766/crucial-pro-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl38-dual-channel-desktop-memory-kit-cp2k16g64c38u5w-white",
+    "delta": -15.0
+  },
+  {
+    "name": "Pro 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL38 Dual Channel Desktop Memory Kit CP2K16G64C38U5B - Black",
+    "price": 89.99,
+    "link": "https://www.microcenter.com/product/686765/crucial-pro-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl38-dual-channel-desktop-memory-kit-cp2k16g64c38u5b-black",
+    "delta": -15.0
+  },
+  {
+    "name": "T-Create Expert 48GB Kit (2 x 24GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit CTCED548G7200HC34ADC01 - Black",
     "price": 179.99,
-    "link": "https://www.microcenter.com/product/689397/corsair-dominator-titanium-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp32gx5m2b6400c32-black"
+    "link": "https://www.microcenter.com/product/668880/teamgroup-t-create-expert-48gb-kit-(2-x-24gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-ctced548g7200hc34adc01-black",
+    "delta": null
   },
   {
-    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KTL-TS432D8/16G - Green",
+    "name": "Trident Z5 Royal RGB 48GB (2 x 24GB) DDR5-7200 PC5-57600 CL36 Dual Channel Desktop Memory Kit F5-7200J3646F24GX2-TR5S - Silver",
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/684518/gskill-trident-z5-royal-rgb-48gb-(2-x-24gb)-ddr5-7200-pc5-57600-cl36-dual-channel-desktop-memory-kit-f5-7200j3646f24gx2-tr5s-silver"
+  },
+  {
+    "name": "T-FORCE DELTA RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit FF3D532G6400HC32ADC01 - Black",
+    "price": 111.99,
+    "link": "https://www.microcenter.com/product/688832/teamgroup-t-force-delta-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ff3d532g6400hc32adc01-black"
+  },
+  {
+    "name": "VENGEANCE 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMK32GX5M2B640Z - Gray",
+    "price": 119.99,
+    "link": "https://www.microcenter.com/product/685509/corsair-vengeance-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmk32gx5m2b640z-gray",
+    "delta": 5.0
+  },
+  {
+    "name": "Flare X5 Series 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit F5-6000J2836G16GX2-FX5W - White",
+    "price": 124.99,
+    "link": "https://www.microcenter.com/product/689349/gskill-flare-x5-series-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-f5-6000j2836g16gx2-fx5w-white",
+    "delta": 5.0
+  },
+  {
+    "name": "THOR 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL32 Dual Channel Desktop Memory Kit LD5U16G60C32LG-RUD - Black",
+    "price": 107.99,
+    "link": "https://www.microcenter.com/product/685118/lexar-media-thor-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl32-dual-channel-desktop-memory-kit-ld5u16g60c32lg-rud-black"
+  },
+  {
+    "name": "ARES RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL30 Dual Channel Desktop Memory Kit LD5BU016G-R6000GDLA - Black",
+    "price": 114.99,
+    "link": "https://www.microcenter.com/product/685119/lexar-media-ares-rgb-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl30-dual-channel-desktop-memory-kit-ld5bu016g-r6000gdla-black",
+    "delta": null
+  },
+  {
+    "name": "Pro 64GB (2 x 32GB) DDR5-6000 PC5-48000 CL40 Dual Channel Desktop Memory Kit CP2K32G60C40U5W - White",
+    "price": 157.99,
+    "link": "https://www.microcenter.com/product/690337/crucial-pro-64gb-(2-x-32gb)-ddr5-6000-pc5-48000-cl40-dual-channel-desktop-memory-kit-cp2k32g60c40u5w-white",
+    "delta": null
+  },
+  {
+    "name": "VENGEANCE RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2B6400Z36 - Black",
+    "price": 99.99,
+    "link": "https://www.microcenter.com/product/689374/corsair-vengeance-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl36-dual-channel-desktop-memory-kit-cmh32gx5m2b6400z36-black",
+    "delta": -20.0
+  },
+  {
+    "name": "Pro Overclocking 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CP2K16G60C36U5W - White",
+    "price": 91.99,
+    "link": "https://www.microcenter.com/product/680863/crucial-pro-overclocking-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl36-dual-channel-desktop-memory-kit-cp2k16g60c36u5w-white",
+    "delta": -3.0
+  },
+  {
+    "name": "Pro 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL48 Dual Channel Desktop Memory Kit CP2K16G60C48U5 - Black",
+    "price": 84.99,
+    "link": "https://www.microcenter.com/product/677125/crucial-pro-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl48-dual-channel-desktop-memory-kit-cp2k16g60c48u5-black"
+  },
+  {
+    "name": "Pro Overclocking 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL36 Dual Channel Desktop Memory Kit CP2K16G60C36U5B - Black",
+    "price": 86.99,
+    "link": "https://www.microcenter.com/product/677126/crucial-pro-overclocking-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl36-dual-channel-desktop-memory-kit-cp2k16g60c36u5b-black",
+    "delta": -3.0
+  },
+  {
+    "name": "64GB DDR5-5600 PC5-44800 CL46 Single Channel Desktop Memory Module CT64G56C46U5 - Black",
+    "price": 189.99,
+    "link": "https://www.microcenter.com/product/690340/crucial-64gb-ddr5-5600-pc5-44800-cl46-single-channel-desktop-memory-module-ct64g56c46u5-black",
+    "delta": null
+  },
+  {
+    "name": "VENGEANCE 32GB (2 x 16GB) DDR5-5600 PC5-44800 CL40 Dual Channel Desktop Memory Kit CMK32GX5M2B5600C40 - Black",
+    "price": 95.99,
+    "link": "https://www.microcenter.com/product/673323/corsair-vengeance-32gb-(2-x-16gb)-ddr5-5600-pc5-44800-cl40-dual-channel-desktop-memory-kit-cmk32gx5m2b5600c40-black",
+    "delta": -8.0
+  },
+  {
+    "name": "T-FORCE DELTA RGB 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL34 Dual Channel Desktop Memory Kit FF3D564G6400HC34EDC01 - Black",
+    "price": 229.99,
+    "link": "https://www.microcenter.com/product/690648/teamgroup-t-force-delta-rgb-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl34-dual-channel-desktop-memory-kit-ff3d564g6400hc34edc01-black"
+  },
+  {
+    "name": "XTREEM CKD 48GB (2 x 24GB) DDR5-8800 PC5-70400 CL42 Dual Channel Desktop Memory Kit FFXD548G8800HC42ADC-CU01 - Black",
+    "price": 384.99,
+    "link": "https://www.microcenter.com/product/688837/teamgroup-xtreem-ckd-48gb-(2-x-24gb)-ddr5-8800-pc5-70400-cl42-dual-channel-desktop-memory-kit-ffxd548g8800hc42adc-cu01-black",
+    "delta": 25.0
+  },
+  {
+    "name": "VENGEANCE RGB 48GB (2 x 24GB) DDR5-8800 PC5-70400 CL42 Dual Channel ECC Unbuffered Desktop Memory Kit CMHC48GX5M2X8800C42 - Gray",
+    "price": 409.99,
+    "link": "https://www.microcenter.com/product/690387/corsair-vengeance-rgb-48gb-(2-x-24gb)-ddr5-8800-pc5-70400-cl42-dual-channel-ecc-unbuffered-desktop-memory-kit-cmhc48gx5m2x8800c42-gray",
+    "delta": null
+  },
+  {
+    "name": "T-Create EXPERT 48GB (2 x 24GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCED548G6400HC32ADC01 - Black",
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/680459/teamgroup-t-create-expert-48gb-(2-x-24gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctced548g6400hc32adc01-black",
+    "delta": 17.0
+  },
+  {
+    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KTD-PE432D8/16G - Green",
     "price": 74.99,
-    "link": "https://www.microcenter.com/product/680019/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ktl-ts432d8-16g-green"
+    "link": "https://www.microcenter.com/product/680017/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ktd-pe432d8-16g-green"
   },
   {
-    "name": "DOMINATOR TITANIUM RGB 64GB (4 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CMP64GX5M4B6400C32 - Black",
-    "price": 369.99,
-    "link": "https://www.microcenter.com/product/689399/corsair-dominator-titanium-rgb-64gb-(4-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-cmp64gx5m4b6400c32-black"
+    "name": "Pro 64GB (2 x 32GB) DDR5-6400 PC5-51200 CL40 Dual Channel Desktop Memory Kit CP2K32G64C40U5W - White",
+    "price": 204.99,
+    "link": "https://www.microcenter.com/product/690339/crucial-pro-64gb-(2-x-32gb)-ddr5-6400-pc5-51200-cl40-dual-channel-desktop-memory-kit-cp2k32g64c40u5w-white",
+    "delta": null
   },
   {
-    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Server Memory Module KTL-TS432E/32G - Green",
+    "name": "T-Force Xtreem Overclocking 32GB (2 x 16GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FFXD532G7600HC36FDC01 - Black",
+    "price": 159.99,
+    "link": "https://www.microcenter.com/product/675488/teamgroup-t-force-xtreem-overclocking-32gb-(2-x-16gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ffxd532g7600hc36fdc01-black",
+    "delta": null
+  },
+  {
+    "name": "32GB DDR5-5600 PC5-44800 CL46 Single Channel ECC Registered Server Memory Module MTC20F1045S1RC56BR - Green",
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/693757/crucial-32gb-ddr5-5600-pc5-44800-cl46-single-channel-ecc-registered-server-memory-module-mtc20f1045s1rc56br-green",
+    "delta": null
+  },
+  {
+    "name": "T-Create EXPERT 48GB (2 x 24GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCWD548G6400HC32ADC01 - White",
+    "price": 199.99,
+    "link": "https://www.microcenter.com/product/680460/teamgroup-t-create-expert-48gb-(2-x-24gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctcwd548g6400hc32adc01-white",
+    "delta": 17.0
+  },
+  {
+    "name": "T-Force Xtreem ARGB 32GB (2 x 16GB) DDR5-8000 PC5-64000 CL38 Dual Channel Desktop Memory Kit FF9D532G8000HC38DDC01 - Black",
+    "price": 289.99,
+    "link": "https://www.microcenter.com/product/680467/teamgroup-t-force-xtreem-argb-32gb-(2-x-16gb)-ddr5-8000-pc5-64000-cl38-dual-channel-desktop-memory-kit-ff9d532g8000hc38ddc01-black",
+    "delta": 70.0
+  },
+  {
+    "name": "32GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KTL-TS432/32G - Green",
+    "price": 139.99,
+    "link": "https://www.microcenter.com/product/680018/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ktl-ts432-32g-green"
+  },
+  {
+    "name": "T-FORCE DELTA RGB ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL38 Dual Channel Desktop Memory Kit FF2D532G6000HC38JDC01 - Silver",
+    "price": 109.99,
+    "link": "https://www.microcenter.com/product/696536/teamgroup-t-force-delta-rgb-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl38-dual-channel-desktop-memory-kit-ff2d532g6000hc38jdc01-silver",
+    "delta": null
+  },
+  {
+    "name": "VENGEANCE RGB 48GB (2 x 24GB) DDR5-8400 PC5-67200 CL40 Dual Channel Desktop Memory Kit CMKC48GX5M2X8800C42 - Gray",
+    "price": 397.99,
+    "link": "https://www.microcenter.com/product/690389/corsair-vengeance-rgb-48gb-(2-x-24gb)-ddr5-8400-pc5-67200-cl40-dual-channel-desktop-memory-kit-cmkc48gx5m2x8800c42-gray",
+    "delta": 7.0
+  },
+  {
+    "name": "T-FORCE DELTA RGB 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL28 Dual Channel Desktop Memory Kit FF3D532G6000HC28ADC01 - Black",
     "price": 134.99,
-    "link": "https://www.microcenter.com/product/680021/kingston-32gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-server-memory-module-ktl-ts432e-32g-green"
+    "link": "https://www.microcenter.com/product/688828/teamgroup-t-force-delta-rgb-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl28-dual-channel-desktop-memory-kit-ff3d532g6000hc28adc01-black",
+    "delta": 15.0
+  },
+  {
+    "name": "16GB DDR4-3200 PC4-25600 CL22 Single Channel ECC Registered Server Memory Module KSM32RD8/16MRR - Green",
+    "price": 74.99,
+    "link": "https://www.microcenter.com/product/680012/kingston-16gb-ddr4-3200-pc4-25600-cl22-single-channel-ecc-registered-server-memory-module-ksm32rd8-16mrr-green",
+    "delta": null
   },
   {
     "name": "ARES RGB 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit LD5EU016G-R6400GDLA - Black",
@@ -1305,23 +1123,26 @@
     "link": "https://www.microcenter.com/product/685120/lexar-media-ares-rgb-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ld5eu016g-r6400gdla-black"
   },
   {
-    "name": "VENGEANCE RGB 48GB (2 x 24GB) DDR5-8400 PC5-67200 CL40 Dual Channel Desktop Memory Kit CMKC48GX5M2X8800C42 - Gray",
-    "price": 390.99,
-    "link": "https://www.microcenter.com/product/690389/corsair-vengeance-rgb-48gb-(2-x-24gb)-ddr5-8400-pc5-67200-cl40-dual-channel-desktop-memory-kit-cmkc48gx5m2x8800c42-gray"
+    "name": "T-FORCE XTREEM 32GB (2 x 16GB) DDR5-7200 PC5-57600 CL34 Dual Channel Desktop Memory Kit FFWD532G7200HC34ADC01 - White",
+    "price": 139.99,
+    "link": "https://www.microcenter.com/product/688836/teamgroup-t-force-xtreem-32gb-(2-x-16gb)-ddr5-7200-pc5-57600-cl34-dual-channel-desktop-memory-kit-ffwd532g7200hc34adc01-white"
   },
   {
-    "name": "T-Create Master Overclocking 64GB (4 x 16GB) DDR5-6800 PC5-54400 CL34 Quad Channel ECC Registered Memory Kit CTCMD564G6800HC34BQC01 - Black",
-    "price": 529.99,
-    "link": "https://www.microcenter.com/product/675481/teamgroup-t-create-master-overclocking-64gb-(4-x-16gb)-ddr5-6800-pc5-54400-cl34-quad-channel-ecc-registered-memory-kit-ctcmd564g6800hc34bqc01-black"
+    "name": "T-Create EXPERT 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 Dual Channel Desktop Memory Kit CTCED532G6400HC32ADC01 - Black",
+    "price": 119.99,
+    "link": "https://www.microcenter.com/product/680457/teamgroup-t-create-expert-32gb-(2-x-16gb)-ddr5-6400-pc5-51200-cl32-dual-channel-desktop-memory-kit-ctced532g6400hc32adc01-black",
+    "delta": 20.0
   },
   {
-    "name": "T-Force Xtreem Overclocking 48GB (2 x 24GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FFXD548G7600HC36EDC01 - Black",
-    "price": 209.99,
-    "link": "https://www.microcenter.com/product/675487/teamgroup-t-force-xtreem-overclocking-48gb-(2-x-24gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ffxd548g7600hc36edc01-black"
+    "name": "VENGEANCE 48GB (2 x 24GB) DDR5-8800 PC5-70400 CL42 Dual Channel Desktop Memory Kit CMKC48GX5M2X8800C42 - Gray",
+    "price": 397.99,
+    "link": "https://www.microcenter.com/product/690386/corsair-vengeance-48gb-(2-x-24gb)-ddr5-8800-pc5-70400-cl42-dual-channel-desktop-memory-kit-cmkc48gx5m2x8800c42-gray",
+    "delta": 7.0
   },
   {
-    "name": "T-FORCE DELTA RGB ECO 32GB (2 x 16GB) DDR5-6000 PC5-48000 CL38 Dual Channel Desktop Memory Kit FF2D532G6000HC38GDC01 - Silver",
-    "price": 109.99,
-    "link": "https://www.microcenter.com/product/688834/teamgroup-t-force-delta-rgb-eco-32gb-(2-x-16gb)-ddr5-6000-pc5-48000-cl38-dual-channel-desktop-memory-kit-ff2d532g6000hc38gdc01-silver"
+    "name": "T-Force Xtreem ARGB 48GB (2 x 24GB) DDR5-7600 PC5-60800 CL36 Dual Channel Desktop Memory Kit FF9D548G7600HC36EDC01 - Black",
+    "price": 299.99,
+    "link": "https://www.microcenter.com/product/680468/teamgroup-t-force-xtreem-argb-48gb-(2-x-24gb)-ddr5-7600-pc5-60800-cl36-dual-channel-desktop-memory-kit-ff9d548g7600hc36edc01-black",
+    "delta": 70.0
   }
 ]

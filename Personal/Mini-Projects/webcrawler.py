@@ -1,7 +1,6 @@
 """
 get a random wiki page
 get text from it
-run sentiment analysis
 
 print page name and analysis result
 
