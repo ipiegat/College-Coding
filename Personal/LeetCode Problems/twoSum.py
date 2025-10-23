@@ -9,3 +9,4 @@ class Solution:
                 if answer == target and i != j:
                     return [i, j]
 
+x = None
