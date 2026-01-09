@@ -32,20 +32,38 @@ class Wordle {
             GREEN
         };
 
-        Wordle(): guess_grid(GRID_SIZE_Y, vector<letter_state>(GRID_SIZE_X, letter_state::GRAY)), previous_guesses(6, string(5, '_')), guesses_attempted(0), wordle_answer(), guessed_word(), player_won(false), player_quit(false), alphabet("a b c d e f g h i j k l m n o p q r s t u v w x y z ") 
+        Wordle(): guess_grid(30), guesses_attempted(), wordle_answer(), guessed_word(), player_won(), player_quit(), replay(false), alphabet() 
         {
-            for (char c = 'a'; c <= 'z'; ++c) {
-                letter_colors[c] = WHITE_BG;   // initialize as white
-            }
+
         }
 
         // print instructions (occurs each turn)
         void initilization() {
-            cout << "\nWELCOME TO WORDLE!" << endl;
-            cout << "\n" << GREEN_BG << "GREEN MEANS CORRECT LETTER, CORRECT POSITION" << RESET << endl;
-            cout << "\n" << YELLOW_BG << "YELLOW MEANS CORRECT LETTER, INCORRECT POSITION" << RESET << endl;
-            cout << "\n" << GRAY_BG << "GRAY MEANS WORD DOES NOT CONTAIN LETTER, OR WORD HOLDS NO ADDITIONAL COPIES" << RESET << endl;
-            cout << "\n" << "YOU GET 6 GUESSES! TYPE 'QUIT' IF YOU WANT TO END EARLY" << endl;
+
+            if (!replay) {
+                cout << "\nWELCOME TO WORDLE!" << endl;
+                cout << "\n" << GREEN_BG << "GREEN MEANS CORRECT LETTER, CORRECT POSITION" << RESET << endl;
+                cout << "\n" << YELLOW_BG << "YELLOW MEANS CORRECT LETTER, INCORRECT POSITION" << RESET << endl;
+                cout << "\n" << GRAY_BG << "GRAY MEANS WORD DOES NOT CONTAIN LETTER, OR WORD HOLDS NO ADDITIONAL COPIES" << RESET << endl;
+                cout << "\n" << "YOU GET 6 GUESSES! TYPE 'Q' IF YOU WANT TO END EARLY" << endl;
+            } else {
+                cout << YELLOW_BG << "\nWORDLE RESET!" << RESET << endl;
+            }
+
+            // initialize and reset if play_again is ever true
+            guess_grid.assign(GRID_SIZE_Y, vector<letter_state>(GRID_SIZE_X, letter_state::GRAY));
+            previous_guesses.assign(6, string(5, '_'));
+            guesses_attempted = 0;
+            wordle_answer.clear();
+            guessed_word.clear();
+            player_won = false;
+            player_quit = false;
+            replay = false;
+            alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z ";
+
+            for (char c = 'a'; c <= 'z'; ++c) {
+                letter_colors[c] = WHITE_BG;   // initialize as white
+            }       
         }
 
         // function to create random 5-letter word
@@ -87,7 +105,7 @@ class Wordle {
                 cout << "\nInput 5-letter word: ";
                 cin >> guessed_word;
 
-                if (guessed_word == "QUIT") {
+                if (guessed_word == "Q" || guessed_word == "q") {
                     player_quit = true;
                     return;
                 }
@@ -190,8 +208,6 @@ class Wordle {
                 }
             }
             
-
-            
             previous_guesses[guesses_attempted] = guessed_word;
             guesses_attempted++;
             
@@ -205,7 +221,6 @@ class Wordle {
         void print_alphabet() {
   
             // print alphabet
-
             cout << "\nAlphabet: ";
 
             for (auto& pair : letter_colors) {
@@ -214,6 +229,7 @@ class Wordle {
 
             cout << endl;
         }
+
 
         // guess grid includes guessed letter location and state. Like "🟩S".
         void print_guess_grid() {
@@ -252,6 +268,30 @@ class Wordle {
                 }
             }
         }
+
+        // offer player chance to play again
+        bool play_again() {
+            char choice;
+
+            while (true) {
+                cout << "Do you want to play again? (Y/N): ";
+                cin >> choice;
+
+                if (choice == 'Y' || choice == 'y') {
+                    replay = true;
+                    return true;
+                }
+
+
+                if (choice == 'N' || choice == 'n') {
+                    replay = false;
+                    return false;
+                }
+
+
+                cout << "\nInvalid input. Please enter Y or N." << endl;
+            }
+        }
         
     private:
         vector<vector<letter_state>> guess_grid;
@@ -261,6 +301,7 @@ class Wordle {
         string guessed_word;
         bool player_won;
         bool player_quit;
+        bool replay;
         string alphabet;
         map<char, string> letter_colors;
 };
@@ -268,17 +309,20 @@ class Wordle {
 int main() {
     Wordle game = Wordle();
 
-    game.initilization();
-    
-    game.generate_word();
-    game.player_guess();
 
-    while (!game.game_loop()) {
-        game.print_guess_grid();
-        game.print_alphabet();
+    do {
+        game.initilization();
+        game.generate_word();
         game.player_guess();
-    }
 
-    game.print_guess_grid();
-    game.end_game();
+        while (!game.game_loop()) {
+            game.print_guess_grid();
+            game.print_alphabet();
+            game.player_guess();
+        }
+
+        game.print_guess_grid();
+        game.end_game();
+
+    } while (game.play_again());
 }
