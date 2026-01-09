@@ -1,0 +1,1122 @@
+Cycle 1, PC 0, Next PC 4
+[Fetch]      add  t0, zero, zero
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000000
+
+=================================================================================================================================
+
+Cycle 2, PC 4, Next PC 8
+[Fetch]      add  t1, zero, zero
+[Decode]     add  t0, zero, zero
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000004
+
+=================================================================================================================================
+
+Cycle 3, PC 8, Next PC 12
+[Fetch]      add  t2, zero, zero
+[Decode]     add  t1, zero, zero
+[Execute ALU] add  t0, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000008
+
+=================================================================================================================================
+
+Cycle 4, PC 12, Next PC 16
+[Fetch]      add  t3, zero, zero
+[Decode]     add  t2, zero, zero
+[Execute ALU] add  t1, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t0, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000000C
+
+=================================================================================================================================
+
+Cycle 5, PC 16, Next PC 20
+[Fetch]      add  t5, zero, zero
+[Decode]     add  t3, zero, zero
+[Execute ALU] add  t2, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t1, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000010
+
+=================================================================================================================================
+
+Cycle 6, PC 20, Next PC 24
+[Fetch]      add  t6, zero, zero
+[Decode]     add  t5, zero, zero
+[Execute ALU] add  t3, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t2, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000014
+
+=================================================================================================================================
+
+Cycle 7, PC 24, Next PC 28
+[Fetch]      lw   t1, 256(t0)
+[Decode]     add  t6, zero, zero
+[Execute ALU] add  t5, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t3, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000018
+
+=================================================================================================================================
+
+Cycle 8, PC 28, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     lw   t1, 256(t0)
+[Execute ALU] add  t6, zero, zero              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t5, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000001C
+
+=================================================================================================================================
+
+Cycle 9, PC 32, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t6, zero, zero           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 10, PC 32, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 11, PC 32, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 12, PC 32, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 13, PC 32, Next PC 32
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 14, PC 32, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     lw   t2, 256(t1)
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t1, 256(t0)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000000        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000020
+
+=================================================================================================================================
+
+Cycle 15, PC 36, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 16, PC 36, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 17, PC 36, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 18, PC 36, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 19, PC 36, Next PC 36
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 20, PC 36, Next PC 40
+[Fetch]      lw   t3, 256(t4)
+[Decode]     add  t4, t1, t2
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t2, 256(t1)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000000        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000024
+
+=================================================================================================================================
+
+Cycle 21, PC 40, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     lw   t3, 256(t4)
+[Execute ALU] add  t4, t1, t2              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000000
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000028
+
+=================================================================================================================================
+
+Cycle 22, PC 44, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t3, 256(t4)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] add  t4, t1, t2           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 23, PC 44, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t3, 256(t4)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 24, PC 44, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t3, 256(t4)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 25, PC 44, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t3, 256(t4)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 26, PC 44, Next PC 44
+[Fetch]      add  t4, t4, t3
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t3, 256(t4)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 27, PC 44, Next PC 48
+[Fetch]      sw   t4, 256(t0)
+[Decode]     add  t4, t4, t3
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t3, 256(t4)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000000
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000002C
+
+=================================================================================================================================
+
+Cycle 28, PC 48, Next PC 52
+[Fetch]      lw   t1, 256(t0)
+[Decode]     sw   t4, 256(t0)
+[Execute ALU] add  t4, t4, t3              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000018
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000030
+
+=================================================================================================================================
+
+Cycle 29, PC 52, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     lw   t1, 256(t0)
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] sw   t4, 256(t0)
+[Writeback ALU or ST] add  t4, t4, t3           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000034
+
+=================================================================================================================================
+
+Cycle 30, PC 56, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] sw   t4, 256(t0)           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 31, PC 56, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 32, PC 56, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 33, PC 56, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 34, PC 56, Next PC 56
+[Fetch]      lw   t2, 256(t1)
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t1, 256(t0)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 35, PC 56, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     lw   t2, 256(t1)
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t1, 256(t0)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000014        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000038
+
+=================================================================================================================================
+
+Cycle 36, PC 60, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 37, PC 60, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 38, PC 60, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 39, PC 60, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 40, PC 60, Next PC 60
+[Fetch]      add  t4, t1, t2
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t2, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 41, PC 60, Next PC 64
+[Fetch]      sw   t4, 256(t1)
+[Decode]     add  t4, t1, t2
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t2, 256(t1)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000004        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000003C
+
+=================================================================================================================================
+
+Cycle 42, PC 64, Next PC 68
+[Fetch]      lw   t5, 256(t1)
+[Decode]     sw   t4, 256(t1)
+[Execute ALU] add  t4, t1, t2              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000020
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000040
+
+=================================================================================================================================
+
+Cycle 43, PC 68, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     lw   t5, 256(t1)
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] sw   t4, 256(t1)
+[Writeback ALU or ST] add  t4, t1, t2           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000044
+
+=================================================================================================================================
+
+Cycle 44, PC 72, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t5, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] sw   t4, 256(t1)           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 45, PC 72, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t5, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 46, PC 72, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t5, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 47, PC 72, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t5, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 48, PC 72, Next PC 72
+[Fetch]      addi zero, zero, 1
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] lw   t5, 256(t1)              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 49, PC 72, Next PC 76
+[Fetch]      addi zero, zero, 0
+[Decode]     addi zero, zero, 1
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] lw   t5, 256(t1)           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000000
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000048
+
+=================================================================================================================================
+
+Cycle 50, PC 76, Next PC 80
+[Fetch]      addi zero, zero, 0
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 1              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 0           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000000        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000025
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x0000004C
+
+=================================================================================================================================
+
+Cycle 51, PC 80, Next PC 84
+[Fetch]      addi zero, zero, 0
+[Decode]     addi zero, zero, 0
+[Execute ALU] addi zero, zero, 0              [Execute LD] addi zero, zero, 0              [Execute ST] addi zero, zero, 0
+[Writeback ALU or ST] addi zero, zero, 1           [Writeback LD] addi zero, zero, 0           
+---------------------
+--- Register Dump ---
+---------------------
+Index   Name     Value             Index   Name     Value             Index   Name     Value             Index   Name     Value     
+-----   ----     -----             -----   ----     -----             -----   ----     -----             -----   ----     -----     
+x0      zero     0x00000001        x8      s0       0x00000000        x16     a6       0x00000000        x24     s8       0x00000000
+x1      ra       0x00000000        x9      s1       0x00000000        x17     a7       0x00000000        x25     s9       0x00000000
+x2      sp       0x00000000        x10     a0       0x00000000        x18     s2       0x00000000        x26     s10      0x00000000
+x3      gp       0x00000000        x11     a1       0x00000000        x19     s3       0x00000000        x27     s11      0x00000000
+x4      tp       0x00000000        x12     a2       0x00000000        x20     s4       0x00000000        x28     t3       0x00000008
+x5      t0       0x00000000        x13     a3       0x00000000        x21     s5       0x00000000        x29     t4       0x00000025
+x6      t1       0x00000020        x14     a4       0x00000000        x22     s6       0x00000000        x30     t5       0x00000025
+x7      t2       0x00000005        x15     a5       0x00000000        x23     s7       0x00000000        x31     t6       0x00000000
+N/A     pc       0x00000050
+
+=================================================================================================================================
+
