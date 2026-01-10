@@ -17,25 +17,16 @@ using namespace std;
 
 class Wordle {
     public:
-        const static int GRID_SIZE_X = 5;
-        const static int GRID_SIZE_Y = 6;
+        static constexpr int GRID_SIZE_X = 5;
+        static constexpr int GRID_SIZE_Y = 6;
 
-        const string YELLOW_BG = "\033[33m";
-        const string GRAY_BG   = "\033[90m";  // bright black = gray
-        const string GREEN_BG  = "\033[32m";
-        const string WHITE_BG  = "\033[97m";
-        const string RESET  = "\033[0m";
-
-        enum letter_state {
+        enum class letter_state {
             GRAY,
             YELLOW,
             GREEN
         };
 
-        Wordle(): guess_grid(30), guesses_attempted(), wordle_answer(), guessed_word(), player_won(), player_quit(), replay(false), alphabet() 
-        {
-
-        }
+        Wordle(): guess_grid(GRID_SIZE_X * GRID_SIZE_Y), guesses_attempted(), wordle_answer(), guessed_word(), player_won(false), player_quit(false), replay(false), alphabet() {}
 
         // print instructions (occurs each turn)
         void initilization() {
@@ -304,6 +295,12 @@ class Wordle {
         bool replay;
         string alphabet;
         map<char, string> letter_colors;
+
+        static constexpr const char* YELLOW_BG = "\033[33m";
+        static constexpr const char* GRAY_BG   = "\033[90m";
+        static constexpr const char* GREEN_BG  = "\033[32m";
+        static constexpr const char* WHITE_BG  = "\033[97m";
+        static constexpr const char* RESET     = "\033[0m";
 };
 
 int main() {
