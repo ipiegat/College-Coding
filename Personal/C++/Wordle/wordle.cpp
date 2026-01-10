@@ -32,7 +32,7 @@ class Wordle {
             GREEN
         };
 
-        Wordle(): guess_grid(30), guesses_attempted(), wordle_answer(), guessed_word(), player_won(), player_quit(), replay(false), alphabet() 
+        Wordle(): guess_grid(30), guesses_attempted(), wordle_answer(), guessed_word(), player_won(false), player_quit(false), replay(false), alphabet() 
         {
 
         }
