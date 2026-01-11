@@ -2,7 +2,8 @@
 
 # 1. Windows PowerShell (run when ESP32 is plugged in or reconnects)
 usbipd list
-usbipd attach --wsl --busid 4-7
+DO ONCE: usbipd bind --busid (bus id) 
+usbipd attach --wsl --busid (bus id)
 
 # 2. WSL: build, upload, run
 cd ~/College-Coding/PlatformIO/Projects/senior-design
