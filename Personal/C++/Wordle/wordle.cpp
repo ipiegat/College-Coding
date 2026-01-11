@@ -17,7 +17,7 @@ using namespace std;
 
 class Wordle {
     public:
-        static constexpr int GRID_SIZE_X = 5;
+        static constexpr int GRID_SIZE_X = 6;
         static constexpr int GRID_SIZE_Y = 6;
 
         enum class letter_state {
@@ -26,14 +26,7 @@ class Wordle {
             GREEN
         };
 
-<<<<<<< HEAD
         Wordle(): guess_grid(GRID_SIZE_X * GRID_SIZE_Y), guesses_attempted(), wordle_answer(), guessed_word(), player_won(false), player_quit(false), replay(false), alphabet() {}
-=======
-        Wordle(): guess_grid(30), guesses_attempted(), wordle_answer(), guessed_word(), player_won(false), player_quit(false), replay(false), alphabet() 
-        {
-
-        }
->>>>>>> refs/remotes/origin/main
 
         // print instructions (occurs each turn)
         void initilization() {
