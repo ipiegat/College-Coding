@@ -26,13 +26,13 @@ struct Card {
 
 class GameManager {
     public:
-        GameManager(int num_bots_): num_bots(std::move(num_bots_)), deck(),  {}
+        GameManager(int num_bots_): num_bots(std::move(num_bots_)), deck(Card),  {}
 
         void initialize_game() {}
         
         void bot_turn() {}
-        
         void player_turn () {}
+
         void shuffle_deck() {
 
             for (int s = 0; s < 4; ++s) {
@@ -42,6 +42,7 @@ class GameManager {
             }
 
         }
+
     private:
     
         bool at_lb;
