@@ -40,5 +40,6 @@ class Singleton {
 
 int main() {
     Singleton& a = Singleton::GetInstance();
+    
 }
 
