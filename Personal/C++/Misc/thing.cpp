@@ -16,6 +16,8 @@ class RAII {
 
 class Singleton {
     public:
+        // delete default constructor (don't delete, this is example)
+        // Singleton() = delete;
         // delete copy constructor
         Singleton(const Singleton&) = delete;
         // delete move constructor
@@ -24,6 +26,8 @@ class Singleton {
         Singleton& operator = (const Singleton&) = delete;
         // delete move assignment operator
         Singleton& operator = (Singleton&&) = delete;
+        // delete destructor (don't do)
+        // ~Singleton() = delete;
 
 
         static Singleton& GetInstance() {
