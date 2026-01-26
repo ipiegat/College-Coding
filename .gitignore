@@ -1,8 +1,15 @@
-# common build outputs
+# ===== Build artifacts =====
+build/
+bin/
+out/
+
+# Object files
+*.o
+*.obj
+
+# Temporary compiler outputs
 a.out
 *.out
-*.o
 
-# executables (no extension)
-wordle
-
+# VS Code
+.vscode/
