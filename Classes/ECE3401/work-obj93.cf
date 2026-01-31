@@ -1,0 +1,7 @@
+v 4
+file . "test0.vhd" "718d80d3ec045d926385602ef4493c2dbc6c50e8" "20260131045043.431":
+  entity test_add at 9( 309) + 0 on 13;
+  architecture test of test_add at 19( 555) + 0 on 14;
+file . "lab0.vhd" "b1ea1aefb7cdf6bcb616b0b5d089893a1e6788b2" "20260131045043.430":
+  entity bit_adder at 5( 105) + 0 on 11;
+  architecture bhv of bit_adder at 19( 577) + 0 on 12;
