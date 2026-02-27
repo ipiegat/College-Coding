@@ -1,0 +1,93 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Feb 11 22:31:39 2026
+[*]
+[dumpfile] "/Users/omer/Desktop/Desktop/vhdl-uconn/PAs-S26/pa1/pa1_working/wave_tb.ghw"
+[dumpfile_mtime] "Wed Feb 11 22:29:12 2026"
+[dumpfile_size] 8197
+[savefile] "/Users/omer/Desktop/Desktop/vhdl-uconn/PAs-S26/pa1/pa1_working/tb.gtkw"
+[timestart] 148200000
+[size] 1720 958
+[pos] -1 -1
+*-25.491360 305000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] top.
+[treeopen] top.tb_pa1.
+[treeopen] top.tb_pa1.uut.
+[sst_width] 240
+[signals_width] 135
+[sst_expanded] 1
+[sst_vpaned_height] 507
+@28
+top.tb_pa1.uut.clk
+top.tb_pa1.uut.reset
+top.tb_pa1.uut.start
+@420
+top.tb_pa1.uut.i
+top.tb_pa1.uut.j
+top.tb_pa1.uut.k
+@421
+top.tb_pa1.uut.n_state
+@420
+top.tb_pa1.uut.state
+@28
+top.tb_pa1.uut.ready
+@420
+top.tb_pa1.matc[0,0]
+top.tb_pa1.matc[0,1]
+top.tb_pa1.matc[0,2]
+top.tb_pa1.matc[1,0]
+top.tb_pa1.matc[1,1]
+top.tb_pa1.matc[1,2]
+top.tb_pa1.matc[2,0]
+top.tb_pa1.matc[2,1]
+top.tb_pa1.matc[2,2]
+top.tb_pa1.mata[0,0]
+top.tb_pa1.mata[0,1]
+top.tb_pa1.mata[0,2]
+top.tb_pa1.mata[1,0]
+top.tb_pa1.mata[1,1]
+top.tb_pa1.mata[1,2]
+top.tb_pa1.mata[2,0]
+top.tb_pa1.mata[2,1]
+@800420
+top.tb_pa1.mata[2,2]
+@1001200
+-group_end
+@420
+top.tb_pa1.matb[0,0]
+top.tb_pa1.matb[0,1]
+top.tb_pa1.matb[0,2]
+top.tb_pa1.matb[1,0]
+top.tb_pa1.matb[1,1]
+top.tb_pa1.matb[1,2]
+top.tb_pa1.matb[2,0]
+top.tb_pa1.matb[2,1]
+top.tb_pa1.matb[2,2]
+[pattern_trace] 1
+[pattern_trace] 0
