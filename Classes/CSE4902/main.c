@@ -1,14 +1,19 @@
 #include <WiFi.h>
+#include <WebServer.h>
+#include <Preferences.h>
 #include <time.h>
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
-
-/* ===== CONFIG ===== */
-
-#define WIFI_SSID "Weiye"
-#define WIFI_PASS "11112222"
+#include <strings.h>
 
 #define LOAD_PIN 5
+#define STATUS_LED 2
+
+#define ADC_PIN_VOLT 34
+#define ADC_PIN_CURR 35
+
+const char* AP_SSID = "LightController_Setup";
+const char* AP_PASS = "setup1234";
 
 const char* AWS_ENDPOINT = "a27vwl8grwujoi-ats.iot.us-east-2.amazonaws.com";
 const char* CLIENT_ID    = "ESP32_Device_01";
@@ -16,80 +21,224 @@ const char* CLIENT_ID    = "ESP32_Device_01";
 const char* TOPIC_CMD    = "esp32/ESP32_Device_01/cmd";
 const char* TOPIC_SCHED  = "esp32/ESP32_Device_01/schedule";
 const char* TOPIC_PUB    = "esp32/ESP32_Device_01/tele";
+const char* TOPIC_STATUS = "esp32/ESP32_Device_01/status";
 
-const char* TZ = "EST5EDT,M3.2.0/2,M11.1.0/2";
+const char* TZ_STRING = "EST5EDT,M3.2.0/2,M11.1.0/2";
 
-/* ===== CERTS ===== */
+const unsigned long WIFI_CONNECT_TIMEOUT_MS = 15000;
+const unsigned long TELE_INTERVAL_MS = 5000;
+
+const int ADC_SAMPLES = 100;
+const float ADC_REF_V = 3.3f;
+const float ADC_MAX   = 4095.0f;
+
+const float VOLTAGE_SCALE  = 100.0f;
+const float CURRENT_SCALE  = 10.0f;
+const float VOLTAGE_OFFSET = 0.0f;
+const float CURRENT_OFFSET = 0.0f;
 
 extern const char AWS_CERT_CA[] PROGMEM;
 extern const char AWS_CERT_CRT[] PROGMEM;
 extern const char AWS_CERT_PRIVATE[] PROGMEM;
 
-/* ===== OBJECTS ===== */
+enum DeviceState {
+  PROVISIONING,
+  NORMAL_OPERATION
+};
+
+DeviceState deviceState = PROVISIONING;
 
 WiFiClientSecure net;
 PubSubClient mqtt(net);
+WebServer server(80);
+Preferences prefs;
 
-/* ===== SCHEDULE STATE ===== */
+String wifiSSID = "";
+String wifiPASS = "";
 
 int schedOnHour  = 20;
 int schedOffHour = 23;
 
-/* ===== WIFI + TIME ===== */
+bool manualOverride = false;
+bool manualState = false;
 
-void connectWiFi() {
+unsigned long lastTeleMs = 0;
+unsigned long lastLedMs = 0;
+bool ledState = false;
+
+bool loadWiFiCreds();
+void saveWiFiCreds(const String& ssid, const String& pass);
+void clearWiFiCreds();
+String htmlPage();
+void startProvisioningMode();
+bool connectWiFi();
+void syncTime();
+void publishStatus(const char* statusMsg);
+void connectAWS();
+void onMessage(char* topic, byte* payload, unsigned int len);
+float readAverageVoltageADC();
+float readAverageCurrentADC();
+float readVoltage();
+float readCurrent();
+void checkSchedule();
+void publishTelemetry();
+void updateStatusLed();
+
+bool loadWiFiCreds() {
+  prefs.begin("wifi", true);
+  wifiSSID = prefs.getString("ssid", "");
+  wifiPASS = prefs.getString("pass", "");
+  prefs.end();
+  return wifiSSID.length() > 0;
+}
+
+void saveWiFiCreds(const String& ssid, const String& pass) {
+  prefs.begin("wifi", false);
+  prefs.putString("ssid", ssid);
+  prefs.putString("pass", pass);
+  prefs.end();
+}
+
+void clearWiFiCreds() {
+  prefs.begin("wifi", false);
+  prefs.clear();
+  prefs.end();
+}
+
+String htmlPage() {
+  String page;
+  page += "<!DOCTYPE html><html><head><meta name='viewport' content='width=device-width, initial-scale=1'>";
+  page += "<title>WiFi Setup</title></head><body>";
+  page += "<h2>ESP32 Lighting Controller Setup</h2>";
+  page += "<p>Connect this device to local WiFi.</p>";
+  page += "<form action='/save' method='POST'>";
+  page += "SSID:<br><input name='ssid'><br><br>";
+  page += "Password:<br><input name='pass' type='password'><br><br>";
+  page += "<input type='submit' value='Save'>";
+  page += "</form>";
+  page += "<br><form action='/clear' method='POST'><input type='submit' value='Clear Saved WiFi'></form>";
+  page += "</body></html>";
+  return page;
+}
+
+void startProvisioningMode() {
+  deviceState = PROVISIONING;
+
+  mqtt.disconnect();
+  WiFi.disconnect(true, true);
+  delay(500);
+
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP(AP_SSID, AP_PASS);
+
+  server.stop();
+
+  server.on("/", HTTP_GET, []() {
+    server.send(200, "text/html", htmlPage());
+  });
+
+  server.on("/save", HTTP_POST, []() {
+    String ssid = server.arg("ssid");
+    String pass = server.arg("pass");
+
+    if (ssid.length() == 0) {
+      server.send(400, "text/html", "<html><body><h3>SSID cannot be empty.</h3><a href='/'>Back</a></body></html>");
+      return;
+    }
+
+    saveWiFiCreds(ssid, pass);
+    server.send(200, "text/html", "<html><body><h3>Saved. Rebooting...</h3></body></html>");
+    delay(1500);
+    ESP.restart();
+  });
+
+  server.on("/clear", HTTP_POST, []() {
+    clearWiFiCreds();
+    server.send(200, "text/html", "<html><body><h3>Saved WiFi cleared. Rebooting...</h3></body></html>");
+    delay(1500);
+    ESP.restart();
+  });
+
+  server.begin();
+}
+
+bool connectWiFi() {
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASS);
-  while (WiFi.status() != WL_CONNECTED) delay(250);
+  WiFi.begin(wifiSSID.c_str(), wifiPASS.c_str());
+
+  unsigned long start = millis();
+  while (WiFi.status() != WL_CONNECTED && millis() - start < WIFI_CONNECT_TIMEOUT_MS) {
+    delay(250);
+  }
+
+  return WiFi.status() == WL_CONNECTED;
 }
 
 void syncTime() {
-  setenv("TZ", TZ, 1);
+  setenv("TZ", TZ_STRING, 1);
   tzset();
-  configTzTime(TZ, "pool.ntp.org");
+  configTzTime(TZ_STRING, "pool.ntp.org", "time.nist.gov", "time.google.com");
 
-  // TLS requires valid time
-  while (time(nullptr) < 1700000000UL) delay(200);
+  while (time(nullptr) < 1700000000UL) {
+    delay(200);
+  }
 }
 
-/* ===== MQTT CALLBACK ===== */
+void publishStatus(const char* statusMsg) {
+  if (!mqtt.connected()) return;
+
+  char msg[256];
+  String ip = WiFi.isConnected() ? WiFi.localIP().toString() : "0.0.0.0";
+
+  snprintf(
+    msg,
+    sizeof(msg),
+    "{\"device\":\"%s\",\"status\":\"%s\",\"ip\":\"%s\",\"uptime\":%lu}",
+    CLIENT_ID,
+    statusMsg,
+    ip.c_str(),
+    millis() / 1000UL
+  );
+
+  mqtt.publish(TOPIC_STATUS, msg);
+}
 
 void onMessage(char* topic, byte* payload, unsigned int len) {
-
-  char msg[128];
+  char msg[256];
+  if (len >= sizeof(msg)) len = sizeof(msg) - 1;
   memcpy(msg, payload, len);
   msg[len] = '\0';
 
-  /* --- Manual ON/OFF Command --- */
   if (strcmp(topic, TOPIC_CMD) == 0) {
-
-    if ((msg[0] | 32) == 'o') {      // handles ON / OFF case-insensitive
-      if ((msg[1] | 32) == 'n') {
-        digitalWrite(LOAD_PIN, HIGH);
-        mqtt.publish(TOPIC_PUB, "LOAD=ON");
-      }
-      if ((msg[1] | 32) == 'f') {
-        digitalWrite(LOAD_PIN, LOW);
-        mqtt.publish(TOPIC_PUB, "LOAD=OFF");
-      }
+    if (strcasecmp(msg, "ON") == 0) {
+      manualOverride = true;
+      manualState = true;
+      digitalWrite(LOAD_PIN, HIGH);
+      publishStatus("manual_on");
+    } else if (strcasecmp(msg, "OFF") == 0) {
+      manualOverride = true;
+      manualState = false;
+      digitalWrite(LOAD_PIN, LOW);
+      publishStatus("manual_off");
+    } else if (strcasecmp(msg, "AUTO") == 0) {
+      manualOverride = false;
+      publishStatus("auto_mode");
     }
   }
 
-  /* --- Cloud Schedule Update --- */
   if (strcmp(topic, TOPIC_SCHED) == 0) {
-
-    // expects: {"on_hour":20,"off_hour":23}
-    sscanf(msg, "{\"on_hour\":%d,\"off_hour\":%d}",
-           &schedOnHour, &schedOffHour);
-
-    mqtt.publish(TOPIC_PUB, "Schedule Updated");
+    int onH, offH;
+    if (sscanf(msg, "{\"on_hour\":%d,\"off_hour\":%d}", &onH, &offH) == 2) {
+      if (onH >= 0 && onH <= 23 && offH >= 0 && offH <= 23) {
+        schedOnHour = onH;
+        schedOffHour = offH;
+        publishStatus("schedule_updated");
+      }
+    }
   }
 }
 
-/* ===== AWS CONNECT ===== */
-
 void connectAWS() {
-
   net.setCACert(AWS_CERT_CA);
   net.setCertificate(AWS_CERT_CRT);
   net.setPrivateKey(AWS_CERT_PRIVATE);
@@ -105,50 +254,153 @@ void connectAWS() {
   mqtt.subscribe(TOPIC_CMD);
   mqtt.subscribe(TOPIC_SCHED);
 
-  mqtt.publish(TOPIC_PUB, "boot");
+  publishStatus("boot");
+  publishStatus("online");
 }
 
-/* ===== SCHEDULER ===== */
+float readAverageVoltageADC() {
+  long sum = 0;
+  for (int i = 0; i < ADC_SAMPLES; i++) {
+    sum += analogRead(ADC_PIN_VOLT);
+    delayMicroseconds(200);
+  }
+  float avg = sum / (float)ADC_SAMPLES;
+  return avg * ADC_REF_V / ADC_MAX;
+}
+
+float readAverageCurrentADC() {
+  long sum = 0;
+  for (int i = 0; i < ADC_SAMPLES; i++) {
+    sum += analogRead(ADC_PIN_CURR);
+    delayMicroseconds(200);
+  }
+  float avg = sum / (float)ADC_SAMPLES;
+  return avg * ADC_REF_V / ADC_MAX;
+}
+
+float readVoltage() {
+  float adcVolts = readAverageVoltageADC();
+  float voltage = adcVolts * VOLTAGE_SCALE + VOLTAGE_OFFSET;
+  if (voltage < 0) voltage = 0;
+  return voltage;
+}
+
+float readCurrent() {
+  float adcVolts = readAverageCurrentADC();
+  float current = adcVolts * CURRENT_SCALE + CURRENT_OFFSET;
+  if (current < 0) current = 0;
+  return current;
+}
 
 void checkSchedule() {
+  if (manualOverride) {
+    digitalWrite(LOAD_PIN, manualState ? HIGH : LOW);
+    return;
+  }
 
   time_t now = time(nullptr);
   struct tm* t = localtime(&now);
-
   int hour = t->tm_hour;
 
-  // If schedule wraps past midnight (e.g., 22 → 3)
+  bool shouldBeOn;
   if (schedOnHour < schedOffHour) {
-    digitalWrite(LOAD_PIN,
-      (hour >= schedOnHour && hour < schedOffHour) ? HIGH : LOW);
+    shouldBeOn = (hour >= schedOnHour && hour < schedOffHour);
   } else {
-    digitalWrite(LOAD_PIN,
-      (hour >= schedOnHour || hour < schedOffHour) ? HIGH : LOW);
+    shouldBeOn = (hour >= schedOnHour || hour < schedOffHour);
+  }
+
+  digitalWrite(LOAD_PIN, shouldBeOn ? HIGH : LOW);
+}
+
+void publishTelemetry() {
+  if (!mqtt.connected()) return;
+  if (millis() - lastTeleMs < TELE_INTERVAL_MS) return;
+
+  lastTeleMs = millis();
+
+  float voltage = readVoltage();
+  float current = readCurrent();
+  float power = voltage * current;
+  int loadState = digitalRead(LOAD_PIN);
+
+  char msg[256];
+  snprintf(
+    msg,
+    sizeof(msg),
+    "{\"device\":\"%s\",\"uptime\":%lu,\"voltage\":%.2f,\"current\":%.2f,\"power\":%.2f,\"load\":%d,\"mode\":\"%s\",\"on_hour\":%d,\"off_hour\":%d}",
+    CLIENT_ID,
+    millis() / 1000UL,
+    voltage,
+    current,
+    power,
+    loadState,
+    manualOverride ? "manual" : "auto",
+    schedOnHour,
+    schedOffHour
+  );
+
+  mqtt.publish(TOPIC_PUB, msg);
+}
+
+void updateStatusLed() {
+  unsigned long interval = (deviceState == PROVISIONING) ? 200 : 1000;
+
+  if (millis() - lastLedMs >= interval) {
+    lastLedMs = millis();
+    ledState = !ledState;
+    digitalWrite(STATUS_LED, ledState ? HIGH : LOW);
   }
 }
 
-/* ===== SETUP ===== */
-
 void setup() {
-
   pinMode(LOAD_PIN, OUTPUT);
+  pinMode(STATUS_LED, OUTPUT);
+
   digitalWrite(LOAD_PIN, LOW);
+  digitalWrite(STATUS_LED, LOW);
 
   Serial.begin(115200);
+  analogReadResolution(12);
 
-  connectWiFi();
+  if (!loadWiFiCreds()) {
+    startProvisioningMode();
+    return;
+  }
+
+  if (!connectWiFi()) {
+    clearWiFiCreds();
+    startProvisioningMode();
+    return;
+  }
+
+  deviceState = NORMAL_OPERATION;
   syncTime();
   connectAWS();
 }
 
-/* ===== LOOP ===== */
-
 void loop() {
+  updateStatusLed();
 
-  if (WiFi.status() != WL_CONNECTED) return;
-  if (!mqtt.connected()) connectAWS();
+  if (deviceState == PROVISIONING) {
+    server.handleClient();
+    delay(10);
+    return;
+  }
+
+  if (WiFi.status() != WL_CONNECTED) {
+    if (!connectWiFi()) {
+      clearWiFiCreds();
+      startProvisioningMode();
+      return;
+    }
+    syncTime();
+  }
+
+  if (!mqtt.connected()) {
+    connectAWS();
+  }
 
   mqtt.loop();
-
-  checkSchedule();   // continuously enforce schedule
+  checkSchedule();
+  publishTelemetry();
 }
