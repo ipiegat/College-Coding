@@ -5,6 +5,7 @@
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
 #include <strings.h>
+#include "certs.h"
 
 #define LOAD_PIN 5
 #define STATUS_LED 2
@@ -166,12 +167,26 @@ bool connectWiFi() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(wifiSSID.c_str(), wifiPASS.c_str());
 
+  Serial.print("Connecting to WiFi");
+
   unsigned long start = millis();
-  while (WiFi.status() != WL_CONNECTED && millis() - start < WIFI_CONNECT_TIMEOUT_MS) {
-    delay(250);
+
+  while (WiFi.status() != WL_CONNECTED &&
+         millis() - start < WIFI_CONNECT_TIMEOUT_MS) {
+    delay(500);
+    Serial.print(".");
   }
 
-  return WiFi.status() == WL_CONNECTED;
+  Serial.println();
+
+  if (WiFi.status() == WL_CONNECTED) {
+    Serial.print("WiFi connected, IP: ");
+    Serial.println(WiFi.localIP());
+    return true;
+  }
+
+  Serial.println("WiFi connection FAILED");
+  return false;
 }
 
 void syncTime() {
@@ -239,16 +254,40 @@ void onMessage(char* topic, byte* payload, unsigned int len) {
 }
 
 void connectAWS() {
+
+  IPAddress ip;
+  if (WiFi.hostByName(AWS_ENDPOINT, ip)) {
+    Serial.print("AWS IP: ");
+    Serial.println(ip);
+  } else {
+    Serial.println("DNS lookup failed");
+  }
+
+  Serial.print("Current epoch: ");
+  Serial.println(time(nullptr));
+
+  // net.setInsecure();
+   
   net.setCACert(AWS_CERT_CA);
   net.setCertificate(AWS_CERT_CRT);
   net.setPrivateKey(AWS_CERT_PRIVATE);
+  
+
 
   mqtt.setServer(AWS_ENDPOINT, 8883);
   mqtt.setCallback(onMessage);
 
   while (!mqtt.connected()) {
-    mqtt.connect(CLIENT_ID);
-    delay(500);
+    Serial.println("Connecting to AWS...");
+
+    if (mqtt.connect(CLIENT_ID)) {
+      Serial.println("AWS Connected!");
+    } else {
+      Serial.print("MQTT failed, rc=");
+      Serial.println(mqtt.state());
+    }
+
+    delay(2000);
   }
 
   mqtt.subscribe(TOPIC_CMD);
@@ -373,6 +412,8 @@ void setup() {
     return;
   }
 
+  Serial.print("WiFi connected, IP: ");
+  Serial.println(WiFi.localIP());
   deviceState = NORMAL_OPERATION;
   syncTime();
   connectAWS();
