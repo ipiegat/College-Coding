@@ -23,7 +23,7 @@ end GEMM;
 
 architecture Behavioral of GEMM is
 
-    type state_t is (IDLE, MAC);
+    type state_t is (IDLE, MAC, WAIT_RELEASE);
     signal state : state_t := IDLE;
 
     signal i : integer range 0 to 1 := 0;
@@ -39,9 +39,6 @@ begin
     acc_res <= signed(mul_res(31 downto 0)) when k = 0 else
                signed(regf_C) + signed(mul_res(31 downto 0));
 
-    -----------------
-    -- CONTROLLER FSM
-    -----------------
     controller : process(clk, reset)
     begin
         if reset = '1' then
@@ -72,20 +69,22 @@ begin
                             if i = 0 then
                                 i <= 1;
                             else
-                                state <= IDLE;
+                                state <= WAIT_RELEASE;
                                 i <= 0;
                                 j <= 0;
                                 k <= 0;
                             end if;
                         end if;
                     end if;
+
+                when WAIT_RELEASE =>
+                    if Gemm_start = '0' then
+                        state <= IDLE;
+                    end if;
             end case;
         end if;
     end process;
 
-    -----------------
-    -- MAC Datapath
-    -----------------
     datapath : process(state, i, j, k, acc_res)
     begin
         if state = MAC then
