@@ -1,0 +1,87 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Thu Mar  5 16:15:52 2026
+[*]
+[dumpfile] "/Users/omer/Desktop/Desktop/vhdl-uconn/PAs-S26/pa2/pa2_working/Waves/loop.ghw"
+[dumpfile_mtime] "Thu Mar  5 14:28:32 2026"
+[dumpfile_size] 2198266
+[savefile] "/Users/omer/Desktop/Desktop/vhdl-uconn/PAs-S26/pa2/pa2_working/omer.gtkw"
+[timestart] 0
+[size] 1776 989
+[pos] -121 57
+*-19.919224 650000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[treeopen] top.
+[treeopen] top.testbench.
+[treeopen] top.testbench.dut_inst.
+[sst_width] 240
+[signals_width] 211
+[sst_expanded] 1
+[sst_vpaned_height] 643
+@28
+top.testbench.dut_inst.clk_in
+top.testbench.dut_inst.rst_in
+@24
+#{top.testbench.dut_inst.inst_addr[31:0]} top.testbench.dut_inst.inst_addr[31] top.testbench.dut_inst.inst_addr[30] top.testbench.dut_inst.inst_addr[29] top.testbench.dut_inst.inst_addr[28] top.testbench.dut_inst.inst_addr[27] top.testbench.dut_inst.inst_addr[26] top.testbench.dut_inst.inst_addr[25] top.testbench.dut_inst.inst_addr[24] top.testbench.dut_inst.inst_addr[23] top.testbench.dut_inst.inst_addr[22] top.testbench.dut_inst.inst_addr[21] top.testbench.dut_inst.inst_addr[20] top.testbench.dut_inst.inst_addr[19] top.testbench.dut_inst.inst_addr[18] top.testbench.dut_inst.inst_addr[17] top.testbench.dut_inst.inst_addr[16] top.testbench.dut_inst.inst_addr[15] top.testbench.dut_inst.inst_addr[14] top.testbench.dut_inst.inst_addr[13] top.testbench.dut_inst.inst_addr[12] top.testbench.dut_inst.inst_addr[11] top.testbench.dut_inst.inst_addr[10] top.testbench.dut_inst.inst_addr[9] top.testbench.dut_inst.inst_addr[8] top.testbench.dut_inst.inst_addr[7] top.testbench.dut_inst.inst_addr[6] top.testbench.dut_inst.inst_addr[5] top.testbench.dut_inst.inst_addr[4] top.testbench.dut_inst.inst_addr[3] top.testbench.dut_inst.inst_addr[2] top.testbench.dut_inst.inst_addr[1] top.testbench.dut_inst.inst_addr[0]
+@420
+top.testbench.dut_inst.control_unit.inst_type
+@28
+top.testbench.dut_inst.terminate
+top.testbench.dut_inst.control_unit.bne
+top.testbench.dut_inst.control_unit.pcsrc
+@22
+#{top.testbench.dut_inst.reg_file_inst.rs1[4:0]} top.testbench.dut_inst.reg_file_inst.rs1[4] top.testbench.dut_inst.reg_file_inst.rs1[3] top.testbench.dut_inst.reg_file_inst.rs1[2] top.testbench.dut_inst.reg_file_inst.rs1[1] top.testbench.dut_inst.reg_file_inst.rs1[0]
+@24
+#{top.testbench.dut_inst.reg_file_inst.read_data1[31:0]} top.testbench.dut_inst.reg_file_inst.read_data1[31] top.testbench.dut_inst.reg_file_inst.read_data1[30] top.testbench.dut_inst.reg_file_inst.read_data1[29] top.testbench.dut_inst.reg_file_inst.read_data1[28] top.testbench.dut_inst.reg_file_inst.read_data1[27] top.testbench.dut_inst.reg_file_inst.read_data1[26] top.testbench.dut_inst.reg_file_inst.read_data1[25] top.testbench.dut_inst.reg_file_inst.read_data1[24] top.testbench.dut_inst.reg_file_inst.read_data1[23] top.testbench.dut_inst.reg_file_inst.read_data1[22] top.testbench.dut_inst.reg_file_inst.read_data1[21] top.testbench.dut_inst.reg_file_inst.read_data1[20] top.testbench.dut_inst.reg_file_inst.read_data1[19] top.testbench.dut_inst.reg_file_inst.read_data1[18] top.testbench.dut_inst.reg_file_inst.read_data1[17] top.testbench.dut_inst.reg_file_inst.read_data1[16] top.testbench.dut_inst.reg_file_inst.read_data1[15] top.testbench.dut_inst.reg_file_inst.read_data1[14] top.testbench.dut_inst.reg_file_inst.read_data1[13] top.testbench.dut_inst.reg_file_inst.read_data1[12] top.testbench.dut_inst.reg_file_inst.read_data1[11] top.testbench.dut_inst.reg_file_inst.read_data1[10] top.testbench.dut_inst.reg_file_inst.read_data1[9] top.testbench.dut_inst.reg_file_inst.read_data1[8] top.testbench.dut_inst.reg_file_inst.read_data1[7] top.testbench.dut_inst.reg_file_inst.read_data1[6] top.testbench.dut_inst.reg_file_inst.read_data1[5] top.testbench.dut_inst.reg_file_inst.read_data1[4] top.testbench.dut_inst.reg_file_inst.read_data1[3] top.testbench.dut_inst.reg_file_inst.read_data1[2] top.testbench.dut_inst.reg_file_inst.read_data1[1] top.testbench.dut_inst.reg_file_inst.read_data1[0]
+@22
+#{top.testbench.dut_inst.reg_file_inst.rs2[4:0]} top.testbench.dut_inst.reg_file_inst.rs2[4] top.testbench.dut_inst.reg_file_inst.rs2[3] top.testbench.dut_inst.reg_file_inst.rs2[2] top.testbench.dut_inst.reg_file_inst.rs2[1] top.testbench.dut_inst.reg_file_inst.rs2[0]
+@24
+#{top.testbench.dut_inst.reg_file_inst.read_data2[31:0]} top.testbench.dut_inst.reg_file_inst.read_data2[31] top.testbench.dut_inst.reg_file_inst.read_data2[30] top.testbench.dut_inst.reg_file_inst.read_data2[29] top.testbench.dut_inst.reg_file_inst.read_data2[28] top.testbench.dut_inst.reg_file_inst.read_data2[27] top.testbench.dut_inst.reg_file_inst.read_data2[26] top.testbench.dut_inst.reg_file_inst.read_data2[25] top.testbench.dut_inst.reg_file_inst.read_data2[24] top.testbench.dut_inst.reg_file_inst.read_data2[23] top.testbench.dut_inst.reg_file_inst.read_data2[22] top.testbench.dut_inst.reg_file_inst.read_data2[21] top.testbench.dut_inst.reg_file_inst.read_data2[20] top.testbench.dut_inst.reg_file_inst.read_data2[19] top.testbench.dut_inst.reg_file_inst.read_data2[18] top.testbench.dut_inst.reg_file_inst.read_data2[17] top.testbench.dut_inst.reg_file_inst.read_data2[16] top.testbench.dut_inst.reg_file_inst.read_data2[15] top.testbench.dut_inst.reg_file_inst.read_data2[14] top.testbench.dut_inst.reg_file_inst.read_data2[13] top.testbench.dut_inst.reg_file_inst.read_data2[12] top.testbench.dut_inst.reg_file_inst.read_data2[11] top.testbench.dut_inst.reg_file_inst.read_data2[10] top.testbench.dut_inst.reg_file_inst.read_data2[9] top.testbench.dut_inst.reg_file_inst.read_data2[8] top.testbench.dut_inst.reg_file_inst.read_data2[7] top.testbench.dut_inst.reg_file_inst.read_data2[6] top.testbench.dut_inst.reg_file_inst.read_data2[5] top.testbench.dut_inst.reg_file_inst.read_data2[4] top.testbench.dut_inst.reg_file_inst.read_data2[3] top.testbench.dut_inst.reg_file_inst.read_data2[2] top.testbench.dut_inst.reg_file_inst.read_data2[1] top.testbench.dut_inst.reg_file_inst.read_data2[0]
+#{top.testbench.dut_inst.immediate_unit.imm_out[31:0]} top.testbench.dut_inst.immediate_unit.imm_out[31] top.testbench.dut_inst.immediate_unit.imm_out[30] top.testbench.dut_inst.immediate_unit.imm_out[29] top.testbench.dut_inst.immediate_unit.imm_out[28] top.testbench.dut_inst.immediate_unit.imm_out[27] top.testbench.dut_inst.immediate_unit.imm_out[26] top.testbench.dut_inst.immediate_unit.imm_out[25] top.testbench.dut_inst.immediate_unit.imm_out[24] top.testbench.dut_inst.immediate_unit.imm_out[23] top.testbench.dut_inst.immediate_unit.imm_out[22] top.testbench.dut_inst.immediate_unit.imm_out[21] top.testbench.dut_inst.immediate_unit.imm_out[20] top.testbench.dut_inst.immediate_unit.imm_out[19] top.testbench.dut_inst.immediate_unit.imm_out[18] top.testbench.dut_inst.immediate_unit.imm_out[17] top.testbench.dut_inst.immediate_unit.imm_out[16] top.testbench.dut_inst.immediate_unit.imm_out[15] top.testbench.dut_inst.immediate_unit.imm_out[14] top.testbench.dut_inst.immediate_unit.imm_out[13] top.testbench.dut_inst.immediate_unit.imm_out[12] top.testbench.dut_inst.immediate_unit.imm_out[11] top.testbench.dut_inst.immediate_unit.imm_out[10] top.testbench.dut_inst.immediate_unit.imm_out[9] top.testbench.dut_inst.immediate_unit.imm_out[8] top.testbench.dut_inst.immediate_unit.imm_out[7] top.testbench.dut_inst.immediate_unit.imm_out[6] top.testbench.dut_inst.immediate_unit.imm_out[5] top.testbench.dut_inst.immediate_unit.imm_out[4] top.testbench.dut_inst.immediate_unit.imm_out[3] top.testbench.dut_inst.immediate_unit.imm_out[2] top.testbench.dut_inst.immediate_unit.imm_out[1] top.testbench.dut_inst.immediate_unit.imm_out[0]
+@28
+top.testbench.dut_inst.control_unit.alusrcb
+@24
+#{top.testbench.dut_inst.datapath_inst.alu_result[31:0]} top.testbench.dut_inst.datapath_inst.alu_result[31] top.testbench.dut_inst.datapath_inst.alu_result[30] top.testbench.dut_inst.datapath_inst.alu_result[29] top.testbench.dut_inst.datapath_inst.alu_result[28] top.testbench.dut_inst.datapath_inst.alu_result[27] top.testbench.dut_inst.datapath_inst.alu_result[26] top.testbench.dut_inst.datapath_inst.alu_result[25] top.testbench.dut_inst.datapath_inst.alu_result[24] top.testbench.dut_inst.datapath_inst.alu_result[23] top.testbench.dut_inst.datapath_inst.alu_result[22] top.testbench.dut_inst.datapath_inst.alu_result[21] top.testbench.dut_inst.datapath_inst.alu_result[20] top.testbench.dut_inst.datapath_inst.alu_result[19] top.testbench.dut_inst.datapath_inst.alu_result[18] top.testbench.dut_inst.datapath_inst.alu_result[17] top.testbench.dut_inst.datapath_inst.alu_result[16] top.testbench.dut_inst.datapath_inst.alu_result[15] top.testbench.dut_inst.datapath_inst.alu_result[14] top.testbench.dut_inst.datapath_inst.alu_result[13] top.testbench.dut_inst.datapath_inst.alu_result[12] top.testbench.dut_inst.datapath_inst.alu_result[11] top.testbench.dut_inst.datapath_inst.alu_result[10] top.testbench.dut_inst.datapath_inst.alu_result[9] top.testbench.dut_inst.datapath_inst.alu_result[8] top.testbench.dut_inst.datapath_inst.alu_result[7] top.testbench.dut_inst.datapath_inst.alu_result[6] top.testbench.dut_inst.datapath_inst.alu_result[5] top.testbench.dut_inst.datapath_inst.alu_result[4] top.testbench.dut_inst.datapath_inst.alu_result[3] top.testbench.dut_inst.datapath_inst.alu_result[2] top.testbench.dut_inst.datapath_inst.alu_result[1] top.testbench.dut_inst.datapath_inst.alu_result[0]
+@22
+#{top.testbench.dut_inst.reg_file_inst.rd[4:0]} top.testbench.dut_inst.reg_file_inst.rd[4] top.testbench.dut_inst.reg_file_inst.rd[3] top.testbench.dut_inst.reg_file_inst.rd[2] top.testbench.dut_inst.reg_file_inst.rd[1] top.testbench.dut_inst.reg_file_inst.rd[0]
+@28
+top.testbench.dut_inst.control_unit.regwrite
+top.testbench.dut_inst.control_unit.memread
+top.testbench.dut_inst.control_unit.wbsrc
+@24
+#{top.testbench.dut_inst.inst_data_mem.data_address[31:0]} top.testbench.dut_inst.inst_data_mem.data_address[31] top.testbench.dut_inst.inst_data_mem.data_address[30] top.testbench.dut_inst.inst_data_mem.data_address[29] top.testbench.dut_inst.inst_data_mem.data_address[28] top.testbench.dut_inst.inst_data_mem.data_address[27] top.testbench.dut_inst.inst_data_mem.data_address[26] top.testbench.dut_inst.inst_data_mem.data_address[25] top.testbench.dut_inst.inst_data_mem.data_address[24] top.testbench.dut_inst.inst_data_mem.data_address[23] top.testbench.dut_inst.inst_data_mem.data_address[22] top.testbench.dut_inst.inst_data_mem.data_address[21] top.testbench.dut_inst.inst_data_mem.data_address[20] top.testbench.dut_inst.inst_data_mem.data_address[19] top.testbench.dut_inst.inst_data_mem.data_address[18] top.testbench.dut_inst.inst_data_mem.data_address[17] top.testbench.dut_inst.inst_data_mem.data_address[16] top.testbench.dut_inst.inst_data_mem.data_address[15] top.testbench.dut_inst.inst_data_mem.data_address[14] top.testbench.dut_inst.inst_data_mem.data_address[13] top.testbench.dut_inst.inst_data_mem.data_address[12] top.testbench.dut_inst.inst_data_mem.data_address[11] top.testbench.dut_inst.inst_data_mem.data_address[10] top.testbench.dut_inst.inst_data_mem.data_address[9] top.testbench.dut_inst.inst_data_mem.data_address[8] top.testbench.dut_inst.inst_data_mem.data_address[7] top.testbench.dut_inst.inst_data_mem.data_address[6] top.testbench.dut_inst.inst_data_mem.data_address[5] top.testbench.dut_inst.inst_data_mem.data_address[4] top.testbench.dut_inst.inst_data_mem.data_address[3] top.testbench.dut_inst.inst_data_mem.data_address[2] top.testbench.dut_inst.inst_data_mem.data_address[1] top.testbench.dut_inst.inst_data_mem.data_address[0]
+@25
+#{top.testbench.dut_inst.inst_data_mem.data_mem_out[31:0]} top.testbench.dut_inst.inst_data_mem.data_mem_out[31] top.testbench.dut_inst.inst_data_mem.data_mem_out[30] top.testbench.dut_inst.inst_data_mem.data_mem_out[29] top.testbench.dut_inst.inst_data_mem.data_mem_out[28] top.testbench.dut_inst.inst_data_mem.data_mem_out[27] top.testbench.dut_inst.inst_data_mem.data_mem_out[26] top.testbench.dut_inst.inst_data_mem.data_mem_out[25] top.testbench.dut_inst.inst_data_mem.data_mem_out[24] top.testbench.dut_inst.inst_data_mem.data_mem_out[23] top.testbench.dut_inst.inst_data_mem.data_mem_out[22] top.testbench.dut_inst.inst_data_mem.data_mem_out[21] top.testbench.dut_inst.inst_data_mem.data_mem_out[20] top.testbench.dut_inst.inst_data_mem.data_mem_out[19] top.testbench.dut_inst.inst_data_mem.data_mem_out[18] top.testbench.dut_inst.inst_data_mem.data_mem_out[17] top.testbench.dut_inst.inst_data_mem.data_mem_out[16] top.testbench.dut_inst.inst_data_mem.data_mem_out[15] top.testbench.dut_inst.inst_data_mem.data_mem_out[14] top.testbench.dut_inst.inst_data_mem.data_mem_out[13] top.testbench.dut_inst.inst_data_mem.data_mem_out[12] top.testbench.dut_inst.inst_data_mem.data_mem_out[11] top.testbench.dut_inst.inst_data_mem.data_mem_out[10] top.testbench.dut_inst.inst_data_mem.data_mem_out[9] top.testbench.dut_inst.inst_data_mem.data_mem_out[8] top.testbench.dut_inst.inst_data_mem.data_mem_out[7] top.testbench.dut_inst.inst_data_mem.data_mem_out[6] top.testbench.dut_inst.inst_data_mem.data_mem_out[5] top.testbench.dut_inst.inst_data_mem.data_mem_out[4] top.testbench.dut_inst.inst_data_mem.data_mem_out[3] top.testbench.dut_inst.inst_data_mem.data_mem_out[2] top.testbench.dut_inst.inst_data_mem.data_mem_out[1] top.testbench.dut_inst.inst_data_mem.data_mem_out[0]
+@24
+#{top.testbench.dut_inst.reg_file_inst.write_data[31:0]} top.testbench.dut_inst.reg_file_inst.write_data[31] top.testbench.dut_inst.reg_file_inst.write_data[30] top.testbench.dut_inst.reg_file_inst.write_data[29] top.testbench.dut_inst.reg_file_inst.write_data[28] top.testbench.dut_inst.reg_file_inst.write_data[27] top.testbench.dut_inst.reg_file_inst.write_data[26] top.testbench.dut_inst.reg_file_inst.write_data[25] top.testbench.dut_inst.reg_file_inst.write_data[24] top.testbench.dut_inst.reg_file_inst.write_data[23] top.testbench.dut_inst.reg_file_inst.write_data[22] top.testbench.dut_inst.reg_file_inst.write_data[21] top.testbench.dut_inst.reg_file_inst.write_data[20] top.testbench.dut_inst.reg_file_inst.write_data[19] top.testbench.dut_inst.reg_file_inst.write_data[18] top.testbench.dut_inst.reg_file_inst.write_data[17] top.testbench.dut_inst.reg_file_inst.write_data[16] top.testbench.dut_inst.reg_file_inst.write_data[15] top.testbench.dut_inst.reg_file_inst.write_data[14] top.testbench.dut_inst.reg_file_inst.write_data[13] top.testbench.dut_inst.reg_file_inst.write_data[12] top.testbench.dut_inst.reg_file_inst.write_data[11] top.testbench.dut_inst.reg_file_inst.write_data[10] top.testbench.dut_inst.reg_file_inst.write_data[9] top.testbench.dut_inst.reg_file_inst.write_data[8] top.testbench.dut_inst.reg_file_inst.write_data[7] top.testbench.dut_inst.reg_file_inst.write_data[6] top.testbench.dut_inst.reg_file_inst.write_data[5] top.testbench.dut_inst.reg_file_inst.write_data[4] top.testbench.dut_inst.reg_file_inst.write_data[3] top.testbench.dut_inst.reg_file_inst.write_data[2] top.testbench.dut_inst.reg_file_inst.write_data[1] top.testbench.dut_inst.reg_file_inst.write_data[0]
+@28
+top.testbench.dut_inst.control_unit.memwrite
+@24
+#{top.testbench.dut_inst.inst_data_mem.write_data[31:0]} top.testbench.dut_inst.inst_data_mem.write_data[31] top.testbench.dut_inst.inst_data_mem.write_data[30] top.testbench.dut_inst.inst_data_mem.write_data[29] top.testbench.dut_inst.inst_data_mem.write_data[28] top.testbench.dut_inst.inst_data_mem.write_data[27] top.testbench.dut_inst.inst_data_mem.write_data[26] top.testbench.dut_inst.inst_data_mem.write_data[25] top.testbench.dut_inst.inst_data_mem.write_data[24] top.testbench.dut_inst.inst_data_mem.write_data[23] top.testbench.dut_inst.inst_data_mem.write_data[22] top.testbench.dut_inst.inst_data_mem.write_data[21] top.testbench.dut_inst.inst_data_mem.write_data[20] top.testbench.dut_inst.inst_data_mem.write_data[19] top.testbench.dut_inst.inst_data_mem.write_data[18] top.testbench.dut_inst.inst_data_mem.write_data[17] top.testbench.dut_inst.inst_data_mem.write_data[16] top.testbench.dut_inst.inst_data_mem.write_data[15] top.testbench.dut_inst.inst_data_mem.write_data[14] top.testbench.dut_inst.inst_data_mem.write_data[13] top.testbench.dut_inst.inst_data_mem.write_data[12] top.testbench.dut_inst.inst_data_mem.write_data[11] top.testbench.dut_inst.inst_data_mem.write_data[10] top.testbench.dut_inst.inst_data_mem.write_data[9] top.testbench.dut_inst.inst_data_mem.write_data[8] top.testbench.dut_inst.inst_data_mem.write_data[7] top.testbench.dut_inst.inst_data_mem.write_data[6] top.testbench.dut_inst.inst_data_mem.write_data[5] top.testbench.dut_inst.inst_data_mem.write_data[4] top.testbench.dut_inst.inst_data_mem.write_data[3] top.testbench.dut_inst.inst_data_mem.write_data[2] top.testbench.dut_inst.inst_data_mem.write_data[1] top.testbench.dut_inst.inst_data_mem.write_data[0]
+[pattern_trace] 1
+[pattern_trace] 0

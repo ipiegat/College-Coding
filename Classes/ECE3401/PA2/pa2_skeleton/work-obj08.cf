@@ -1,0 +1,24 @@
+v 4
+file . "code/tb/testbench.vhd" "09acd8e620efee105fa394c7409040c02c320d07" "20260327171359.638":
+  entity testbench at 1( 0) + 0 on 24;
+  architecture behavioral of testbench at 12( 199) + 0 on 25;
+file . "code/src/register_file.vhd" "45b18c9d9bea4f04f9d73aae6e1edab46ef0ee33" "20260327171359.637":
+  entity register_file at 1( 0) + 0 on 22;
+  architecture behavioral of register_file at 29( 992) + 0 on 23;
+file . "code/src/PA2.vhd" "cca5d533ba465f6344de4cc7c4020b9a35a57062" "20260327171359.636":
+  entity pa2 at 1( 0) + 0 on 20;
+  architecture behavioral of pa2 at 17( 312) + 0 on 21;
+file . "code/src/Immediate.vhd" "13dfae9c04ce9b40966812e25c3d36ce9daf8c9a" "20260327171359.635":
+  entity immediate at 1( 0) + 0 on 18;
+  architecture behavioral of immediate at 12( 240) + 0 on 19;
+file . "code/src/Imem_Dmem.vhd" "cbf42c46576d3d6bb22add35c871f5e7c6892df6" "20260327171359.635":
+  entity imem_dmem at 1( 0) + 0 on 16;
+  architecture behavioral of imem_dmem at 24( 744) + 0 on 17;
+file . "code/src/Datapath.vhd" "4c38dae76f5d1b9543aff93cfa965c2782573c09" "20260327171359.633":
+  entity datapath at 1( 0) + 0 on 14;
+  architecture behavioral of datapath at 28( 925) + 0 on 15;
+file . "code/src/Controller.vhd" "76464824975ff7e93074d6a2109d9080fa288372" "20260327171359.632":
+  entity controller at 1( 0) + 0 on 12;
+  architecture behavioral of controller at 23( 629) + 0 on 13;
+file . "code/src/0itype.vhd" "2073996a2ae668dfe4c0505684c70631895ac9e9" "20260327171359.629":
+  package itype_pkg at 5( 238) + 0 on 11;
